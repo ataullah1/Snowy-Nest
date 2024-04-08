@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { FaEye, FaEyeSlash, FaTwitter } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { MdEmail } from 'react-icons/md';
@@ -7,10 +7,14 @@ import { Link } from 'react-router-dom';
 import image1 from '../../assets/sliderImg/6.jpg';
 import Nav from '../../components/Nav/Nav';
 import { FaGithub } from 'react-icons/fa';
+import { ContextAuth } from '../../provider/Provider';
 const Login = () => {
   const [eye, setEye] = useState(false);
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const [emailErr, setEmailErr] = useState(null);
+
+  const { twitterLogin, gitHubLogin, googleLogin, emlPassLogin } =
+    useContext(ContextAuth);
 
   const handleLoginSubmit = (e) => {
     setEmailErr(null);
@@ -24,9 +28,29 @@ const Login = () => {
       setEmailErr('Please enter a valid email address.');
       return;
     }
+    // Email password Login
+    emlPassLogin(email, pass)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
   };
-  const socialLogin = (anda) => {
-    console.log(anda);
+
+  // all Social Login
+  const socialLogin = (socialLogin) => {
+    socialLogin()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
   };
 
   return (
@@ -126,7 +150,7 @@ const Login = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-3">
           <button
-            onClick={() => socialLogin('handleGoogleLogin')}
+            onClick={() => socialLogin(googleLogin)}
             className="py-2 px-4 w-full font-medium border hover:shadow-lg shadow-indigo-900/20 rounded-md flex items-center justify-center gap-2 border-redLi"
           >
             <span className=" text-2xl">
@@ -135,7 +159,7 @@ const Login = () => {
             Login With Google
           </button>
           <button
-            onClick={() => socialLogin('handleGithuLogin')}
+            onClick={() => socialLogin(gitHubLogin)}
             className="py-2 px-4 w-full font-medium border hover:shadow-lg shadow-blue-500/20 rounded-md  flex items-center justify-center gap-2 border-redLi"
           >
             <span className="text-black text-2xl">
@@ -144,7 +168,7 @@ const Login = () => {
             Login With GitHub
           </button>
           <button
-            onClick={() => socialLogin('handleTwitterLogin')}
+            onClick={() => socialLogin(twitterLogin)}
             className="py-2 px-4 w-full font-medium border hover:shadow-lg shadow-blue-400-900/20 rounded-md  flex items-center justify-center gap-2 border-redLi"
           >
             <span className="text-blue-400 text-2xl">

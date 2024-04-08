@@ -53,7 +53,7 @@ const Register = () => {
       setConfPassErr('Password is not matched.');
       return;
     }
-    // Email password Login
+    // Email password Register
     emlPassRegister(email, pass)
       .then((userCredential) => {
         const user = userCredential.user;
