@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation, Keyboard } from 'swiper/modules';
 
 // image input
-import slide1 from '../../assets/sliderImg/1.jpg';
+import slide1 from '../../assets/sliderImg/8.jpg';
 
 import Nav from '../Nav/Nav';
 
@@ -56,7 +56,7 @@ const Banner = () => {
                     Buy the property of your choice.
                   </h1>
                 </div>
-                <div className="hidden md:block h-28 w-10/12 rounded-xl p-2 absolute bottom-0 bg-[#77777779]">
+                <div className="hidden md:block h-28 w-10/12 rounded-xl p-2 absolute bottom-6 bg-[#77777779]">
                   <div className="h-full w-full border-2 rounded-xl bg-white"></div>
                 </div>
               </div>
@@ -64,7 +64,8 @@ const Banner = () => {
           </div>
         </SwiperSlide>
 
-        {/* <SwiperSlide>
+        {/* 
+        <SwiperSlide>
           <div
             className="min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
             style={{
@@ -112,7 +113,8 @@ const Banner = () => {
               </div>
             </div>
           </div>
-        </SwiperSlide> */}
+        </SwiperSlide> 
+        */}
       </Swiper>
     </div>
   );
