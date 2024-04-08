@@ -97,7 +97,10 @@ const Nav = () => {
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 flex gap-6 text-white">
-              <NavLink className="px-3 py-3 font-semibold hover:bg-slate-300 hover:text-redLi bg-[#ffffff0c] rounded-2xl">
+              <NavLink
+                to={'/'}
+                className="px-3 py-3 font-semibold hover:bg-slate-300 hover:text-redLi bg-[#ffffff0c] rounded-2xl"
+              >
                 Home
               </NavLink>
               <NavLink

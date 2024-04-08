@@ -11,3 +11,4 @@
 - React-hot-toast
 - Swiper
 - Firebase
+- React Hook Form
