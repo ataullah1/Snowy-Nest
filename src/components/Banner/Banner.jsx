@@ -38,42 +38,68 @@ const Banner = () => {
       >
         <SwiperSlide>
           <div
-            className="min-h-screen flex items-center justify-center"
+            className="min-h-screen relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
             style={{
-              backgroundImage: ` url(${slide1})`,
+              backgroundImage: `url(${slide1})`,
               backgroundPosition: 'center',
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
             }}
           >
-            <h1>Find Your Dream Home At Snowy Nest.</h1>
+            <div
+              className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+              style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
+            >
+              <div className="flex h-full items-center justify-center">
+                <div className="text-white">
+                  <h1>Find Your Dream Home At Snowy Nest.</h1>
+                </div>
+              </div>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="min-h-screen flex items-center justify-center"
+            className="min-h-screen relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
             style={{
-              backgroundImage: `
-             url(${slide1})`,
+              backgroundImage: `url(${slide1})`,
               backgroundPosition: 'center',
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
             }}
           >
-            <h1>Your Property, Our Priority.</h1>
+            <div
+              className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+              style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
+            >
+              <div className="flex h-full items-center justify-center">
+                <div className="text-white">
+                  <h1>Buy the property of your choice.</h1>
+                </div>
+              </div>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="min-h-screen flex items-center justify-center"
+            className="min-h-screen relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
             style={{
-              backgroundImage: ` url(${slide1})`,
+              backgroundImage: `url(${slide1})`,
               backgroundPosition: 'center',
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
             }}
           >
-            <h1>Buy the property of your choice.</h1>
+            <div
+              className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+              style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
+            >
+              <div className="flex h-full items-center justify-center">
+                <div className="text-white">
+                  <h1>Your Property, Our Priority.</h1>
+                </div>
+              </div>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>
