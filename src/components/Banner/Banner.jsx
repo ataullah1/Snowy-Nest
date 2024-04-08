@@ -29,9 +29,21 @@ const Banner = () => {
         modules={[Autoplay, Pagination, Navigation, Keyboard]}
         className="mySwiper min-h-screen"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>
+          <div>
+            <h1>Find Your Dream Home At Snowy Nest.</h1>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>
+            <h1>Your Property, Our Priority.</h1>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>
+            <h1>Buy the property of your choice.</h1>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </>
   );
