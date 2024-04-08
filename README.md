@@ -3,6 +3,7 @@
 ## Package Used-
 
 - React Router Dom
-- react-icons
-- react-hot-toast
-- swiper
+- React-icons
+- React-hot-toast
+- Swiper
+- Firebase

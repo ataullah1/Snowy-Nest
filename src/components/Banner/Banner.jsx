@@ -91,7 +91,7 @@ const Banner = () => {
                       className="w-full h-12 rounded-full bg-transparent border-2 my-7 px-7 text-redLi"
                       placeholder="Search Your Keyword"
                     />
-                    <span className="absolute top-1/2 -translate-y-1/2 right-5 md:right-10">
+                    <span className="absolute cursor-pointer top-1/2 -translate-y-1/2 right-5 md:right-10">
                       <FaSearch />
                     </span>
                   </div>
