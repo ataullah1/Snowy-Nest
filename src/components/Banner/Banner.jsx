@@ -9,6 +9,11 @@ import { Autoplay, Pagination, Navigation, Keyboard } from 'swiper/modules';
 
 // image input
 import slide1 from '../../assets/sliderImg/8.jpg';
+import slide2 from '../../assets/sliderImg/7.jpg';
+import slide3 from '../../assets/sliderImg/6.jpg';
+import slide4 from '../../assets/sliderImg/5.jpg';
+import slide5 from '../../assets/sliderImg/4.jpg';
+import slide6 from '../../assets/sliderImg/3.jpg';
 
 import Nav from '../Nav/Nav';
 import { FaSearch } from 'react-icons/fa';
@@ -39,7 +44,7 @@ const Banner = () => {
   }
 
   return (
-    <div className="">
+    <div className="relative">
       <div className="fixed w-full z-50">
         <Nav />
       </div>
@@ -48,7 +53,7 @@ const Banner = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 3500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -59,7 +64,7 @@ const Banner = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation, Keyboard]}
-        className="mySwiper min-h-screen"
+        className="mySwiper h-[500px] md:min-h-screen"
       >
         <SwiperSlide>
           <div
@@ -76,7 +81,7 @@ const Banner = () => {
               style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
             >
               <div className="flex h-full items-center justify-center relative">
-                <div className="text-white px-4 lg:px-10">
+                <div className="text-white px-4 max-w-[800px]">
                   <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
                     Buy the property of your choice.
                   </h1>
@@ -84,32 +89,16 @@ const Banner = () => {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Molestias architecto animi delectus .
                   </p>
-                  <div className="relative">
-                    <input
-                      type="text"
-                      name="search"
-                      className="w-full h-12 rounded-full bg-transparent border-2 my-7 px-7 text-redLi"
-                      placeholder="Search Your Keyword"
-                    />
-                    <span className="absolute cursor-pointer top-1/2 -translate-y-1/2 right-5 md:right-10">
-                      <FaSearch />
-                    </span>
-                  </div>
                 </div>
-                {/* <div className="hidden md:block h-28 w-10/12 rounded-xl p-2 absolute bottom-6 bg-[#77777779]">
-                  <div className="h-full w-full border-2 rounded-xl bg-white"></div>
-                </div> */}
               </div>
             </div>
           </div>
         </SwiperSlide>
-
-        {/* 
         <SwiperSlide>
           <div
-            className="min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+            className="h-[500px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
             style={{
-              backgroundImage: `url(${slide1})`,
+              backgroundImage: `url(${slide2})`,
               backgroundPosition: 'center',
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
@@ -119,43 +108,146 @@ const Banner = () => {
               className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
               style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
             >
-              <div className="flex h-full items-center justify-center">
-                <div className="text-white">
-                  <h1 className="text-6xl font-bold">
-                    Find Your Dream Home At Snowy Nest.
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div
-            className="min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
-            style={{
-              backgroundImage: `url(${slide1})`,
-              backgroundPosition: 'center',
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
-            <div
-              className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-              style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
-            >
-              <div className="flex h-full items-center justify-center">
-                <div className="text-white">
-                  <h1 className="text-6xl font-bold">
+              <div className="flex h-full items-center justify-center relative">
+                <div className="text-white px-4 max-w-[800px]">
+                  <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
                     Your Property, Our Priority.
                   </h1>
+                  <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias architecto animi delectus .
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </SwiperSlide> 
-        */}
+        </SwiperSlide>
+        <SwiperSlide>
+          <div
+            className="h-[500px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+            style={{
+              backgroundImage: `url(${slide3})`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            <div
+              className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+              style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
+            >
+              <div className="flex h-full items-center justify-center relative">
+                <div className="text-white px-4 max-w-[800px]">
+                  <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
+                    Find Your Dream Home At Snowy Nest.
+                  </h1>
+                  <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias architecto animi delectus .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div
+            className="h-[500px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+            style={{
+              backgroundImage: `url(${slide4})`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            <div
+              className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+              style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
+            >
+              <div className="flex h-full items-center justify-center relative">
+                <div className="text-white px-4 max-w-[800px]">
+                  <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
+                    Find Your Dream Home At Snowy Nest.
+                  </h1>
+                  <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias architecto animi delectus .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div
+            className="h-[500px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+            style={{
+              backgroundImage: `url(${slide5})`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            <div
+              className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+              style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
+            >
+              <div className="flex h-full items-center justify-center relative">
+                <div className="text-white px-4 max-w-[800px]">
+                  <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
+                    Find Your Dream Home At Snowy Nest.
+                  </h1>
+                  <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias architecto animi delectus .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div
+            className="h-[500px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+            style={{
+              backgroundImage: `url(${slide6})`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            <div
+              className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+              style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
+            >
+              <div className="flex h-full items-center justify-center relative">
+                <div className="text-white px-4 max-w-[800px]">
+                  <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
+                    Find Your Dream Home At Snowy Nest.
+                  </h1>
+                  <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias architecto animi delectus .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
       </Swiper>
+      <div className="w-10/12 sm:w-3/4 lg:w-1/2 absolute bottom-20 left-1/2 -translate-x-1/2 z-10">
+        <div className="relative">
+          <input
+            type="text"
+            name="search"
+            className="w-full h-12 rounded-full bg-transparent border-2 my-7 px-7 text-redLi"
+            placeholder="Search Your Keyword"
+          />
+          <span className="absolute cursor-pointer top-1/2 -translate-y-1/2 right-5 md:right-10 text-redLi ">
+            <FaSearch />
+          </span>
+        </div>
+      </div>
     </div>
   );
 };
