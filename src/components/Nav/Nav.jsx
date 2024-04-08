@@ -10,7 +10,7 @@ const Nav = () => {
   // const { user } = useContext(ContextProvider);
   // const [view, setView] = useState(false);
   return (
-    <div className="bg-slate-400">
+    <div className="">
       <div className="w-11/12 mx-auto ">
         <Toaster />
         <div className=" navbar flex items-center flex-col sm:flex-row sm:justify-between">
