@@ -76,13 +76,13 @@ const Nav = () => {
                   </NavLink>
                   <div className="flex sm:hidden flex-col-reverse gap-2 mt-2">
                     <Link
-                      to={'login'}
+                      to={'/login'}
                       className="font-semibold hover:bg-redLi hover:text-white px-5 sm:px-8 py-2 sm:py-3 rounded-md border-2 border-white text-white active:scale-90 duration-150"
                     >
                       Login
                     </Link>
                     <Link
-                      to={'register'}
+                      to={'/register'}
                       className="font-semibold bg-redLi hover:bg-white hover:text-redLi text-white px-5 sm:px-8 py-2 sm:py-3 rounded-md active:scale-90 duration-150"
                     >
                       Register
@@ -145,13 +145,13 @@ const Nav = () => {
           {/* ) : ( */}
           <div className="navbar-end gap-4 hidden sm:flex w-auto">
             <Link
-              to={'login'}
+              to={'/login'}
               className="font-semibold bg-white text-redLi px-5 sm:px-8 py-2 sm:py-3 rounded-md active:scale-90 duration-150 hover: border-2 hover:border-redLi"
             >
               Login
             </Link>
             <Link
-              to={'register'}
+              to={'/register'}
               className="font-semibold bg-redLi hover:bg-white hover:text-redLi px-5 sm:px-8 py-2 sm:py-3 rounded-md border border-white active:scale-90 duration-150 text-white"
             >
               Register

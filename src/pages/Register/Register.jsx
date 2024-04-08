@@ -2,7 +2,6 @@ import Nav from '../../components/Nav/Nav';
 import {
   FaEye,
   FaEyeSlash,
-  FaFacebook,
   FaGithub,
   FaImage,
   FaTwitter,
