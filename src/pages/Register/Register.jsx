@@ -74,11 +74,17 @@ const Register = () => {
           >
             <div className="bg-transparent w-full z-10">
               <Nav />
+            </div>{' '}
+            <div className="h-full w-full absolute top-[40%] left-1/2 -translate-x-1/2 text-3xl font-bold z-50 text-white">
+              <div>
+                <Link to={'/'}>Home /</Link>
+                <Link to={'/register'}> Register</Link>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full mt-2 md:max-w-[720px] mx-auto border-2 rounded-lg p-5">
+      <div className="w-full mt-2 md:max-w-[720px] mx-auto rounded-lg p-5">
         <h1 className="text-3xl font-bold mb-6 border-b-2 border-redLi inline-block pr-3">
           Create an account
         </h1>
