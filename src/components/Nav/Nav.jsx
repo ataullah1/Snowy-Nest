@@ -2,7 +2,6 @@ import { Toaster } from 'react-hot-toast';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/whiteLogo.png';
 import { useState } from 'react';
-import { FaArrowRight } from 'react-icons/fa';
 import { IoIosArrowForward, IoMdClose } from 'react-icons/io';
 // import ProfileMenu from '../ProfileMenu/ProfileMenu';
 // import { useState } from 'react';
