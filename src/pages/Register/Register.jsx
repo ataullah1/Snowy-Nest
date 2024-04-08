@@ -3,6 +3,7 @@ import {
   FaEye,
   FaEyeSlash,
   FaFacebook,
+  FaGithub,
   FaImage,
   FaTwitter,
   FaUserAlt,
@@ -78,8 +79,10 @@ const Register = () => {
           </div>
         </div>
       </div>
-      <div className="w-full mt-2 md:w-1/2 mx-auto border-2 rounded-lg p-5">
-        <h1 className="text-3xl font-bold pb-6">Create an account</h1>
+      <div className="w-full mt-2 md:max-w-[720px] mx-auto border-2 rounded-lg p-5">
+        <h1 className="text-3xl font-bold mb-6 border-b-2 border-redLi inline-block pr-3">
+          Create an account
+        </h1>
         <form className="space-y-4" onSubmit={handleSignUpSubmit}>
           <label className="input input-bordered flex items-center gap-2">
             <FaUserAlt />
@@ -180,31 +183,33 @@ const Register = () => {
             Login
           </Link>
         </p>
-        <div className="divider divider-secondary">Or</div>
-        <div className="flex flex-col gap-2">
+        <div className="divider before:bg-redLi after:bg-redLi divider-secondary">
+          Or
+        </div>
+        <div className="flex flex-col md:flex-row gap-3">
           <button
             onClick={() => socialLogin('handleGoogleLogin')}
-            className="py-2 px-4 w-full font-medium border-y hover:shadow-lg shadow-indigo-900/20 rounded-md flex items-center justify-center gap-2 bg-white"
+            className="py-2 px-4 w-full font-medium border hover:shadow-lg shadow-indigo-900/20 rounded-md flex items-center justify-center gap-2 border-redLi"
           >
-            <span>
+            <span className=" text-2xl">
               <FcGoogle />
             </span>
             Login With Google
           </button>
           <button
             onClick={() => socialLogin('handleGithuLogin')}
-            className="py-2 px-4 w-full font-medium border-y hover:shadow-lg shadow-blue-500/20 rounded-md  flex items-center justify-center gap-2"
+            className="py-2 px-4 w-full font-medium border hover:shadow-lg shadow-blue-500/20 rounded-md  flex items-center justify-center gap-2 border-redLi"
           >
-            <span className="text-blue-500">
-              <FaFacebook />
+            <span className="text-black text-2xl">
+              <FaGithub />
             </span>
             Login With GitHub
           </button>
           <button
             onClick={() => socialLogin('handleTwitterLogin')}
-            className="py-2 px-4 w-full font-medium border-y hover:shadow-lg shadow-blue-400-900/20 rounded-md  flex items-center justify-center gap-2"
+            className="py-2 px-4 w-full font-medium border hover:shadow-lg shadow-blue-400-900/20 rounded-md  flex items-center justify-center gap-2 border-redLi"
           >
-            <span className="text-blue-400">
+            <span className="text-blue-400 text-2xl">
               <FaTwitter />
             </span>
             Login With Twitter
