@@ -16,3 +16,13 @@ h4,
 h5 {
   font-family: 'Nunito', sans-serif;
 }
+::-moz-selection {
+  /* Code for Firefox */
+  color: #ff5a5f;
+  background: rgb(18, 18, 18);
+}
+
+::selection {
+  color: #ff5a5f;
+  background: rgb(18, 18, 18);
+}
