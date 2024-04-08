@@ -4,11 +4,12 @@ import About from '../pages/About/About';
 import Login from '../pages/Login/Login';
 import Register from '../pages/Register/Register';
 import Root from '../root/Root';
+import Contact from '../pages/Contact/Contact';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root/>,
+    element: <Root />,
     children: [
       {
         path: '/',
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
       },
       {
         path: '/login',
