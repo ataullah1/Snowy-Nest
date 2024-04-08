@@ -3,16 +3,19 @@ import {
   GoogleAuthProvider,
   TwitterAuthProvider,
   createUserWithEmailAndPassword,
+  onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
 } from 'firebase/auth';
 import PropTypes from 'prop-types';
-import { createContext } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import auth from '../firebase/firebase.config';
 
 export const ContextAuth = createContext();
 const Provider = ({ children }) => {
+  const [userDta, setUserDta] = useState(null);
+
   // Register User
   const emlPassRegister = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
@@ -49,6 +52,15 @@ const Provider = ({ children }) => {
       });
   };
 
+  useEffect(() => {
+    const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUserDta(currentUser);
+    });
+    return () => {
+      unSubscribe();
+    };
+  }, []);
+
   // All data obj passing
   const authDta = {
     emlPassRegister,
@@ -57,6 +69,7 @@ const Provider = ({ children }) => {
     gitHubLogin,
     googleLogin,
     logOutAcc,
+    userDta,
   };
   return (
     <ContextAuth.Provider value={authDta}>{children}</ContextAuth.Provider>

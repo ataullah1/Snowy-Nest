@@ -1,16 +1,15 @@
 import { Toaster } from 'react-hot-toast';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/whiteLogo.png';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { IoIosArrowForward, IoMdClose } from 'react-icons/io';
-// import ProfileMenu from '../ProfileMenu/ProfileMenu';
-// import { useState } from 'react';
-// import { ContextProvider } from '../../provider/AuthProvider';
+import ProfileMenu from '../ProfileMenu/ProfileMenu';
+import { ContextAuth } from '../../provider/Provider';
 // import { IoMdClose } from 'react-icons/io';
 
 const Nav = () => {
-  // const { user } = useContext(ContextProvider);
-  // const [view, setView] = useState(false);
+  const { userDta } = useContext(ContextAuth);
+  const [viewProfile, setViewProfile] = useState(false);
   const [view, setView] = useState(false);
   return (
     <div className="">
@@ -58,23 +57,23 @@ const Nav = () => {
                   </div>
                   <NavLink
                     to={'/'}
-                    className="hover:bg-slate-300 hover:text-redLi py-2 px-4 rounded"
+                    className="hover:bg-slate-300 hover:text-redLi py-1 px-4 rounded"
                   >
                     Home
                   </NavLink>
                   <NavLink
                     to={'about'}
-                    className="hover:bg-slate-300 hover:text-redLi py-2 px-4 rounded"
+                    className="hover:bg-slate-300 hover:text-redLi py-1 px-4 rounded"
                   >
                     About
                   </NavLink>
                   <NavLink
                     to={'contact'}
-                    className="hover:bg-slate-300 hover:text-redLi py-2 px-4 rounded"
+                    className="hover:bg-slate-300 hover:text-redLi py-1 px-4 rounded"
                   >
                     Contact
                   </NavLink>
-                  <div className="flex sm:hidden flex-col-reverse gap-2 mt-2">
+                  <div className="flex sm:hidden flex-col gap-2 mt-2">
                     <Link
                       to={'/login'}
                       className="font-semibold hover:bg-redLi hover:text-white px-5 sm:px-8 py-2 sm:py-3 rounded-md border-2 border-white text-white active:scale-90 duration-150"
@@ -117,47 +116,49 @@ const Nav = () => {
               </NavLink>
             </ul>
           </div>
-          {/* {user ? ( */}
-          {/* <div className="navbar-end flex gap-4 w-auto">
-          <img
-            onClick={() => setView(!view)}
-            src={user.photoURL}
-            className="border border-redLi rounded-full h-11 w-11 cursor-pointer p-1"
-            alt=""
-          />
+          {userDta ? (
+            <div className="navbar-end flex gap-4 w-auto">
+              <img
+                onClick={() => setViewProfile(!viewProfile)}
+                src={userDta.photoURL}
+                className="border-2 border-redLi rounded-full h-12 w-12 cursor-pointer p-[2px]"
+                alt=""
+              />
 
-          <div
-            className={`absolute top-16 lg:top-20 right-3 duration-3000 transition-transform ${
-              view ? 'translate-x-0 visible' : 'translate-x-96 invisible'
-            }`}
-          >
-            <div className="relative">
               <div
-                className="text-white absolute text-2xl top-3 left-3 border rounded cursor-pointer hover:border-orange-400 duration-150"
-                onClick={() => setView(!view)}
+                className={`absolute top-16 lg:top-20 right-20 duration-3000 transition-transform ${
+                  viewProfile
+                    ? 'translate-x-0 visible'
+                    : 'translate-x-96 invisible'
+                }`}
               >
-                <IoMdClose />
+                <div className="relative">
+                  <div
+                    className="text-white absolute text-2xl top-3 left-3 border rounded cursor-pointer hover:border-redLi duration-150"
+                    onClick={() => setViewProfile(!viewProfile)}
+                  >
+                    <IoMdClose />
+                  </div>
+                  <ProfileMenu />
+                </div>
               </div>
-              <ProfileMenu />
             </div>
-          </div>
-        </div> */}
-          {/* ) : ( */}
-          <div className="navbar-end gap-4 hidden sm:flex w-auto">
-            <Link
-              to={'/login'}
-              className="font-semibold bg-white text-redLi px-5 sm:px-8 py-2 sm:py-3 rounded-md active:scale-90 duration-150 hover: border-2 hover:border-redLi"
-            >
-              Login
-            </Link>
-            <Link
-              to={'/register'}
-              className="font-semibold bg-redLi hover:bg-white hover:text-redLi px-5 sm:px-8 py-2 sm:py-3 rounded-md border border-white active:scale-90 duration-150 text-white"
-            >
-              Register
-            </Link>
-          </div>
-          {/* )} */}
+          ) : (
+            <div className="navbar-end gap-4 hidden sm:flex w-auto">
+              <Link
+                to={'/login'}
+                className="font-semibold bg-white text-redLi px-5 sm:px-8 py-2 sm:py-3 rounded-md active:scale-90 duration-150 hover: border-2 hover:border-redLi"
+              >
+                Login
+              </Link>
+              <Link
+                to={'/register'}
+                className="font-semibold bg-redLi hover:bg-white hover:text-redLi px-5 sm:px-8 py-2 sm:py-3 rounded-md border border-white active:scale-90 duration-150 text-white"
+              >
+                Register
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </div>
