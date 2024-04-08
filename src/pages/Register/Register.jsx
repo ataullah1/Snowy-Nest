@@ -12,8 +12,9 @@ import { RiLockPasswordFill } from 'react-icons/ri';
 import { TbPasswordFingerprint } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
-import image1 from '../../assets/sliderImg/11.jpg';
-import { useState } from 'react';
+import image1 from '../../assets/sliderImg/login.jpg';
+import { useContext, useState } from 'react';
+import { ContextAuth } from '../../provider/Provider';
 
 const Register = () => {
   const [eye, setEye] = useState(false);
@@ -22,6 +23,10 @@ const Register = () => {
   const [emailErr, setEmailErr] = useState(null);
   const [passErr, setPassErr] = useState(null);
   const [confPassErr, setConfPassErr] = useState(null);
+
+  // Firebase data
+  const { emlPassRegister, twitterLogin, gitHubLogin, googleLogin } =
+    useContext(ContextAuth);
 
   const [imgNam, setImgNam] = useState({});
   const handleSignUpSubmit = (e) => {
@@ -42,18 +47,35 @@ const Register = () => {
       setEmailErr('Please enter a valid email address.');
       return;
     } else if (!isValidPass.test(pass)) {
-      setPassErr('Please input Uppercase, Number and at least 6 digits.');
+      setPassErr('Please input Uppercase, Lowercase and at least 6 digits.');
       return;
     } else if (pass !== confPass) {
       setConfPassErr('Password is not matched.');
       return;
-    } else {
-      console.log('Good Password');
     }
+    // Email password Login
+    emlPassRegister(email, pass)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
   };
 
-  const socialLogin = (anda) => {
-    console.log(anda);
+  // all Social Login
+  const socialLogin = (socialLogin) => {
+    socialLogin()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
   };
 
   return (
@@ -193,7 +215,7 @@ const Register = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-3">
           <button
-            onClick={() => socialLogin('handleGoogleLogin')}
+            onClick={() => socialLogin(googleLogin)}
             className="py-2 px-4 w-full font-medium border hover:shadow-lg shadow-indigo-900/20 rounded-md flex items-center justify-center gap-2 border-redLi"
           >
             <span className=" text-2xl">
@@ -202,7 +224,7 @@ const Register = () => {
             Login With Google
           </button>
           <button
-            onClick={() => socialLogin('handleGithuLogin')}
+            onClick={() => socialLogin(gitHubLogin)}
             className="py-2 px-4 w-full font-medium border hover:shadow-lg shadow-blue-500/20 rounded-md  flex items-center justify-center gap-2 border-redLi"
           >
             <span className="text-black text-2xl">
@@ -211,7 +233,7 @@ const Register = () => {
             Login With GitHub
           </button>
           <button
-            onClick={() => socialLogin('handleTwitterLogin')}
+            onClick={() => socialLogin(twitterLogin)}
             className="py-2 px-4 w-full font-medium border hover:shadow-lg shadow-blue-400-900/20 rounded-md  flex items-center justify-center gap-2 border-redLi"
           >
             <span className="text-blue-400 text-2xl">

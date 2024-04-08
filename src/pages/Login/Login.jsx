@@ -4,7 +4,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { MdEmail } from 'react-icons/md';
 import { RiLockPasswordFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
-import image1 from '../../assets/sliderImg/11.jpg';
+import image1 from '../../assets/sliderImg/6.jpg';
 import Nav from '../../components/Nav/Nav';
 import { FaGithub } from 'react-icons/fa';
 const Login = () => {
