@@ -2,7 +2,7 @@
 
 ## Live Link: https://snowynest-c1dbe.web.app/ -->
 
-# SnowyNest
+# Project Name: SnowyNest
 
 SnowyNest is a real estate project built with React.js, React Router DOM, and Tailwind CSS. It aims to provide a platform for showcasing various types of residential properties.
 
@@ -83,21 +83,21 @@ To install and run SnowyNest locally, follow these steps:
   ```
 - **React-hot-toast**
 
-```
-npm i react-hot-toast
-```
+  ```
+  npm i react-hot-toast
+  ```
 
-- **Swiper**
+- **Swiper js**
 
-```
-npm i swiper
-```
+  ```
+  npm i swiper
+  ```
 
 - **Firebase**
 
-```
-npm i react-firebase
-```
+  ```
+  npm i react-firebase
+  ```
 
 6. Run the development server:
 
