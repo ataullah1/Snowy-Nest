@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
-import { Toaster } from 'react-hot-toast';
+import { useContext, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/whiteLogo.png';
 import { IoIosArrowForward, IoMdClose } from 'react-icons/io';
@@ -11,34 +10,10 @@ const Nav = () => {
   const { userDta } = useContext(ContextAuth);
   const [viewProfile, setViewProfile] = useState(false);
   const [view, setView] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
-    <div
-      className={
-        scrolled
-          ? 'fixed top-0 left-0 right-0 bg-[#c0c0c077] z-50 max-w-[1500px] mx-auto'
-          : ''
-      }
-    >
+    <div>
       <div className="w-11/12 mx-auto ">
-        <Toaster />
         <div className=" navbar flex items-center flex-col sm:flex-row sm:justify-between">
           <div className="navbar-start flex items-center flex-row-reverse justify-between w-full sm:w-auto sm:flex-row">
             {userDta ? (
@@ -91,7 +66,7 @@ const Nav = () => {
                   </svg>
                 </div>
                 {view && (
-                  <ul className="absolute mt-1 sm:mt-3 -ml-40 sm:ml-4 z-10 p-2 shadow rounded-box w-52 border-2 border-solid border-redLi bg-slate-800 text-white flex flex-col lg:hidden">
+                  <ul className="navManu absolute mt-1 sm:mt-3 -ml-40 sm:ml-4 z-10 p-2 shadow rounded-box w-52 border-2 border-solid border-redLi bg-slate-800 text-white flex flex-col lg:hidden">
                     <div
                       onClick={() => setView(!view)}
                       className="sm:hidden cursor-pointer text-redLi text-3xl -translate-x-9 translate-y-1/2 top-[calc(50%-20px)] absolute"
@@ -149,7 +124,7 @@ const Nav = () => {
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 flex gap-6 text-white">
+            <ul className="navManu menu menu-horizontal px-1 flex gap-6 text-white">
               <NavLink
                 to={'/'}
                 className="w-28 py-3 text-center font-semibold hover:bg-white hover:text-redLi bg-[#ffffff0c] rounded-md border hover:border-redLi"

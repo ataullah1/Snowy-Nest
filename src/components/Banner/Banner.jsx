@@ -15,15 +15,15 @@ import slide4 from '../../assets/sliderImg/5.jpg';
 import slide5 from '../../assets/sliderImg/4.jpg';
 import slide6 from '../../assets/sliderImg/3.jpg';
 
-import Nav from '../Nav/Nav';
+// import Nav from '../Nav/Nav';
 import { FaSearch } from 'react-icons/fa';
 
 const Banner = () => {
   return (
     <div className="relative">
-      <div className="fixed w-full max-w-[1500px] mx-auto z-50">
+      {/* <div className="fixed w-full max-w-[1500px] mx-auto z-50">
         <Nav />
-      </div>
+      </div> */}
 
       <Swiper
         spaceBetween={30}

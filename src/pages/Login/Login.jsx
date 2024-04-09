@@ -5,7 +5,6 @@ import { MdEmail } from 'react-icons/md';
 import { RiLockPasswordFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import image1 from '../../assets/sliderImg/6.jpg';
-import Nav from '../../components/Nav/Nav';
 import { FaGithub } from 'react-icons/fa';
 import { ContextAuth } from '../../provider/Provider';
 import Loding from '../Loding/Loding';
@@ -77,14 +76,11 @@ const Login = () => {
             className="absolute bottom-0 left-0 right-0 top-0 h-72 w-full overflow-hidden bg-fixed"
             style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
           >
-            <div className="bg-transparent absolute w-full z-50">
-              <Nav />
-            </div>
-          </div>
-          <div className="h-full w-full absolute top-[40%] left-1/2 -translate-x-1/2 text-3xl font-bold z-10 text-white">
-            <div>
-              <Link to={'/'}>Home /</Link>
-              <Link to={'/login'}> Login</Link>
+            <div className="h-full w-full absolute top-[40%] left-1/2 -translate-x-1/2 text-3xl font-bold z-10 text-white">
+              <div>
+                <Link to={'/'}>Home /</Link>
+                <Link to={'/login'}> Login</Link>
+              </div>
             </div>
           </div>
         </div>
