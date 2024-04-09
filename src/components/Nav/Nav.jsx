@@ -1,20 +1,38 @@
+import { useContext, useEffect, useState } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/whiteLogo.png';
-import { useContext, useState } from 'react';
 import { IoIosArrowForward, IoMdClose } from 'react-icons/io';
 import ProfileMenu from '../ProfileMenu/ProfileMenu';
 import { ContextAuth } from '../../provider/Provider';
 import userProfile from '../../assets/userProfile.png';
-// import { IoMdClose } from 'react-icons/io';
 
 const Nav = () => {
   const { userDta } = useContext(ContextAuth);
   const [viewProfile, setViewProfile] = useState(false);
   const [view, setView] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="">
+    <div
+      className={scrolled ? 'fixed top-0 left-0 right-0 bg-[#c0c0c077] z-50' : ''}
+    >
       <div className="w-11/12 mx-auto ">
         <Toaster />
         <div className=" navbar flex items-center flex-col sm:flex-row sm:justify-between">
@@ -130,19 +148,19 @@ const Nav = () => {
             <ul className="menu menu-horizontal px-1 flex gap-6 text-white">
               <NavLink
                 to={'/'}
-                className="px-3 py-3 font-semibold hover:bg-slate-300 hover:text-redLi bg-[#ffffff0c] rounded-2xl"
+                className="w-28 py-3 text-center font-semibold hover:bg-white hover:text-redLi bg-[#ffffff0c] rounded-md border hover:border-redLi"
               >
                 Home
               </NavLink>
               <NavLink
                 to={'about'}
-                className="px-6 py-3 font-semibold hover:bg-slate-300 hover:text-redLi bg-[#ffffff0c] rounded-2xl"
+                className="w-28 py-3 text-center font-semibold hover:bg-white hover:text-redLi bg-[#ffffff0c] rounded-md border hover:border-redLi"
               >
                 About
               </NavLink>
               <NavLink
                 to={'contact'}
-                className="px-6 py-3 font-semibold hover:bg-slate-300 hover:text-redLi bg-[#ffffff0c] rounded-2xl"
+                className="w-28 py-3 text-center font-semibold hover:bg-white hover:text-redLi bg-[#ffffff0c] rounded-md border hover:border-redLi"
               >
                 Contact
               </NavLink>
