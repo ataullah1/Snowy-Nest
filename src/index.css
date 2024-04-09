@@ -26,9 +26,14 @@ h5 {
   color: #ff5a5f;
   background: rgb(18, 18, 18);
 }
-/* .navManu > avtive {
-  background-color: #ff5a5f;
-} */
+.navManu > a {
+  transform: skewX(-15deg);
+}
+.navManu > a.active {
+  background-color: #e1dddd52;
+  /* color: #ff5a5f; */
+  border-color: #ff5a5f;
+}
 
 /* Loder CSS */
 
