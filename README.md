@@ -25,6 +25,10 @@ SnowyNest is a responsive web application designed to showcase residential prope
 - **React Router DOM**: Declarative routing for React applications, enabling navigation between different components.
 - **Tailwind CSS**: A utility-first CSS framework for quickly styling web applications.
 
+## Component Library Used
+
+- **DaisyUI**
+
 ## Package Used
 
 - **React Router DOM**
