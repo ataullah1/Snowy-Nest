@@ -1,6 +1,6 @@
-# Project Name: Snowy Nest
+<!-- # Project Name: Snowy Nest
 
-## Live Link: https://snowynest-c1dbe.web.app/
+## Live Link: https://snowynest-c1dbe.web.app/ -->
 
 # SnowyNest
 
@@ -41,7 +41,7 @@ To install and run SnowyNest locally, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/SnowyNest.git
+   git clone https://github.com/programming-hero-web-course-4/b9a9-real-estate-ataullah1
    ```
 
 2. Navigate into the project directory:
@@ -53,34 +53,62 @@ To install and run SnowyNest locally, follow these steps:
 3. Install dependencies using npm or yarn:
 
    ```
-   npm install
+   npm install -D tailwindcss postcss autoprefixer
+   ```
+
    # or
-   yarn install
-   ```
-
-4. Run the development server:
 
    ```
-   npm start
-   # or
-   yarn start
+   yarn install -D tailwindcss postcss autoprefixer
+
    ```
 
-5. Open your browser and visit `http://localhost:3000` to view SnowyNest locally.
+4. All packages used by this project must be installed:
+
+- **React Router DOM**
+
+  ```
+  npm install react-router-dom localforage match-sorter sort-by
+  ```
+
+  # or
+
+  ```
+  yarn install react-router-dom localforage match-sorter sort-by
+  ```
+
+- **React Icon**
+  ```
+  npm install react-icons --save
+  ```
+- **React-hot-toast**
+
+```
+npm i react-hot-toast
+```
+
+- **Swiper**
+
+```
+npm i swiper
+```
+
+- **Firebase**
+
+```
+npm i react-firebase
+```
+
+6. Run the development server:
+
+   ```
+   npm run dev
+   ```
+
+   #Then Click "o". Then Hit Enter.
 
 ## Feedback and Contributions
 
-Feedback and contributions are welcome! If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/your-username/SnowyNest/issues) or submit a pull request.
+Feedback and contributions are welcome! If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/programming-hero-web-course-4/b9a9-real-estate-ataullah1/issues) or submit a pull request.
 
-Thank you for using SnowyNest! We hope you find your dream home.
-
-<pre><code>npm install -D tailwindcss postcss autoprefixer</code></pre>
-
-## Package Used-
-
-- React Router Dom
-- React-icons
-- React-hot-toast
-- Swiper
-- Firebase
-- React Hook Form
+Thank you for using SnowyNest! We hope you find your dream Property.
