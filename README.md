@@ -56,7 +56,7 @@ To install and run SnowyNest locally, follow these steps:
    npm install -D tailwindcss postcss autoprefixer
    ```
 
-   # or
+   #or
 
    ```
    yarn install -D tailwindcss postcss autoprefixer
@@ -71,7 +71,7 @@ To install and run SnowyNest locally, follow these steps:
   npm install react-router-dom localforage match-sorter sort-by
   ```
 
-  # or
+  #or
 
   ```
   yarn install react-router-dom localforage match-sorter sort-by
@@ -112,3 +112,17 @@ npm i react-firebase
 Feedback and contributions are welcome! If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/programming-hero-web-course-4/b9a9-real-estate-ataullah1/issues) or submit a pull request.
 
 Thank you for using SnowyNest! We hope you find your dream Property.
+
+## Contact me-
+
+### Follow on GitHub
+
+[Link to GitHub Profile](https://github.com/ataullah1)
+
+### Follow on Facebook
+
+[Link to Facebook Profile](https://www.facebook.com/ataullah0)
+
+### Follow on Twitter
+
+[Link to Twitter Profile](https://twitter.com/dev_ataullah)
