@@ -31,7 +31,11 @@ const Nav = () => {
 
   return (
     <div
-      className={scrolled ? 'fixed top-0 left-0 right-0 bg-[#c0c0c077] z-50' : ''}
+      className={
+        scrolled
+          ? 'fixed top-0 left-0 right-0 bg-[#c0c0c077] z-50 max-w-[1500px] mx-auto'
+          : ''
+      }
     >
       <div className="w-11/12 mx-auto ">
         <Toaster />
@@ -195,18 +199,24 @@ const Nav = () => {
             </div>
           ) : (
             <div className="navbar-end gap-4 hidden sm:flex w-auto">
-              <Link
+              {/* <Link
                 to={'/login'}
                 className="font-semibold bg-white text-redLi px-5 sm:px-8 py-2 sm:py-3 rounded-md active:scale-90 duration-150 hover: border-2 hover:border-redLi"
               >
                 Login
-              </Link>
+              </Link> */}
               <Link
+                to={'/login'}
+                className="font-semibold bg-redLi hover:bg-white hover:text-redLi px-5 sm:px-8 py-2 sm:py-3 rounded-md  active:scale-90 duration-150 text-white"
+              >
+                Login
+              </Link>
+              {/* <Link
                 to={'/register'}
-                className="font-semibold bg-redLi hover:bg-white hover:text-redLi px-5 sm:px-8 py-2 sm:py-3 rounded-md border border-white active:scale-90 duration-150 text-white"
+                className="font-semibold bg-redLi hover:bg-white hover:text-redLi px-5 sm:px-8 py-2 sm:py-3 rounded-md  active:scale-90 duration-150 text-white"
               >
                 Register
-              </Link>
+              </Link> */}
             </div>
           )}
         </div>

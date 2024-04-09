@@ -21,7 +21,7 @@ import { FaSearch } from 'react-icons/fa';
 const Banner = () => {
   return (
     <div className="relative">
-      <div className="fixed w-full z-50">
+      <div className="fixed w-full max-w-[1500px] mx-auto z-50">
         <Nav />
       </div>
 
@@ -211,12 +211,12 @@ const Banner = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="w-10/12 sm:w-3/4 lg:w-1/2 absolute bottom-20 left-1/2 -translate-x-1/2 z-10">
+      <div className="w-10/12 sm:w-3/4 lg:w-1/2 absolute top-[65%] left-1/2 -translate-x-1/2 z-10">
         <div className="relative">
           <input
             type="text"
             name="search"
-            className="w-full h-12 rounded-full bg-transparent border-2 my-7 px-7 text-redLi"
+            className="w-full h-12 rounded-full outline-redLi bg-transparent border-2 my-7 px-7 text-redLi"
             placeholder="Search Your Keyword"
           />
           <span className="absolute cursor-pointer top-1/2 -translate-y-1/2 right-5 md:right-10 text-redLi ">
