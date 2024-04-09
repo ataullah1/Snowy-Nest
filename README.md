@@ -117,7 +117,7 @@ Feedback and contributions are welcome! If you encounter any issues or have sugg
 
 Thank you for using SnowyNest! We hope you find your dream Property.
 
-## Contact me-
+## -Contact me
 
 ### Follow on GitHub
 
