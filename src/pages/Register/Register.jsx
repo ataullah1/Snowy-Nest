@@ -13,8 +13,10 @@ import { TbPasswordFingerprint } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
 import image1 from '../../assets/sliderImg/login.jpg';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { ContextAuth } from '../../provider/Provider';
+import { useNavigate } from 'react-router-dom';
+import Loding from '../Loding/Loding';
 
 const Register = () => {
   const [eye, setEye] = useState(false);
@@ -23,12 +25,29 @@ const Register = () => {
   const [emailErr, setEmailErr] = useState(null);
   const [passErr, setPassErr] = useState(null);
   const [confPassErr, setConfPassErr] = useState(null);
+  const [loginErr, setLoginErr] = useState(false);
 
   // Firebase data
-  const { emlPassRegister, twitterLogin, gitHubLogin, googleLogin } =
-    useContext(ContextAuth);
+  const {
+    emlPassRegister,
+    twitterLogin,
+    gitHubLogin,
+    googleLogin,
+    isLoading,
+    logOutAcc,
+    userDta,
+    profileUpdate,
+  } = useContext(ContextAuth);
 
-  const [imgNam, setImgNam] = useState({});
+  // Naviget, login done then go to Login
+  const naviget = useNavigate();
+  useEffect(() => {
+    if (userDta) {
+      naviget('/');
+    }
+  }, [userDta, naviget]);
+
+  // const [imgNam, setImgNam] = useState({});
   const handleSignUpSubmit = (e) => {
     setEmailErr(null);
     setPassErr(null);
@@ -37,11 +56,11 @@ const Register = () => {
     const formDta = new FormData(e.currentTarget);
     const name = formDta.get('name');
     const photo = formDta.get('img');
-    setImgNam({ nam: name, pic: photo });
+    // setImgNam({ nam: name, pic: photo });
     const email = formDta.get('email');
     const pass = formDta.get('password');
     const confPass = formDta.get('confirmPass');
-    console.log(name, photo, imgNam, email, pass, confPass);
+    // console.log(name, photo, imgNam, email, pass, confPass);
 
     if (!isValidEmail.test(email)) {
       setEmailErr('Please enter a valid email address.');
@@ -55,13 +74,20 @@ const Register = () => {
     }
     // Email password Register
     emlPassRegister(email, pass)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log(user);
+      .then(() => {
+        // Update Profile
+        profileUpdate(name, photo)
+          .then(() => {})
+          .catch((err) => {
+            console.log(err);
+          });
+        logOutAcc();
+        naviget('/login');
       })
       .catch((error) => {
         const errorMessage = error.message;
         console.log(errorMessage);
+        setLoginErr(true);
       });
   };
 
@@ -77,7 +103,9 @@ const Register = () => {
         console.log(errorMessage);
       });
   };
-
+  if (isLoading && !loginErr) {
+    return <Loding />;
+  }
   return (
     <div>
       <div>
@@ -117,6 +145,7 @@ const Register = () => {
               type="text"
               name="name"
               className="grow"
+              required
               placeholder="Your Name"
             />
           </label>
@@ -126,6 +155,7 @@ const Register = () => {
               type="text"
               className="grow"
               name="img"
+              required
               placeholder="Your Image URL"
             />
           </label>

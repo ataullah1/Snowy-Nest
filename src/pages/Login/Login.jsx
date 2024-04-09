@@ -8,12 +8,17 @@ import image1 from '../../assets/sliderImg/6.jpg';
 import Nav from '../../components/Nav/Nav';
 import { FaGithub } from 'react-icons/fa';
 import { ContextAuth } from '../../provider/Provider';
+import Loding from '../Loding/Loding';
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
+  // Naviget, login done then go to Home
+  const naviget = useNavigate();
+
   const [eye, setEye] = useState(false);
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const [emailErr, setEmailErr] = useState(null);
 
-  const { twitterLogin, gitHubLogin, googleLogin, emlPassLogin } =
+  const { twitterLogin, gitHubLogin, googleLogin, emlPassLogin, isLoadings } =
     useContext(ContextAuth);
 
   const handleLoginSubmit = (e) => {
@@ -33,6 +38,7 @@ const Login = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
+        naviget('/');
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -52,7 +58,9 @@ const Login = () => {
         console.log(errorMessage);
       });
   };
-
+  if (isLoadings) {
+    return <Loding />;
+  }
   return (
     <div>
       <div>

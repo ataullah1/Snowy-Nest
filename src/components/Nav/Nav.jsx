@@ -5,12 +5,14 @@ import { useContext, useState } from 'react';
 import { IoIosArrowForward, IoMdClose } from 'react-icons/io';
 import ProfileMenu from '../ProfileMenu/ProfileMenu';
 import { ContextAuth } from '../../provider/Provider';
+import userProfile from '../../assets/userProfile.png';
 // import { IoMdClose } from 'react-icons/io';
 
 const Nav = () => {
   const { userDta } = useContext(ContextAuth);
   const [viewProfile, setViewProfile] = useState(false);
   const [view, setView] = useState(false);
+
   return (
     <div className="">
       <div className="w-11/12 mx-auto ">
@@ -150,7 +152,7 @@ const Nav = () => {
             <div className="navbar-end hidden sm:flex gap-4 w-auto">
               <img
                 onClick={() => setViewProfile(!viewProfile)}
-                src={userDta.photoURL}
+                src={userDta.photoURL ? userDta.photoURL : userProfile}
                 className="border-2 border-redLi rounded-full h-12 w-12 cursor-pointer p-[2px]"
                 alt=""
               />

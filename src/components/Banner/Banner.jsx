@@ -17,32 +17,8 @@ import slide6 from '../../assets/sliderImg/3.jpg';
 
 import Nav from '../Nav/Nav';
 import { FaSearch } from 'react-icons/fa';
-import { useEffect, useState } from 'react';
 
 const Banner = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 0) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  let navbarClasses = ['navbar'];
-  if (scrolled) {
-    navbarClasses.push('scrolled');
-  }
-
   return (
     <div className="relative">
       <div className="fixed w-full z-50">

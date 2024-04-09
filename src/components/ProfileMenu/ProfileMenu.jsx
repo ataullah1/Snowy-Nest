@@ -11,16 +11,16 @@ const ProfileMenu = () => {
           <img
             src={userDta.photoURL ? userDta.photoURL : userProfile}
             alt=""
-            className="h-16 w-16 border border-redLi p-2 rounded-full mx-auto"
+            className="h-16 sm:h-20 w-16 sm:w-20 border-2 border-redLi p-[2px] rounded-full mx-auto"
           />
           <h2 className="text-2xl font-semibold text-center">
             {userDta.displayName ? userDta.displayName : 'User Name'}
           </h2>
           <div className="w-full text-center">
             <Link to={'profile'}>
-              <button className="border-2 border-redLi relative inline-flex items-center justify-start px-6 py-1.5 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
-                <span className="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+              <button className="active:scale-90 border-2 border-redLi relative inline-flex items-center justify-start px-6 py-1.5 overflow-hidden font-medium transition-all bg-transparent rounded hover:bg-white group">
+                <span className="w-48 h-48 rounded rotate-[-40deg] bg-white absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span className="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-redLi">
                   View Profile
                 </span>
               </button>
@@ -42,6 +42,12 @@ const ProfileMenu = () => {
               About
             </Link>
             <Link
+              className="py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150"
+              to={'/contact'}
+            >
+              Contact Us
+            </Link>
+            <Link
               to={'profile'}
               className="py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150"
             >
@@ -53,9 +59,9 @@ const ProfileMenu = () => {
           </ul>
           <button
             onClick={logOutAcc}
-            className="relative group w-full py-1.5 px-4 border-2 font-bold tracking-widest active:scale-95 duration-150 hover:border-purple-600 hover:text-redLi border-redLi rounded"
+            className="relative group w-full py-1.5 px-4 border-2 font-bold tracking-widest active:scale-95 duration-150 hover:border-white  border-redLi rounded hover:border-b-redLi"
           >
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full group-hover:transition-all"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-[3px] bg-redLi group-hover:w-full group-hover:transition-all"></span>
             Log out
           </button>
         </div>
