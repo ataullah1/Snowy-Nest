@@ -8,25 +8,38 @@ import { ContextAuth } from '../../provider/Provider';
 import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
-  const { userDta } = useContext(ContextAuth);
+  const { userDta, profileUpdate } = useContext(ContextAuth);
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const isValidPhoto = /\bhttps?:\/\/\S+?\.(?:png|jpe?g|gif|bmp)\b/;
   const [update, setUpdate] = useState(false);
   const [nameErr, setNameErr] = useState('');
   const [emailErr, setEmailErr] = useState('');
+  const [photoErr, setPhotoErr] = useState('');
 
-  const profileUpdate = () => {
-    setEmailErr('');
+  const handleProfileUpdate = () => {
+    setPhotoErr('');
     setNameErr('');
+    setEmailErr('');
     const name = document.getElementById('nameInp').value;
     const email = document.getElementById('emailInp').value;
+    const photo = document.getElementById('imgUrl').value;
     if (name.length > 2 && isValidEmail.test(email)) {
       setUpdate(!update);
+    } else if (!isValidPhoto.test(photo)) {
+      setPhotoErr('Please enter a valid URL');
     } else if (name.length < 2) {
       setNameErr('Enter your valid name!');
+      return;
     } else if (!isValidEmail.test(email)) {
       setEmailErr('Enter a valid email address!');
+      return;
     }
     // console.log(name, email);
+    profileUpdate(name, photo)
+      .then(() => {})
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   // Naviget, if not login then go to Home
@@ -62,6 +75,18 @@ const Profile = () => {
                 />
               </div>
             </div>
+            {update && (
+              <input
+                type="text"
+                id="imgUrl"
+                placeholder={photoErr ? photoErr : 'Input your photo URL'}
+                className={
+                  photoErr
+                    ? 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block my-2 md:w-[500px] placeholder-red-500'
+                    : 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block my-2 md:w-[500px]'
+                }
+              />
+            )}
             <h1 className="text-center text-2xl font-semibold ">
               {userDta.displayName ? userDta.displayName : 'User Name'}
             </h1>
@@ -149,7 +174,9 @@ const Profile = () => {
                   {update ? (
                     <div>
                       <button
-                        onClick={(() => setUpdate(!update), profileUpdate)}
+                        onClick={
+                          (() => setUpdate(!update), handleProfileUpdate)
+                        }
                         className="bg-redLi text-white flex items-center gap-1 font-semibold text-lg cursor-pointer py-2 border-redLi border-2 hover:-skew-x-[15deg] duration-150 px-5 rounded-md"
                       >
                         <MdSave /> Save
