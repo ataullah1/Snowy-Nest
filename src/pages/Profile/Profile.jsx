@@ -6,15 +6,22 @@ import { useState } from 'react';
 import { MdSave } from 'react-icons/md';
 
 const Profile = () => {
+  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const [update, setUpdate] = useState(false);
   const [nameErr, setNameErr] = useState('');
   const [emailErr, setEmailErr] = useState('');
 
   const profileUpdate = () => {
+    setEmailErr('');
+    setNameErr('');
     const name = document.getElementById('nameInp').value;
     const email = document.getElementById('emailInp').value;
-    if (name.length < 2) {
-      console.log('sorry ntmr nam soto');
+    if (name.length > 2 && isValidEmail.test(email)) {
+      setUpdate(!update);
+    } else if (name.length < 2) {
+      setNameErr('Enter your valid name!');
+    } else if (!isValidEmail.test(email)) {
+      setEmailErr('Enter a valid email address!');
     }
     // console.log(name, email);
   };
@@ -66,12 +73,17 @@ const Profile = () => {
                   Full Name
                 </p>
                 {update ? (
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    id="nameInp"
-                    className="border-2 border-redLi rounded-md py-1 px-2"
-                  />
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      id="nameInp"
+                      className="border-2 border-redLi rounded-md py-1 px-2"
+                    />{' '}
+                    {nameErr && (
+                      <p className="text-red-500 italic text-sm">{nameErr}</p>
+                    )}
+                  </div>
                 ) : (
                   <p>Md Ataullah</p>
                 )}
@@ -79,12 +91,17 @@ const Profile = () => {
               <div>
                 <p className="text-base font-semibold text-slate-500">Email</p>
                 {update ? (
-                  <input
-                    type="email"
-                    placeholder="Your Email"
-                    id="emailInp"
-                    className="border-2 border-redLi rounded-md py-1 px-2"
-                  />
+                  <div>
+                    <input
+                      type="email"
+                      placeholder="Your Email"
+                      id="emailInp"
+                      className="border-2 border-redLi rounded-md py-1 px-2"
+                    />
+                    {emailErr && (
+                      <p className="text-red-500 italic text-sm">{emailErr}</p>
+                    )}
+                  </div>
                 ) : (
                   <p>ataullahm100@gmail.com</p>
                 )}
@@ -107,9 +124,9 @@ const Profile = () => {
 
               <div>
                 {update ? (
-                  <div onClick={() => setUpdate(!update)}>
+                  <div>
                     <button
-                      onClick={profileUpdate}
+                      onClick={(() => setUpdate(!update), profileUpdate)}
                       className="bg-redLi text-white flex items-center gap-1 font-semibold text-lg cursor-pointer py-2 border-redLi border-2 hover:-skew-x-[15deg] duration-150 px-5 rounded-md"
                     >
                       <MdSave /> Save
