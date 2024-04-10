@@ -8,7 +8,7 @@ import { ContextAuth } from '../../provider/Provider';
 import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
-  const { userDta, profileUpdate } = useContext(ContextAuth);
+  const { userDta, profileUpdate, handleUpdateEmail } = useContext(ContextAuth);
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const isValidPhoto = /\bhttps?:\/\/\S+?\.(?:png|jpe?g|gif|bmp)\b/;
   const [update, setUpdate] = useState(false);
@@ -30,11 +30,19 @@ const Profile = () => {
     } else if (name.length < 2) {
       setNameErr('Enter your valid name!');
       return;
-    } else if (!isValidEmail.test(email)) {
-      setEmailErr('Enter a valid email address!');
-      return;
     }
+    //  else if (!isValidEmail.test(email)) {
+    //   setEmailErr('Enter a valid email address!');
+    //   return;
+    // }
     // console.log(name, email);
+    handleUpdateEmail(email)
+      .then(() => {
+        console.log('done email');
+      })
+      .catch((err) => {
+        console.log(err);
+      });
     profileUpdate(name, photo)
       .then(() => {})
       .catch((err) => {

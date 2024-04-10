@@ -7,6 +7,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateEmail,
   updateProfile,
 } from 'firebase/auth';
 import PropTypes from 'prop-types';
@@ -69,11 +70,14 @@ const Provider = ({ children }) => {
     };
   }, []);
 
-  const profileUpdate = (nam, photoU) => {
+  const profileUpdate = (nam, photoUrl) => {
     return updateProfile(auth.currentUser, {
       displayName: nam,
-      photoURL: photoU,
+      photoURL: photoUrl,
     });
+  };
+  const handleUpdateEmail = (email) => {
+    return updateEmail(auth.currentUser, email);
   };
 
   // All data obj passing
@@ -87,6 +91,7 @@ const Provider = ({ children }) => {
     userDta,
     isLoading,
     profileUpdate,
+    handleUpdateEmail,
   };
   return (
     <ContextAuth.Provider value={authDta}>{children}</ContextAuth.Provider>

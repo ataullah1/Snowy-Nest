@@ -10,7 +10,9 @@ const Nav = () => {
   const { userDta } = useContext(ContextAuth);
   const [viewProfile, setViewProfile] = useState(false);
   const [view, setView] = useState(false);
+  const [hover, setHover] = useState(false);
 
+  console.log(hover);
   return (
     <div>
       <div className="w-11/12 mx-auto ">
@@ -19,12 +21,18 @@ const Nav = () => {
             {userDta ? (
               <div className="navbar-end flex sm:hidden gap-4 w-auto">
                 <img
+                  onMouseOver={() => setHover(true)}
+                  onMouseOut={() => setHover(false)}
                   onClick={() => setViewProfile(!viewProfile)}
                   src={userDta.photoURL}
                   className="border-2 border-redLi rounded-full h-12 w-12 cursor-pointer p-[2px]"
                   alt=""
                 />
-
+                {hover && (
+                  <p className="text-redLi rounded-md absolute top-16 lg:top-[70px] right-14 lg:right-20 bg-slate-100 border-redLi border px-3 py-1">
+                    View Profile
+                  </p>
+                )}
                 <div
                   className={`absolute top-16 lg:top-20 right-8 duration-3000 transition-transform ${
                     viewProfile
@@ -148,12 +156,18 @@ const Nav = () => {
           {userDta ? (
             <div className="navbar-end hidden sm:flex gap-4 w-auto">
               <img
+                onMouseOver={() => setHover(true)}
+                onMouseOut={() => setHover(false)}
                 onClick={() => setViewProfile(!viewProfile)}
                 src={userDta.photoURL ? userDta.photoURL : userProfile}
                 className="border-2 border-redLi rounded-full h-12 w-12 cursor-pointer p-[2px]"
                 alt=""
               />
-
+              {hover && (
+                <p className="text-redLi rounded-md absolute top-16 lg:top-[70px] right-14 lg:right-20 bg-slate-100 border-redLi border px-3 py-1">
+                  View Profile
+                </p>
+              )}
               <div
                 className={`absolute top-16 lg:top-20 right-16 duration-3000 transition-transform ${
                   viewProfile
