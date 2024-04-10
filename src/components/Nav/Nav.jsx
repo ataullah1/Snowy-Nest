@@ -12,7 +12,7 @@ const Nav = () => {
   const [view, setView] = useState(false);
   const [hover, setHover] = useState(false);
 
-  console.log(hover);
+  // console.log(hover);
   return (
     <div>
       <div className="w-11/12 mx-auto ">
@@ -154,7 +154,7 @@ const Nav = () => {
             </ul>
           </div>
           {userDta ? (
-            <div className="navbar-end hidden sm:flex gap-4 w-auto">
+            <div className=" navbar-end hidden sm:flex gap-4 w-28">
               <img
                 onMouseOver={() => setHover(true)}
                 onMouseOut={() => setHover(false)}
@@ -187,7 +187,7 @@ const Nav = () => {
               </div>
             </div>
           ) : (
-            <div className="navbar-end gap-4 hidden sm:flex w-auto">
+            <div className="navbar-end gap-4 hidden sm:flex w-28">
               {/* <Link
                 to={'/login'}
                 className="font-semibold bg-white text-redLi px-5 sm:px-8 py-2 sm:py-3 rounded-md active:scale-90 duration-150 hover: border-2 hover:border-redLi"

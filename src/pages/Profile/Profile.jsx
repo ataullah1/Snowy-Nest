@@ -8,7 +8,8 @@ import { ContextAuth } from '../../provider/Provider';
 import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
-  const { userDta, profileUpdate, handleUpdateEmail } = useContext(ContextAuth);
+  const { userDta, profileUpdate, handleUpdateEmail, handleDeleteAcc } =
+    useContext(ContextAuth);
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const isValidPhoto = /\bhttps?:\/\/\S+?\.(?:png|jpe?g|gif|bmp)\b/;
   const [update, setUpdate] = useState(false);
@@ -174,7 +175,10 @@ const Profile = () => {
                 </div>
               </div>
               <div className="flex items-center justify-between mt-12">
-                <button className="py-2 bg-redLi text-white hover:-skew-x-[15deg] duration-150 border-redLi border-2 rounded-md px-4">
+                <button
+                  onClick={()=>handleDeleteAcc()}
+                  className="py-2 bg-redLi text-white hover:-skew-x-[15deg] duration-150 border-redLi border-2 rounded-md px-4"
+                >
                   Delete Profile
                 </button>
 

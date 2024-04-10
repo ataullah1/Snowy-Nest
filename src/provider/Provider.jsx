@@ -3,6 +3,7 @@ import {
   GoogleAuthProvider,
   TwitterAuthProvider,
   createUserWithEmailAndPassword,
+  deleteUser,
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
@@ -80,6 +81,19 @@ const Provider = ({ children }) => {
     return updateEmail(auth.currentUser, email);
   };
 
+  // Delete Profile
+
+  const handleDeleteAcc = () => {
+    return deleteUser(auth.currentUser)
+      .then(() => {
+        // User deleted.
+      })
+      .catch((err) => {
+        // An error ocurred
+        console.log(err);
+      });
+  };
+
   // All data obj passing
   const authDta = {
     emlPassRegister,
@@ -92,6 +106,7 @@ const Provider = ({ children }) => {
     isLoading,
     profileUpdate,
     handleUpdateEmail,
+    handleDeleteAcc,
   };
   return (
     <ContextAuth.Provider value={authDta}>{children}</ContextAuth.Provider>
