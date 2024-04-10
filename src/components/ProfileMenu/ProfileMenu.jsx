@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ContextAuth } from '../../provider/Provider';
 import userProfile from '../../assets/userProfile.png';
+import { LuLogOut } from 'react-icons/lu';
 const ProfileMenu = () => {
   const { userDta, logOutAcc } = useContext(ContextAuth);
   return (
@@ -59,10 +60,15 @@ const ProfileMenu = () => {
           </ul>
           <button
             onClick={logOutAcc}
-            className="relative group w-full py-1.5 px-4 border-2 font-bold tracking-widest active:scale-95 duration-150 hover:border-white  border-redLi rounded hover:border-b-redLi"
+            className="relative group w-full py-1.5 px-4 border-2 font-bold tracking-widest active:scale-95 duration-150 hover:border-white  border-redLi rounded hover:border-b-redLi text-center"
           >
             <span className="absolute bottom-0 left-0 w-0 h-[3px] bg-redLi group-hover:w-full group-hover:transition-all"></span>
-            Log out
+            <span className="flex items-center justify-center flex-row-reverse gap-2">
+              <span className="rotate-180 font-bold text-2xl">
+                <LuLogOut />
+              </span>
+              Log out
+            </span>
           </button>
         </div>
       </div>

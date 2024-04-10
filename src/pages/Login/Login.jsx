@@ -17,9 +17,18 @@ const Login = () => {
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const [emailErr, setEmailErr] = useState(null);
 
-  const { twitterLogin, gitHubLogin, googleLogin, emlPassLogin, isLoadings } =
-    useContext(ContextAuth);
+  const {
+    twitterLogin,
+    gitHubLogin,
+    googleLogin,
+    emlPassLogin,
+    isLoadings,
+    userDta,
+  } = useContext(ContextAuth);
 
+  if (userDta) {
+    naviget('/');
+  }
   const handleLoginSubmit = (e) => {
     setEmailErr(null);
     e.preventDefault();
@@ -51,6 +60,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        naviget('/');
       })
       .catch((error) => {
         const errorMessage = error.message;
