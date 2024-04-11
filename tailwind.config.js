@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        redLi: '#ff6b6b',
+        redLi: '#FF5A5F',
       },
     },
   },
