@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import Banner from '../../components/Banner/Banner';
 import { ContextAuth } from '../../provider/Provider';
 import Loding from '../Loding/Loding';
-import Propertices from '../../components/Propertices/Propertices';
+import MainSection from '../../components/MainSection/MainSection';
 
 const Home = () => {
   const { isLoading } = useContext(ContextAuth);
@@ -13,7 +13,7 @@ const Home = () => {
     <div>
       <Banner />
       <div>
-        <Propertices />
+        <MainSection />
       </div>
     </div>
   );
