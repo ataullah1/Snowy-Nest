@@ -42,7 +42,7 @@ const Root = () => {
           baler mata
         </h1> */}
       </div>
-      <div className="max-w-[1500px] mx-auto">
+      <div className="max-w-[1700px] mx-auto">
         <Outlet />
       </div>
       <Footer />
