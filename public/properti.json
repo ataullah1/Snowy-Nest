@@ -1,0 +1,102 @@
+[
+    {
+      "image": "image_url_1.jpg",
+      "estate_title": "Cozy Suburban Home",
+      "estate_shot_description": "Charming single-family home in a quiet neighborhood",
+      "id": "001",
+      "segment_name": "Single-family homes",
+      "full_description": "Welcome to your charming suburban oasis! This delightful single-family home offers the perfect blend of comfort and convenience. Nestled in a quiet neighborhood, this property provides a peaceful retreat from the hustle and bustle of city life. With three bedrooms, two bathrooms, and a spacious backyard, there's plenty of room for
+  User
+  give me 9 JSON data for Residential segment name is Single-family homes, townhouses, apartments, student
+  housing, senior living communities, vacation rentals etc. and Each estate card will contain -
+  ○ a relevant Image,
+  ○ estate_title,
+  ○ estate_shot_description,
+  ○ id,
+  ○ segment_name
+  ○ full_description (minimum 800 word),
+  ○ price,
+  ○ Status => It can be “sale”, “rent”
+  ○ Area => for example- 2000 sq ft
+  ○ location
+  ○ facilities => in an array => [ “living room”, “swimming pool”,
+  “Kitchen”]
+  ○ rating,
+  ○ year_built,
+  ○ last_remodel_year,
+  ○ features (minimum 12 features in array),
+  
+  ChatGPT
+  Certainly, here are nine JSON data objects for residential estate cards with the specified properties:
+  
+  json
+  Copy code
+  [
+    {
+      "image": "image_url_1.jpg",
+      "estate_title": "Tranquil Lakeside Retreat",
+      "estate_shot_description": "Peaceful single-family home with stunning lake views",
+      "id": "001",
+      "segment_name": "Single-family homes",
+      "full_description": "Escape the hustle and bustle of city life and embrace the tranquility of lakeside living in this breathtaking single-family home. Situated on the shores of a pristine lake, this property offers unparalleled serenity and natural beauty. The spacious interior features an open-concept layout with large windows that flood the space with natural light and offer stunning views of the surrounding landscape. The gourmet kitchen is a chef's dream, equipped with high-end appliances, granite countertops, and a large island for meal preparation and casual dining. The expansive living room is perfect for entertaining guests or simply relaxing with loved ones, while the cozy fireplace adds warmth and ambiance on chilly evenings. Upstairs, the luxurious master suite boasts panoramic lake views, a spa-like ensuite bathroom, and a private balcony where you can savor your morning coffee while watching the sunrise over the water. Three additional bedrooms provide ample space for family and guests, and the home office is ideal for remote work or study. Outside, the expansive deck is perfect for al fresco dining and entertaining, and the private dock offers direct access to the lake for swimming, boating, and fishing. With its idyllic setting, luxurious amenities, and unmatched beauty, this lakeside retreat is truly a dream home come true.",
+      "price": "$1,200,000",
+      "status": "sale",
+      "area": "3500 sq ft",
+      "location": "Lakefront Community, USA",
+      "facilities": ["living room", "kitchen", "private dock"],
+      "rating": 4.9,
+      "year_built": 2015,
+      "last_remodel_year": 2020,
+      "features": ["Panoramic lake views", "Gourmet kitchen", "Master suite with balcony", "Fireplace", "Home office", "Expansive deck", "Private dock", "High-end appliances", "Granite countertops", "Hardwood floors", "Walk-in closets", "Three-car garage"]
+    },
+    {
+      "image": "image_url_2.jpg",
+      "estate_title": "Urban Townhouse Living",
+      "estate_shot_description": "Modern townhouse in the heart of the city",
+      "id": "002",
+      "segment_name": "Townhouses",
+      "full_description": "Experience the best of urban living in this stylish and contemporary townhouse located in the heart of the city. Boasting sleek design, modern amenities, and convenient access to all that the city has to offer, this townhouse is perfect for those seeking a vibrant and dynamic lifestyle. The spacious open-concept living area is flooded with natural light, creating a warm and inviting atmosphere for relaxation and entertaining. The gourmet kitchen is a chef's delight, featuring stainless steel appliances, quartz countertops, and ample cabinet space for storage. Upstairs, the luxurious master suite offers a peaceful retreat from the hustle and bustle of city life, complete with a spa-like ensuite bathroom and private balcony overlooking the urban landscape. Two additional bedrooms provide plenty of space for family and guests, while the rooftop terrace offers stunning views of the city skyline and is ideal for outdoor gatherings and al fresco dining. With its prime location, modern amenities, and sophisticated design, this townhouse offers the ultimate urban lifestyle.",
+      "price": "$900,000",
+      "status": "sale",
+      "area": "2400 sq ft",
+      "location": "Downtown Metropolis, USA",
+      "facilities": ["living room", "rooftop terrace"],
+      "rating": 4.8,
+      "year_built": 2017,
+      "last_remodel_year": null,
+      "features": ["Open-concept layout", "Gourmet kitchen", "Master suite with balcony", "Rooftop terrace", "Hardwood floors", "Quartz countertops", "Stainless steel appliances", "Walk-in closets", "Two-car garage", "Smart home technology", "City views", "Convenient location"]
+    },
+    {
+      "image": "image_url_3.jpg",
+      "estate_title": "Luxury High-Rise Apartment",
+      "estate_shot_description": "Sleek and modern apartment with breathtaking city views",
+      "id": "003",
+      "segment_name": "Apartments",
+      "full_description": "Indulge in luxury living in this stunning high-rise apartment situated in the heart of the city. Boasting panoramic views of the skyline, top-of-the-line amenities, and sophisticated design, this apartment offers the ultimate urban lifestyle. The spacious and light-filled living area features floor-to-ceiling windows that provide sweeping views of the city below, creating an ambiance of modern elegance and luxury. The state-of-the-art kitchen is equipped with high-end appliances, sleek cabinetry, and quartz countertops, making it perfect for both cooking and entertaining. The lavish master suite offers a private sanctuary from the hustle and bustle of city life, complete with a spa-like ensuite bathroom and walk-in closet. Additional highlights include a private balcony, perfect for enjoying morning coffee or evening cocktails while taking in the breathtaking views, as well as access to a range of amenities such as a fitness center, pool, and concierge services. With its unbeatable location, luxurious amenities, and stunning views, this high-rise apartment is the epitome of urban sophistication.",
+      "price": "$4,500/month",
+      "status": "rent",
+      "area": "1500 sq ft",
+      "location": "City Center, USA",
+      "facilities": ["living room", "balcony", "pool"],
+      "rating": 4.9,
+      "year_built": 2019,
+      "last_remodel_year": null,
+      "features": ["Panoramic city views", "Floor-to-ceiling windows", "Gourmet kitchen", "Master suite with ensuite bathroom", "Walk-in closet", "Private balcony", "High-end appliances", "Quartz countertops", "Hardwood floors", "Fitness center", "Swimming pool", "Concierge services"]
+    },
+    {
+      "image": "image_url_4.jpg",
+      "estate_title": "Student Housing Complex",
+      "estate_shot_description": "Modern student apartments near campus",
+      "id": "004",
+      "segment_name": "Student Housing",
+      "full_description": "Experience the best of student living in this modern and stylish student housing complex located just steps away from campus. Offering a range of fully furnished apartments and state-of-the-art amenities, this complex provides everything you need for a comfortable and convenient college experience. Each apartment features a spacious layout with modern furnishings, a fully equipped kitchen, and a private bathroom, ensuring that you have everything you need to feel at home. The complex also offers a variety of amenities to help you make the most of your college years, including a fitness center, study lounges, and outdoor recreational areas. Plus, with on-site management and 24-hour maintenance, you can rest easy knowing that help is always just a phone call away. With its unbeatable location, modern amenities, and comfortable living spaces, this student housing complex is the perfect place to call home during your college years.",
+      "price": "$800/month",
+      "status": "rent",
+      "area": "600 sq ft",
+      "location": "College Town, USA",
+      "facilities": ["living room", "gym", "study lounge"],
+      "rating": 4.7,
+      "year_built": 2016,
+      "last_remodel_year": null,
+      "features": ["Fully furnished", "Fully equipped kitchen", "Private bathroom", "On-site laundry", "Fitness center", "Study lounges", "Outdoor recreational areas", "On-site management", "24-hour maintenance", "Close to campus", "Secure access", "High-speed internet"]
+    },]
