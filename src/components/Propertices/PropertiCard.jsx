@@ -1,5 +1,5 @@
 import { FaRegHeart } from 'react-icons/fa';
-import card1 from '../../assets/sliderImg/card/1.jpg';
+// import card1 from '../../assets/sliderImg/card/17.jpg';
 import { SlSizeFullscreen } from 'react-icons/sl';
 import { PropTypes } from 'prop-types';
 // import card2 from '../../assets/sliderImg/card/2.jpg';
@@ -7,10 +7,14 @@ import { PropTypes } from 'prop-types';
 const PropertiCard = ({ dta }) => {
   // console.log(dta);
   return (
-    <div className="bg-white max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3 hover:shadow-lg">
-      <div className="relative">
-        <div className="relative">
-          <img className="rounded-lg " src={card1} alt="" />
+    <div className="bg-white min-w-[420px] max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3 hover:shadow-lg">
+      <div className="relative w-full h-56">
+        <div className="relative w-full h-full">
+          <img
+            className="rounded-lg w-full h-full bg-cover overflow-hidden"
+            src={dta.image}
+            alt=""
+          />
           <div className="absolute bg-[#00000047] w-full h-full top-0 left-0 right-0 bottom-0 rounded-lg"></div>
         </div>
         <div className="absolute bottom-3 w-full flex justify-between px-4 items-center">

@@ -1,6 +1,6 @@
 [
   {
-    "image": "image_url_1.jpg",
+    "image": "https://ibb.co/n1Xk26N",
     "estate_title": "Tranquil Lakeside Retreat",
     "estate_shot_description": "Peaceful single-family home with stunning lake views",
     "id": "001",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "image": "image_url_2.jpg",
+    "image": "https://ibb.co/5TnbPBb",
     "estate_title": "Urban Townhouse Living",
     "estate_shot_description": "Modern townhouse in the heart of the city",
     "id": "002",
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "image": "image_url_3.jpg",
+    "image": "https://ibb.co/mq7ry1j",
     "estate_title": "Luxury High-Rise Apartment",
     "estate_shot_description": "Sleek and modern apartment with breathtaking city views",
     "id": "003",
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "image_url_4.jpg",
+    "image": "https://ibb.co/WBkPq78",
     "estate_title": "Student Housing Complex",
     "estate_shot_description": "Modern student apartments near campus",
     "id": "004",
@@ -120,7 +120,7 @@
     ]
   },
   {
-    "image": "image_url_5.jpg",
+    "image": "https://ibb.co/wC3j8tG",
     "estate_title": "Senior Living Community",
     "estate_shot_description": "Comfortable and caring senior living residence",
     "id": "005",
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "image": "image_url_6.jpg",
+    "image": "https://ibb.co/7VNXp2X",
     "estate_title": "Luxury Vacation Villa",
     "estate_shot_description": "Exquisite villa with private pool and ocean views",
     "id": "006",
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "image_url_7.jpg",
+    "image": "https://ibb.co/VmTT5sr",
     "estate_title": "Downtown Loft Apartment",
     "estate_shot_description": "Chic loft apartment in the heart of downtown",
     "id": "007",
@@ -210,13 +210,13 @@
     ]
   },
   {
-    "image": "image_url_8.jpg",
+    "image": "https://ibb.co/HTP8zth",
     "estate_title": "Beachfront Bungalow",
     "estate_shot_description": "Quaint bungalow steps away from the beach",
     "id": "008",
     "segment_name": "Vacation Rentals",
     "full_description": "Escape to paradise in this charming beachfront bungalow located just steps away from the sand and surf. Nestled in a secluded tropical garden, this quaint retreat offers the perfect blend of relaxation and adventure. The cozy interior features nautical-inspired decor, comfortable furnishings, and all the amenities you need for a memorable beach getaway. The fully equipped kitchen allows you to prepare delicious meals with fresh local ingredients, which you can enjoy in the sunny dining area or al fresco on the shaded patio. After a day of sun and sea, retreat to the comfortable bedroom for a restful night's sleep. Wake up to the sound of waves crashing and enjoy your morning coffee on the private deck while taking in breathtaking ocean views. With its prime beachfront location, tranquil surroundings, and laid-back atmosphere, this beachfront bungalow is the perfect destination for your next vacation.",
-    "price": "$300/night",
+    "price": "$300",
     "status": "sale",
     "area": "700",
     "location": "Beachfront Paradise, USA",
@@ -240,13 +240,13 @@
     ]
   },
   {
-    "image": "image_url_9.jpg",
+    "image": "https://ibb.co/5cRw03q",
     "estate_title": "Mountain Cabin Retreat",
     "estate_shot_description": "Cozy cabin nestled in the mountains",
     "id": "009",
     "segment_name": "Vacation Rentals",
     "full_description": "Experience the beauty of the great outdoors in this charming mountain cabin retreat. Tucked away in a secluded forest setting, this cozy cabin offers the perfect escape from the hustle and bustle of everyday life. The rustic interior features exposed wood beams, a stone fireplace, and comfortable furnishings, creating a warm and inviting atmosphere for relaxation and rejuvenation. The fully equipped kitchen allows you to prepare hearty meals to enjoy with family and friends, while the spacious living area is ideal for cozying up with a good book or gathering around the fire for game night. Step outside to breathe in the fresh mountain air and take in the scenic views from the private deck, where you can relax in the hot tub or dine alfresco under the stars. With its serene location, comfortable accommodations, and access to outdoor recreation, this mountain cabin retreat is the perfect destination for your next getaway.",
-    "price": "$200/night",
+    "price": "$200",
     "status": "rent",
     "area": "1200",
     "location": "Mountain Wilderness, USA",
