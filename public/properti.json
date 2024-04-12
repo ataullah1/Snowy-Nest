@@ -118,5 +118,65 @@
       "Secure access",
       "High-speed internet"
     ]
+  },
+  {
+    "image": "image_url_5.jpg",
+    "estate_title": "Senior Living Community",
+    "estate_shot_description": "Comfortable and caring senior living residence",
+    "id": "005",
+    "segment_name": "Senior Living Communities",
+    "full_description": "Discover a welcoming and supportive senior living community where you can enjoy your golden years to the fullest. Our thoughtfully designed residences offer a range of services and amenities tailored to meet the unique needs of older adults. From delicious chef-prepared meals to engaging social activities and wellness programs, there's always something to do and someone to meet. Our caring staff is available around the clock to provide assistance with activities of daily living and medication management, ensuring that you can maintain your independence while receiving the support you need. Whether you're looking for independent living, assisted living, or memory care, our community offers a range of living options to suit your lifestyle and preferences. Plus, with a convenient location close to shopping, dining, and medical facilities, everything you need is right at your fingertips. Come experience the warmth and camaraderie of our senior living community and discover why so many older adults are proud to call it home.",
+    "price": "$3,000/month",
+    "status": "rent",
+    "area": "1800 sq ft",
+    "location": "Senior Community, USA",
+    "facilities": ["living room", "dining hall", "wellness center"],
+    "rating": 4.6,
+    "year_built": 2000,
+    "last_remodel_year": 2018,
+    "features": [
+      "Chef-prepared meals",
+      "Social activities",
+      "Wellness programs",
+      "Around-the-clock staff",
+      "Assistance with activities of daily living",
+      "Medication management",
+      "Independent living",
+      "Assisted living",
+      "Memory care",
+      "Convenient location",
+      "Spacious floor plans",
+      "Beautifully landscaped grounds"
+    ]
+  },
+  {
+    "image": "image_url_6.jpg",
+    "estate_title": "Luxury Vacation Villa",
+    "estate_shot_description": "Exquisite villa with private pool and ocean views",
+    "id": "006",
+    "segment_name": "Vacation Rentals",
+    "full_description": "Experience the ultimate luxury getaway in this stunning vacation villa located in a tropical paradise. Nestled on a hillside overlooking the sparkling ocean, this exquisite property offers unparalleled privacy, comfort, and breathtaking views. The spacious interior features elegant furnishings, high-end finishes, and modern amenities, creating a luxurious retreat for relaxation and entertainment. The gourmet kitchen is a chef's dream, equipped with top-of-the-line appliances, granite countertops, and a large island for meal preparation. The expansive living area is perfect for gathering with family and friends, while the outdoor terrace offers alfresco dining and lounging areas where you can soak up the sun and savor the ocean breeze. Cool off in your private infinity pool or unwind in the adjacent jacuzzi while enjoying panoramic views of the coastline. With four beautifully appointed bedrooms, including a lavish master suite with a spa-like ensuite bathroom and private balcony, this villa offers ample space for up to eight guests to enjoy a truly unforgettable vacation experience. Whether you're seeking adventure or relaxation, this luxury vacation villa is the perfect destination for your next tropical getaway.",
+    "price": "$5,000/week",
+    "status": "rent",
+    "area": "4000 sq ft",
+    "location": "Tropical Paradise, USA",
+    "facilities": ["living room", "private pool", "jacuzzi"],
+    "rating": 4.9,
+    "year_built": 2014,
+    "last_remodel_year": 2019,
+    "features": [
+      "Ocean views",
+      "Gourmet kitchen",
+      "Infinity pool",
+      "Jacuzzi",
+      "Outdoor terrace",
+      "Alfresco dining area",
+      "Luxurious master suite",
+      "Spa-like ensuite bathroom",
+      "Private balcony",
+      "High-end appliances",
+      "Granite countertops",
+      "Open-concept layout"
+    ]
   }
 ]
