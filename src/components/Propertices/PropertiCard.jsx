@@ -7,7 +7,7 @@ import { FaBath } from 'react-icons/fa6';
 
 const PropertiCard = () => {
   return (
-    <div className="bg-white max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3">
+    <div className="bg-white max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3 hover:shadow-lg">
       <div className="relative">
         <div className="relative">
           <img className="rounded-lg " src={card1} alt="" />
