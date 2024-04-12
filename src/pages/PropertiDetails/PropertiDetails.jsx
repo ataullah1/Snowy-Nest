@@ -4,10 +4,11 @@ const PropertiDetails = () => {
   const { viewId } = useParams();
   const dta = useLoaderData();
   const filterDta = dta.filter((dta) => dta.id === viewId);
-  console.log(filterDta);
+  const { id } = filterDta[0];
+  //   console.log(filterDta[0]);
   return (
     <div>
-      <h1 className="text-3xl font-bold">Propertices details page: </h1>
+      <h1 className="text-3xl font-bold mt-28 text-redLi">sdf: {id}</h1>
     </div>
   );
 };
