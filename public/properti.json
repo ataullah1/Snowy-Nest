@@ -178,5 +178,65 @@
       "Granite countertops",
       "Open-concept layout"
     ]
+  },
+  {
+    "image": "image_url_7.jpg",
+    "estate_title": "Downtown Loft Apartment",
+    "estate_shot_description": "Chic loft apartment in the heart of downtown",
+    "id": "007",
+    "segment_name": "Apartments",
+    "full_description": "Live in style in this chic loft apartment located in the vibrant heart of downtown. Housed in a historic building, this beautifully renovated apartment seamlessly blends modern luxury with industrial charm. The open-concept layout features soaring ceilings, exposed brick walls, and hardwood floors, creating a trendy urban aesthetic that's perfect for contemporary living. The gourmet kitchen boasts stainless steel appliances, quartz countertops, and a large island with seating for casual dining and entertaining. The spacious living area offers plenty of room to relax and unwind, while the lofted bedroom provides a private retreat from the hustle and bustle of the city below. With its unbeatable location, stylish design, and top-notch amenities, this downtown loft apartment offers the ultimate urban living experience.",
+    "price": "$2,500/month",
+    "status": "rent",
+    "area": "1000 sq ft",
+    "location": "Downtown District, USA",
+    "facilities": ["living room", "gourmet kitchen"],
+    "rating": 4.7,
+    "year_built": 1920,
+    "last_remodel_year": 2018,
+    "features": [
+      "Exposed brick walls",
+      "Soaring ceilings",
+      "Hardwood floors",
+      "Gourmet kitchen",
+      "Stainless steel appliances",
+      "Quartz countertops",
+      "Large island",
+      "Lofted bedroom",
+      "Historic building",
+      "Central location",
+      "Close to restaurants and shops",
+      "Pet-friendly"
+    ]
+  },
+  {
+    "image": "image_url_8.jpg",
+    "estate_title": "Beachfront Bungalow",
+    "estate_shot_description": "Quaint bungalow steps away from the beach",
+    "id": "008",
+    "segment_name": "Vacation Rentals",
+    "full_description": "Escape to paradise in this charming beachfront bungalow located just steps away from the sand and surf. Nestled in a secluded tropical garden, this quaint retreat offers the perfect blend of relaxation and adventure. The cozy interior features nautical-inspired decor, comfortable furnishings, and all the amenities you need for a memorable beach getaway. The fully equipped kitchen allows you to prepare delicious meals with fresh local ingredients, which you can enjoy in the sunny dining area or al fresco on the shaded patio. After a day of sun and sea, retreat to the comfortable bedroom for a restful night's sleep. Wake up to the sound of waves crashing and enjoy your morning coffee on the private deck while taking in breathtaking ocean views. With its prime beachfront location, tranquil surroundings, and laid-back atmosphere, this beachfront bungalow is the perfect destination for your next vacation.",
+    "price": "$300/night",
+    "status": "rent",
+    "area": "800 sq ft",
+    "location": "Beachfront Paradise, USA",
+    "facilities": ["living room", "kitchen", "private deck"],
+    "rating": 4.8,
+    "year_built": 1965,
+    "last_remodel_year": 2015,
+    "features": [
+      "Beachfront location",
+      "Nautical-inspired decor",
+      "Fully equipped kitchen",
+      "Outdoor dining area",
+      "Private deck",
+      "Ocean views",
+      "Comfortable bedroom",
+      "Secluded tropical garden",
+      "Shaded patio",
+      "WiFi",
+      "BBQ grill",
+      "Outdoor shower"
+    ]
   }
 ]

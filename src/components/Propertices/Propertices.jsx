@@ -1,6 +1,9 @@
+import { useLoaderData } from 'react-router-dom';
 import PropertiCard from './PropertiCard';
 
 const Propertices = () => {
+  const data = useLoaderData();
+  console.log(data);
   return (
     <div className="w-11/12 mx-auto">
       <h1 className="pt-16 text-2xl sm:text-3xl text-center font-bold">
@@ -11,9 +14,9 @@ const Propertices = () => {
         delur distinctio iusto? Tempora numquam non quos!
       </p>
       <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <PropertiCard />
-        <PropertiCard />
-        <PropertiCard />
+        {data.map((dta) => (
+          <PropertiCard key={dta.id} dta={dta} />
+        ))}
       </div>
     </div>
   );
