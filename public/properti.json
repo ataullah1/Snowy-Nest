@@ -238,5 +238,35 @@
       "BBQ grill",
       "Outdoor shower"
     ]
+  },
+  {
+    "image": "image_url_9.jpg",
+    "estate_title": "Mountain Cabin Retreat",
+    "estate_shot_description": "Cozy cabin nestled in the mountains",
+    "id": "009",
+    "segment_name": "Vacation Rentals",
+    "full_description": "Experience the beauty of the great outdoors in this charming mountain cabin retreat. Tucked away in a secluded forest setting, this cozy cabin offers the perfect escape from the hustle and bustle of everyday life. The rustic interior features exposed wood beams, a stone fireplace, and comfortable furnishings, creating a warm and inviting atmosphere for relaxation and rejuvenation. The fully equipped kitchen allows you to prepare hearty meals to enjoy with family and friends, while the spacious living area is ideal for cozying up with a good book or gathering around the fire for game night. Step outside to breathe in the fresh mountain air and take in the scenic views from the private deck, where you can relax in the hot tub or dine alfresco under the stars. With its serene location, comfortable accommodations, and access to outdoor recreation, this mountain cabin retreat is the perfect destination for your next getaway.",
+    "price": "$200/night",
+    "status": "rent",
+    "area": "1200 sq ft",
+    "location": "Mountain Wilderness, USA",
+    "facilities": ["living room", "kitchen", "hot tub"],
+    "rating": 4.7,
+    "year_built": 1980,
+    "last_remodel_year": 2010,
+    "features": [
+      "Secluded forest setting",
+      "Exposed wood beams",
+      "Stone fireplace",
+      "Fully equipped kitchen",
+      "Comfortable furnishings",
+      "Private deck",
+      "Hot tub",
+      "Scenic views",
+      "WiFi",
+      "Board games",
+      "Outdoor grill",
+      "Hiking trails nearby"
+    ]
   }
 ]

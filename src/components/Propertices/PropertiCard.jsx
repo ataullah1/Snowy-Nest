@@ -3,9 +3,11 @@ import card1 from '../../assets/sliderImg/card/1.jpg';
 import { SlSizeFullscreen } from 'react-icons/sl';
 import { LuBedSingle } from 'react-icons/lu';
 import { FaBath } from 'react-icons/fa6';
+import { PropTypes } from 'prop-types';
 // import card2 from '../../assets/sliderImg/card/2.jpg';
 
-const PropertiCard = () => {
+const PropertiCard = ({ dta }) => {
+  console.log(dta);
   return (
     <div className="bg-white max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3 hover:shadow-lg">
       <div className="relative">
@@ -65,3 +67,6 @@ const PropertiCard = () => {
 };
 
 export default PropertiCard;
+PropertiCard.propTypes = {
+  dta: PropTypes.object,
+};

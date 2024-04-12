@@ -3,7 +3,7 @@ import PropertiCard from './PropertiCard';
 
 const Propertices = () => {
   const data = useLoaderData();
-  console.log(data);
+  // console.log(data);
   return (
     <div className="w-11/12 mx-auto">
       <h1 className="pt-16 text-2xl sm:text-3xl text-center font-bold">
