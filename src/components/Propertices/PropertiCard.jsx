@@ -7,7 +7,7 @@ import { PropTypes } from 'prop-types';
 // import card2 from '../../assets/sliderImg/card/2.jpg';
 
 const PropertiCard = ({ dta }) => {
-  console.log(dta);
+  // console.log(dta);
   return (
     <div className="bg-white max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3 hover:shadow-lg">
       <div className="relative">
@@ -29,28 +29,26 @@ const PropertiCard = ({ dta }) => {
       </div>
       <div className="space-y-2 px-3">
         <p className="text-redLi font-semibold">Residential</p>
-        <h1 className="text-2xl font-bold text-black">
-          Lorem ipsum dolor sit amet.
-        </h1>
+        <h1 className="text-2xl font-bold text-black">{dta.estate_title}</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
           quisquam?
         </p>
         <hr />
-        <div className="flex items-center justify-between py-2 gap-3 text-redLi">
-          <div className="bg-[#3bf5f853] w-full py-1 px-2 flex items-center justify-center rounded gap-2 text-base font-semibold">
+        <div className="flex flex-wrap justify-between py-2 gap-2 text-redLi">
+          <div className="bg-[#3bf5f853] max-w-[200px] py-1 px-2 flex items-center justify-center rounded gap-2 text-base font-semibold mx-auto">
             <span className="text-sm">
               <SlSizeFullscreen />
             </span>
             600 Sq Ft
           </div>
-          <div className="bg-[#c9f15b67] w-full py-1 px-2 flex items-center justify-center rounded gap-2 text-base font-semibold">
+          <div className="bg-[#c9f15b67] max-w-[200px] py-1 px-2 flex items-center justify-center rounded gap-2 text-base font-semibold mx-auto">
             <span>
               <LuBedSingle />
             </span>
             4 Beds
           </div>
-          <div className="bg-[#25eb8867] w-full py-1 px-2 flex items-center justify-center rounded gap-2 text-base font-semibold">
+          <div className="bg-[#25eb8867] max-w-[200px] py-1 px-2 flex items-center justify-center rounded gap-2 text-base font-semibold mx-auto">
             <span>
               <FaBath />
             </span>
