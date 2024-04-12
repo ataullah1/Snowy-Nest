@@ -7,7 +7,7 @@ import { PropTypes } from 'prop-types';
 const PropertiCard = ({ dta }) => {
   // console.log(dta);
   return (
-    <div className="bg-white min-w-[420px] max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3 hover:shadow-lg">
+    <div className="bg-white min-w-[380px] max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3 hover:shadow-lg">
       <div className="relative w-full h-56">
         <div className="relative w-full h-full">
           <img
@@ -32,12 +32,12 @@ const PropertiCard = ({ dta }) => {
       </div>
       <div className="space-y-2 px-3">
         <p className="text-redLi font-semibold">{dta.segment_name}</p>
-        <div className="sm:h-[120px] space-y-3">
+        <div className="sm:h-[90px] space-y-3">
           <h1 className="text-2xl font-bold text-black">{dta.estate_title}</h1>
           <p>{dta.estate_shot_description}.</p>
         </div>
         <hr />
-        <div className="flex flex-wrap justify-between py-2 gap-2 text-redLi">
+        <div className="flex items-center justify-between py-2 gap-2 text-redLi">
           <div className="bg-[#3bf5f853] py-1 px-2 flex items-center justify-center rounded gap-2 text-base font-semibold mx-auto">
             <span className="text-xs">
               <SlSizeFullscreen />
