@@ -30,9 +30,11 @@ h5 {
   transform: skewX(-15deg);
 }
 .navManu > a.active {
-  background-color: #e1dddd52;
+  background-color: #ffffff;
   /* color: #ff5a5f; */
   border-color: #ff5a5f;
+  color: #ff5a5f;
+  /* color: #00ffa6; */
 }
 
 /* Loder CSS */
