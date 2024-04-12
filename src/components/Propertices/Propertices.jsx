@@ -22,12 +22,17 @@ const Propertices = () => {
           <PropertiCard key={dta.id} dta={dta} />
         ))}
       </div>
-      <p className="py-2 px-4 text-center cursor-pointer mt-8 underline flex items-center gap-2 justify-center hover:text-redLi text-lg" onClick={()=>setShowDta(dta.length)}>
-        View More Properties
-        <span className="text-2xl">
-          <MdArrowRightAlt />
-        </span>
-      </p>
+      {showDta !== data.length && (
+        <p
+          className="py-2 px-4 text-center cursor-pointer mt-8 underline flex items-center gap-2 justify-center hover:text-redLi text-lg"
+          onClick={() => setShowDta(data.length)}
+        >
+          View More Properties
+          <span className="text-2xl">
+            <MdArrowRightAlt />
+          </span>
+        </p>
+      )}
     </div>
   );
 };
