@@ -6,6 +6,7 @@ import Register from '../pages/Register/Register';
 import Root from '../root/Root';
 import Contact from '../pages/Contact/Contact';
 import Profile from '../pages/Profile/Profile';
+import PropertiDetails from '../pages/PropertiDetails/PropertiDetails';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
       {
         path: '/profile',
         element: <Profile />,
+      },
+      {
+        path: '/properti_details/:viewId',
+        element: <PropertiDetails />,
+        loader: () => fetch('/properti.json'),
       },
     ],
   },

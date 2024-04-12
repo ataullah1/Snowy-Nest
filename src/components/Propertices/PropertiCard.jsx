@@ -2,6 +2,7 @@ import { FaRegHeart } from 'react-icons/fa';
 // import card1 from '../../assets/sliderImg/card/17.jpg';
 import { SlSizeFullscreen } from 'react-icons/sl';
 import { PropTypes } from 'prop-types';
+import { Link } from 'react-router-dom';
 // import card2 from '../../assets/sliderImg/card/2.jpg';
 
 const PropertiCard = ({ dta }) => {
@@ -52,9 +53,11 @@ const PropertiCard = ({ dta }) => {
           </div>
         </div>
         <hr className="pb-3" />
-        <button className="w-full py-2 px-3 rounded-md text-base font-bold border-redLi border-2 text-redLi hover:bg-redLi hover:text-white active:scale-95 duration-150">
-          View Property
-        </button>
+        <Link to={`/properti_details/${dta.id}`}>
+          <button className="w-full py-2 px-3 rounded-md text-base font-bold border-redLi border-2 text-redLi hover:bg-redLi hover:text-white active:scale-95 duration-150">
+            View Property
+          </button>
+        </Link>
       </div>
     </div>
   );

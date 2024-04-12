@@ -7,7 +7,7 @@ const Propertices = () => {
   const [showDta, setShowDta] = useState(6);
   const data = useLoaderData();
 
-  console.log(data.length);
+  // console.log(data.length);
   return (
     <div className="w-11/12 mx-auto">
       <h1 className="pt-16 text-2xl sm:text-3xl text-center font-bold">
