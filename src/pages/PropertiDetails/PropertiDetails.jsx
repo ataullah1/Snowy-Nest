@@ -28,13 +28,12 @@ const PropertiDetails = () => {
       <div className="bg-slate-900 h-20"></div>
       <div className="w-full grid gap-1 rounded-md grid-cols-2 lg:grid-cols-5 grid-rows-5 lg:grid-rows-2 relative bg-white mb-10">
         <div
-          className="bg-green-200 col-span-2 lg:col-span-3 row-span-3 lg:row-span-2 "
+          className="bg-green-200 col-span-2 lg:col-span-3 row-span-3 lg:row-span-2 h-[200px] sm:h-[280px] lg:h-[450px]"
           style={{
             backgroundImage: `url(${image})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
-            height: '450px',
             borderRadius: '12px',
           }}
         ></div>
@@ -69,7 +68,7 @@ const PropertiDetails = () => {
           }}
         ></div>
         <div
-          className="bg-green-700 hidden md:block "
+          className="bg-green-300 hidden md:block "
           style={{
             backgroundImage: `url(${image4})`,
             backgroundPosition: 'center',
@@ -184,7 +183,7 @@ const PropertiDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="w-1/3 h-[320px] bg-white rounded-xl p-4 lg:p-8">
+            <div className="w-full lg:w-1/3 h-[320px] bg-white rounded-xl p-4 xl:p-8">
               <h1 className="text-2xl font-bold pb-6">Property Price</h1>
               <div className="pb-7">
                 <table className="w-full ">
@@ -218,10 +217,10 @@ const PropertiDetails = () => {
                 </table>
               </div>
               <div className="flex justify-between gap-2 ">
-                <button className="py-2 px-2 w-full bg-redLi text-white font-semibold rounded-md hover:bg-transparent border-2 border-redLi hover:text-redLi duration-150 active:scale-90">
+                <button className="py-2 lg:px-1 xl:px-2 w-full bg-redLi text-white font-semibold rounded-md hover:bg-transparent border-2 border-redLi hover:text-redLi duration-150 active:scale-90">
                   Book Now
                 </button>
-                <button className="py-2 px-2 w-full bg-redLi text-white font-semibold rounded-md hover:bg-transparent border-2 border-redLi hover:text-redLi duration-150 active:scale-90">
+                <button className="py-2 lg:px-1 xl:px-2 w-full bg-redLi text-white font-semibold rounded-md hover:bg-transparent border-2 border-redLi hover:text-redLi duration-150 active:scale-90">
                   Save Property
                 </button>
               </div>
