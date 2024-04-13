@@ -1,6 +1,10 @@
 [
   {
     "image": "https://i.postimg.cc/x8vjzpGd/17.jpg",
+    "image1": "https://i.postimg.cc/1414LQ7r/18.jpg",
+    "image2": "https://i.postimg.cc/SxpZk1nZ/19.jpg",
+    "image3": "https://i.postimg.cc/6pLM3VRB/20.jpg",
+    "image4": "https://i.postimg.cc/pdW5WPW0/23.jpg",
     "estate_title": "Tranquil Lakeside Retreat",
     "estate_shot_description": "Peaceful single-family home with stunning lake views",
     "id": "001",
@@ -31,6 +35,10 @@
   },
   {
     "image": "https://i.postimg.cc/nzQhHhCB/10.jpg",
+    "image1": "https://i.postimg.cc/2jV9wZpx/22.jpg",
+    "image2": "https://i.postimg.cc/W45Ftxts/24.jpg",
+    "image3": "https://i.postimg.cc/V6TJWMjT/25.jpg",
+    "image4": "https://i.postimg.cc/WzkhW384/26.jpg",
     "estate_title": "Urban Townhouse Living",
     "estate_shot_description": "Modern townhouse in the heart of the city",
     "id": "002",
@@ -61,6 +69,10 @@
   },
   {
     "image": "https://i.postimg.cc/Bvzv9KQJ/3.jpg",
+    "image1": "https://i.postimg.cc/MZNPrpqJ/27.jpg",
+    "image2": "https://i.postimg.cc/d3bTwd3d/7-1.jpg",
+    "image3": "https://i.postimg.cc/Kjkg6QGx/4.jpg",
+    "image4": "https://i.postimg.cc/15FCx13n/28.jpg",
     "estate_title": "Luxury High-Rise Apartment",
     "estate_shot_description": "Sleek and modern apartment with breathtaking city views",
     "id": "003",
@@ -91,6 +103,10 @@
   },
   {
     "image": "https://i.postimg.cc/KcB8w4Xy/5.jpg",
+    "image1": "https://i.postimg.cc/hjhJmM7T/8.jpg",
+    "image2": "https://i.postimg.cc/13ZNdpL1/14.jpg",
+    "image3": "https://i.postimg.cc/1414LQ7r/18.jpg",
+    "image4": "https://i.postimg.cc/9XK9d3bM/11.jpg",
     "estate_title": "Student Housing Complex",
     "estate_shot_description": "Modern student apartments near campus",
     "id": "004",
@@ -121,6 +137,10 @@
   },
   {
     "image": "https://i.postimg.cc/g2kcxDxY/6.jpg",
+    "image1": "https://i.postimg.cc/6pLM3VRB/20.jpg",
+    "image2": "https://i.postimg.cc/P5z8nCjp/16.jpg",
+    "image3": "https://i.postimg.cc/7Yz2XBtN/12.jpg",
+    "image4": "https://i.postimg.cc/MZNPrpqJ/27.jpg",
     "estate_title": "Senior Living Community",
     "estate_shot_description": "Comfortable and caring senior living residence",
     "id": "005",
@@ -151,6 +171,10 @@
   },
   {
     "image": "https://i.postimg.cc/Kv5vcVvq/7.jpg",
+    "image1": "https://i.postimg.cc/P5z8nCjp/16.jpg",
+    "image2": "https://i.postimg.cc/9XK9d3bM/11.jpg",
+    "image3": "https://i.postimg.cc/hjhJmM7T/8.jpg",
+    "image4": "https://i.postimg.cc/W45Ftxts/24.jpg",
     "estate_title": "Luxury Vacation Villa",
     "estate_shot_description": "Exquisite villa with private pool and ocean views",
     "id": "006",
@@ -181,6 +205,10 @@
   },
   {
     "image": "https://i.postimg.cc/HnDsj1yK/9.jpg",
+    "image1": "https://i.postimg.cc/9XK9d3bM/11.jpg",
+    "image2": "https://i.postimg.cc/7Yz2XBtN/12.jpg",
+    "image3": "https://i.postimg.cc/13ZNdpL1/14.jpg",
+    "image4": "https://i.postimg.cc/P5z8nCjp/16.jpg",
     "estate_title": "Downtown Loft Apartment",
     "estate_shot_description": "Chic loft apartment in the heart of downtown",
     "id": "007",
@@ -211,6 +239,10 @@
   },
   {
     "image": "https://i.postimg.cc/HkBxzNqc/1.jpg",
+    "image1": "https://i.postimg.cc/d3bTwd3d/7-1.jpg",
+    "image2": "https://i.postimg.cc/Kjkg6QGx/4.jpg",
+    "image3": "https://i.postimg.cc/MZNPrpqJ/27.jpg",
+    "image4": "https://i.postimg.cc/W45Ftxts/24.jpg",
     "estate_title": "Beachfront Bungalow",
     "estate_shot_description": "Quaint bungalow steps away from the beach",
     "id": "008",
@@ -241,6 +273,10 @@
   },
   {
     "image": "https://i.postimg.cc/RVmZB99J/2.jpg",
+    "image1": "https://i.postimg.cc/13ZNdpL1/14.jpg",
+    "image2": "https://i.postimg.cc/V6TJWMjT/25.jpg",
+    "image3": "https://i.postimg.cc/6pLM3VRB/20.jpg",
+    "image4": "https://i.postimg.cc/1414LQ7r/18.jpg",
     "estate_title": "Mountain Cabin Retreat",
     "estate_shot_description": "Cozy cabin nestled in the mountains",
     "id": "009",
