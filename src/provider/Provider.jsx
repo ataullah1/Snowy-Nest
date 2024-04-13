@@ -39,15 +39,15 @@ const Provider = ({ children }) => {
   const twitterProvider = new TwitterAuthProvider();
 
   const googleLogin = () => {
-    setIsLoading(true);
+    // setIsLoading(true);
     return signInWithPopup(auth, googleProvider);
   };
   const gitHubLogin = () => {
-    setIsLoading(true);
+    // setIsLoading(true);
     return signInWithPopup(auth, gitHubProvider);
   };
   const twitterLogin = () => {
-    setIsLoading(true);
+    // setIsLoading(true);
     return signInWithPopup(auth, twitterProvider);
   };
 

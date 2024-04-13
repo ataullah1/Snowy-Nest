@@ -60,7 +60,7 @@ const Profile = () => {
     naviget('/');
   }
   return (
-    <div className="relative min-h-screen mb-10">
+    <div className="relative min-h-screen">
       <div
         className="min-h-96 overflow-hidden bg-cover bg-no-repeat p-12 text-center relative"
         style={{
@@ -76,7 +76,7 @@ const Profile = () => {
         ></div>
       </div>
       {userDta && (
-        <div className="min-h-[500px] py-5 w-11/12 sm:w-10/12 lg:w-[700px] left-1/2 -translate-x-1/2 top-52 bg-slate-50 border-4 border-redLi rounded-2xl absolute z-10">
+        <div className="min-h-[500px] py-5 w-11/12 sm:w-10/12 lg:w-[700px] mx-auto bg-slate-50 border-4 border-redLi rounded-2xl -translate-y-44">
           <div>
             <div className=" h-[95px] w-[96px] mx-auto rounded-full bg-gradient-to-r from-fuchsia-600 to-purple-600 p-1">
               <div className="w-full h-full bg-fuchsia-50 rounded-full p-1">
@@ -103,7 +103,7 @@ const Profile = () => {
               {userDta.displayName ? userDta.displayName : 'User Name'}
             </h1>
             <p className="text-center text-sm underline">
-              {userDta.email ? userDta.email : 'user email address'}
+              {userDta.email ? userDta.email : 'Email could not be accessed'}
             </p>
             <div className="divider before:bg-redLi after:bg-redLi divider-secondary w-full text-lg">
               Profile details
@@ -157,7 +157,11 @@ const Profile = () => {
                       )}
                     </div>
                   ) : ( */}
-                  <p>{userDta.email ? userDta.email : 'user email address'}</p>
+                  <p>
+                    {userDta.email
+                      ? userDta.email
+                      : 'Email could not be accessed.'}
+                  </p>
                   {/* )} */}
                 </div>
                 <div>
