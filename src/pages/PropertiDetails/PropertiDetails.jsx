@@ -8,7 +8,8 @@ const PropertiDetails = () => {
   //   console.log(filterDta[0]);
   return (
     <div>
-      <div className="w-full grid gap-1 rounded-md grid-cols-2 lg:grid-cols-5 grid-rows-5 lg:grid-rows-2 relative">
+      <div className="bg-slate-900 h-20"></div>
+      <div className="w-full grid gap-1 rounded-md grid-cols-2 lg:grid-cols-5 grid-rows-5 lg:grid-rows-2 relative bg-white mb-10">
         <div
           className="bg-green-200 col-span-2 lg:col-span-3 row-span-3 lg:row-span-2 "
           style={{
@@ -60,7 +61,17 @@ const PropertiDetails = () => {
             borderRadius: '12px',
           }}
         ></div>
-        <div className="bg-[#01000039] absolute top-0 left-0 w-full z-20 h-full"></div>
+        <div className="bg-[#01000039] absolute top-0 left-0 w-full z-20 h-full rounded-lg"></div>
+      </div>
+      <div className="bg-[#00000014] py-8">
+        <div className="w-11/12 mx-auto">
+          <div className="min-h-48 flex flex-col md:flex-row gap-2 md:gap-4">
+            <div className="w-2/3 bg-white rounded-xl">
+              
+            </div>
+            <div className="w-1/3 bg-white rounded-xl"></div>
+          </div>
+        </div>
       </div>
     </div>
   );
