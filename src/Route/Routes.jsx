@@ -7,11 +7,14 @@ import Root from '../root/Root';
 import Contact from '../pages/Contact/Contact';
 import Profile from '../pages/Profile/Profile';
 import PropertiDetails from '../pages/PropertiDetails/PropertiDetails';
+import PriveteRoute from '../pages/PrivetRoute/PriveteRoute';
+import Error from '../pages/ErrorPage/Error';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    errorElement:<Error/>,
     children: [
       {
         path: '/',
@@ -40,7 +43,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/properti_details/:viewId',
-        element: <PropertiDetails />,
+        element: (
+          <PriveteRoute>
+            <PropertiDetails />
+          </PriveteRoute>
+        ),
         loader: () => fetch('/properti.json'),
       },
     ],
