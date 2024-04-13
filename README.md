@@ -37,6 +37,7 @@ SnowyNest is a responsive web application designed to showcase residential prope
 - **Swiper**
 - **Firebase**
 - **React Hook Form**
+- **Sweetalert2**
 
 ## How to Install this project!
 

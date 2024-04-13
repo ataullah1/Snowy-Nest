@@ -24,7 +24,6 @@ const Register = () => {
   const [emailErr, setEmailErr] = useState(null);
   const [passErr, setPassErr] = useState(null);
   const [confPassErr, setConfPassErr] = useState(null);
-  const [loginErr, setLoginErr] = useState(false);
 
   // Firebase data
   const {
@@ -38,6 +37,7 @@ const Register = () => {
     profileUpdate,
     setReload,
     reload,
+    setIsLoading,
   } = useContext(ContextAuth);
 
   // Naviget, login done then go to Login
@@ -89,7 +89,7 @@ const Register = () => {
       .catch((error) => {
         const errorMessage = error.message;
         console.log(errorMessage);
-        setLoginErr(true);
+        setIsLoading(false);
       });
   };
 
@@ -105,7 +105,7 @@ const Register = () => {
         console.log(errorMessage);
       });
   };
-  if (isLoading && !loginErr) {
+  if (isLoading) {
     return <Loding />;
   }
   return (

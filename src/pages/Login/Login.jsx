@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { FaEye, FaEyeSlash, FaTwitter } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { MdEmail } from 'react-icons/md';
@@ -9,6 +9,8 @@ import { FaGithub } from 'react-icons/fa';
 import { ContextAuth } from '../../provider/Provider';
 import Loding from '../Loding/Loding';
 import { useNavigate } from 'react-router-dom';
+// Sweetalert import
+import Swal from 'sweetalert2';
 const Login = () => {
   // Naviget, login done then go to Home
   const naviget = useNavigate();
@@ -25,11 +27,14 @@ const Login = () => {
     emlPassLogin,
     isLoadings,
     userDta,
+    setIsLoading,
   } = useContext(ContextAuth);
 
-  if (userDta) {
-    naviget('/');
-  }
+  useEffect(() => {
+    if (userDta) {
+      naviget('/');
+    }
+  }, [naviget]);
   const handleLoginSubmit = (e) => {
     setEmailErr(null);
     e.preventDefault();
@@ -47,11 +52,22 @@ const Login = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
+        Swal.fire({
+          title: 'Good job!',
+          text: 'Your account has been successfully logged in.',
+          icon: 'success',
+        });
         naviget(location?.state ? location.state : '/');
       })
       .catch((error) => {
         const errorMessage = error.message;
         console.log(errorMessage);
+        setIsLoading(false);
+        Swal.fire({
+          title: 'Oops...!',
+          text: 'Sorry, your account could not be logged in!',
+          icon: 'error',
+        });
       });
   };
 
@@ -61,11 +77,21 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        Swal.fire({
+          title: 'Good job!',
+          text: 'Your account has been successfully logged in.',
+          icon: 'success',
+        });
         naviget(location?.state ? location.state : '/');
       })
       .catch((error) => {
         const errorMessage = error.message;
         console.log(errorMessage);
+        Swal.fire({
+          title: 'Oops...!',
+          text: 'Sorry, your account could not be logged in!',
+          icon: 'error',
+        });
       });
   };
   if (isLoadings) {

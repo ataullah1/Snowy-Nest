@@ -80,7 +80,7 @@ const Footer = () => {
                 placeholder="Your Email"
                 className="w-full sm:w-2/3 py-3 outline-none rounded-l-full rounded-r-full sm:rounded-r-none bg-[#354765] px-5 text-white"
               />
-              <button className="w-full sm:w-1/3 py-2 text-white border-redLi border-2 bg-transparent hover:bg-redLi sm:rounded-l-none rounded-l-full rounded-r-full active:scale-95 duration-200">
+              <button className="w-full sm:w-1/3 py-2 text-white border-redLi border-2 bg-transparent hover:bg-redLi sm:rounded-l-none rounded-l-full rounded-r-full active:bg-transparent duration-200 font-semibold">
                 Subscribe
               </button>
             </div>

@@ -110,6 +110,7 @@ const Provider = ({ children }) => {
     handleDeleteAcc,
     setReload,
     reload,
+    setIsLoading,
   };
   return (
     <ContextAuth.Provider value={authDta}>{children}</ContextAuth.Provider>
