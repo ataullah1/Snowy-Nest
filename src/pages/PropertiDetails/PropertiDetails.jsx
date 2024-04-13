@@ -10,7 +10,7 @@ const PropertiDetails = () => {
     <div>
       <div className="w-full grid gap-1 rounded-md grid-cols-2 lg:grid-cols-5 grid-rows-5 lg:grid-rows-2 relative">
         <div
-          className="bg-green-200 col-span-2 lg:col-span-3 row-span-3 lg:row-span-2 border-r border-redLi"
+          className="bg-green-200 col-span-2 lg:col-span-3 row-span-3 lg:row-span-2 "
           style={{
             backgroundImage: `url(${image})`,
             backgroundPosition: 'center',
@@ -21,7 +21,7 @@ const PropertiDetails = () => {
           }}
         ></div>
         <div
-          className="bg-yellow-100 row-span-2 md:row-span-1 border border-redLi"
+          className="bg-yellow-100 row-span-2 md:row-span-1 "
           style={{
             backgroundImage: `url(${image1})`,
             backgroundPosition: 'center',
@@ -31,7 +31,7 @@ const PropertiDetails = () => {
           }}
         ></div>
         <div
-          className="bg-fuchsia-200 row-span-2 md:row-span-1 border border-redLi"
+          className="bg-fuchsia-200 row-span-2 md:row-span-1 "
           style={{
             backgroundImage: `url(${image2})`,
             backgroundPosition: 'center',
@@ -41,7 +41,7 @@ const PropertiDetails = () => {
           }}
         ></div>
         <div
-          className="bg-sky-200 hidden md:block border border-redLi"
+          className="bg-sky-200 hidden md:block "
           style={{
             backgroundImage: `url(${image3})`,
             backgroundPosition: 'center',
@@ -51,7 +51,7 @@ const PropertiDetails = () => {
           }}
         ></div>
         <div
-          className="bg-green-700 hidden md:block border border-redLi"
+          className="bg-green-700 hidden md:block "
           style={{
             backgroundImage: `url(${image4})`,
             backgroundPosition: 'center',
