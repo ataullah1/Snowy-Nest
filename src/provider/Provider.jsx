@@ -17,6 +17,7 @@ import auth from '../firebase/firebase.config';
 
 export const ContextAuth = createContext();
 const Provider = ({ children }) => {
+  const [reload, setReload] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [userDta, setUserDta] = useState(null);
 
@@ -69,7 +70,7 @@ const Provider = ({ children }) => {
     return () => {
       unSubscribe();
     };
-  }, []);
+  }, [reload]);
 
   const profileUpdate = (nam, photoUrl) => {
     return updateProfile(auth.currentUser, {
@@ -107,6 +108,8 @@ const Provider = ({ children }) => {
     profileUpdate,
     handleUpdateEmail,
     handleDeleteAcc,
+    setReload,
+    reload,
   };
   return (
     <ContextAuth.Provider value={authDta}>{children}</ContextAuth.Provider>

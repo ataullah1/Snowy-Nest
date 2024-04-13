@@ -8,7 +8,8 @@ import { ContextAuth } from '../../provider/Provider';
 import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
-  const { userDta, profileUpdate, handleDeleteAcc } = useContext(ContextAuth);
+  const { userDta, profileUpdate, handleDeleteAcc, setReload, reload } =
+    useContext(ContextAuth);
   // const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const isValidPhoto = /\bhttps?:\/\/\S+?\.(?:png|jpe?g|gif|bmp)\b/;
   const [update, setUpdate] = useState(false);
@@ -45,7 +46,9 @@ const Profile = () => {
     //     console.log(err);
     //   });
     profileUpdate(name, photo)
-      .then(() => {})
+      .then(() => {
+        setReload(!reload);
+      })
       .catch((err) => {
         console.log(err);
       });
@@ -57,7 +60,7 @@ const Profile = () => {
     naviget('/');
   }
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen mb-10">
       <div
         className="min-h-96 overflow-hidden bg-cover bg-no-repeat p-12 text-center relative"
         style={{
@@ -73,7 +76,7 @@ const Profile = () => {
         ></div>
       </div>
       {userDta && (
-        <div className="min-h-[500px] py-5 w-11/12 sm:w-10/12 lg:w-[700px] left-1/2 -translate-x-1/2 top-52 bg-slate-50 border-4 border-redLi rounded-2xl absolute z-50">
+        <div className="min-h-[500px] py-5 w-11/12 sm:w-10/12 lg:w-[700px] left-1/2 -translate-x-1/2 top-52 bg-slate-50 border-4 border-redLi rounded-2xl absolute z-10">
           <div>
             <div className=" h-[95px] w-[96px] mx-auto rounded-full bg-gradient-to-r from-fuchsia-600 to-purple-600 p-1">
               <div className="w-full h-full bg-fuchsia-50 rounded-full p-1">
