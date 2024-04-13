@@ -3,7 +3,7 @@ import { FaEye, FaEyeSlash, FaTwitter } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { MdEmail } from 'react-icons/md';
 import { RiLockPasswordFill } from 'react-icons/ri';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import image1 from '../../assets/sliderImg/6.jpg';
 import { FaGithub } from 'react-icons/fa';
 import { ContextAuth } from '../../provider/Provider';
@@ -12,7 +12,8 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
   // Naviget, login done then go to Home
   const naviget = useNavigate();
-
+  const location = useLocation();
+  // console.log(location);
   const [eye, setEye] = useState(false);
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const [emailErr, setEmailErr] = useState(null);
@@ -46,7 +47,7 @@ const Login = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
-        naviget('/');
+        naviget(location?.state ? location.state : '/');
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -60,7 +61,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        naviget('/');
+        naviget(location?.state ? location.state : '/');
       })
       .catch((error) => {
         const errorMessage = error.message;

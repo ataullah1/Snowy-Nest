@@ -17,7 +17,7 @@ import auth from '../firebase/firebase.config';
 
 export const ContextAuth = createContext();
 const Provider = ({ children }) => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [userDta, setUserDta] = useState(null);
 
   // Register User
