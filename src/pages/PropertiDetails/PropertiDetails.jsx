@@ -1,3 +1,4 @@
+import { SlSizeFullscreen } from 'react-icons/sl';
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const PropertiDetails = () => {
@@ -11,6 +12,7 @@ const PropertiDetails = () => {
     image3,
     image4,
     facilities,
+    area,
     full_description,
     estate_title,
   } = filterDta[0];
@@ -79,11 +81,23 @@ const PropertiDetails = () => {
               <h1 className="text-4xl font-bold text-[#000000d0] pb-3">
                 {estate_title}
               </h1>
-              <div>
-                <button className="py-2 px-4 bg-[#F7F7F7] text-black rounded-md">
-                  baler mata
-                </button>
+              <div className="flex gap-4">
+                <div className="bg-[#F7F7F7] py-2 px-6 flex items-center justify-center rounded gap-2 text-base font-semibold border">
+                  <span className="text-xs">
+                    <SlSizeFullscreen />
+                  </span>
+                  {area} Sq Ft
+                </div>
+                {facilities.map((dta, i) => (
+                  <button
+                    key={i}
+                    className="py-2 px-4 bg-[#F7F7F7] text-black rounded-md border"
+                  >
+                    {dta}
+                  </button>
+                ))}
               </div>
+              <p className="pt-5 leading-7 text-slate-400">{full_description}</p>
             </div>
             <div className="w-1/3 bg-white rounded-xl"></div>
           </div>
