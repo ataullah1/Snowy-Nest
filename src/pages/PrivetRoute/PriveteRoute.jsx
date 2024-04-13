@@ -6,7 +6,7 @@ import { PropTypes } from 'prop-types';
 const PriveteRoute = ({ children }) => {
   const { userDta } = useContext(ContextAuth);
   const location = useLocation();
-  console.log(location.pathname);
+  //   console.log(location.pathname);
 
   if (userDta) {
     return children;

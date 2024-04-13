@@ -8,23 +8,23 @@ import { ContextAuth } from '../../provider/Provider';
 import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
-  const { userDta, profileUpdate, handleUpdateEmail, handleDeleteAcc } =
-    useContext(ContextAuth);
-  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const { userDta, profileUpdate, handleDeleteAcc } = useContext(ContextAuth);
+  // const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const isValidPhoto = /\bhttps?:\/\/\S+?\.(?:png|jpe?g|gif|bmp)\b/;
   const [update, setUpdate] = useState(false);
   const [nameErr, setNameErr] = useState('');
-  const [emailErr, setEmailErr] = useState('');
+  // const [emailErr, setEmailErr] = useState('');
   const [photoErr, setPhotoErr] = useState('');
 
   const handleProfileUpdate = () => {
     setPhotoErr('');
     setNameErr('');
-    setEmailErr('');
+    // setEmailErr('');
     const name = document.getElementById('nameInp').value;
-    const email = document.getElementById('emailInp').value;
+    // const email = document.getElementById('emailInp').value;
     const photo = document.getElementById('imgUrl').value;
-    if (name.length > 2 && isValidEmail.test(email)) {
+    if (name.length > 2) {
+      //&& isValidEmail.test(email)
       setUpdate(!update);
     } else if (!isValidPhoto.test(photo)) {
       setPhotoErr('Please enter a valid URL');
@@ -37,13 +37,13 @@ const Profile = () => {
     //   return;
     // }
     // console.log(name, email);
-    handleUpdateEmail(email)
-      .then(() => {
-        console.log('done email');
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // handleUpdateEmail(email)
+    //   .then(() => {
+    //     console.log('done email');
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
     profileUpdate(name, photo)
       .then(() => {})
       .catch((err) => {
@@ -139,7 +139,7 @@ const Profile = () => {
                   <p className="text-base font-semibold text-slate-500">
                     Email
                   </p>
-                  {update ? (
+                  {/* {update ? (
                     <div>
                       <input
                         type="email"
@@ -153,11 +153,9 @@ const Profile = () => {
                         </p>
                       )}
                     </div>
-                  ) : (
-                    <p>
-                      {userDta.email ? userDta.email : 'user email address'}
-                    </p>
-                  )}
+                  ) : ( */}
+                  <p>{userDta.email ? userDta.email : 'user email address'}</p>
+                  {/* )} */}
                 </div>
                 <div>
                   <p className="text-base font-semibold text-slate-500">
@@ -176,7 +174,7 @@ const Profile = () => {
               </div>
               <div className="flex items-center justify-between mt-12">
                 <button
-                  onClick={()=>handleDeleteAcc()}
+                  onClick={() => handleDeleteAcc()}
                   className="py-2 bg-redLi text-white hover:-skew-x-[15deg] duration-150 border-redLi border-2 rounded-md px-4"
                 >
                   Delete Profile
