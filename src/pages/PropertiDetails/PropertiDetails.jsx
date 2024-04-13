@@ -193,7 +193,10 @@ const PropertiDetails = () => {
                       <p>Price</p>
                     </td>
                     <td className="py-2">
-                      <p className="font-bold">: {price}</p>
+                      <p className="font-bold">
+                        : {price}
+                        <span className="text-xs">/mo</span>
+                      </p>
                     </td>
                   </tr>
                   <tr>
