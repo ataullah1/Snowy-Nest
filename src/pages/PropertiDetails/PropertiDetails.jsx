@@ -102,9 +102,11 @@ const PropertiDetails = () => {
                   </button>
                 ))}
               </div>
-              <p className="pt-5 leading-7 text-slate-400">
-                {full_description}
-              </p>
+              <hr className="mt-7 mb-3" />
+              <h1 className="text-2xl font-semibold pb-3">
+                Property Description
+              </h1>
+              <p className="leading-7 text-slate-400">{full_description}</p>
 
               <hr className="my-6" />
               <div>
@@ -174,7 +176,7 @@ const PropertiDetails = () => {
                 <div>
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45060306.91979326!2d-129.94270855000002!3d46.42366899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e72d55ea434f%3A0x91e2209ccaf48a86!2sTropical%20Paradise%20Properties!5e0!3m2!1sen!2sbd!4v1712984027431!5m2!1sen!2sbd"
-                    height="450"
+                    className="h-52 sm:h-[330px]"
                     style={{ border: '0', width: '100%' }}
                     allowFullScreen
                     loading="lazy"
