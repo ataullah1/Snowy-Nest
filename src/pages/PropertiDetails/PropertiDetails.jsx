@@ -4,7 +4,16 @@ const PropertiDetails = () => {
   const { viewId } = useParams();
   const dta = useLoaderData();
   const filterDta = dta.filter((dta) => dta.id === viewId);
-  const { image, image1, image2, image3, image4 } = filterDta[0];
+  const {
+    image,
+    image1,
+    image2,
+    image3,
+    image4,
+    facilities,
+    full_description,
+    estate_title,
+  } = filterDta[0];
   //   console.log(filterDta[0]);
   return (
     <div>
@@ -63,11 +72,18 @@ const PropertiDetails = () => {
         ></div>
         <div className="bg-[#01000039] absolute top-0 left-0 w-full z-20 h-full rounded-lg"></div>
       </div>
-      <div className="bg-[#00000014] py-8">
+      <div className="bg-[#F7F7F7] py-8">
         <div className="w-11/12 mx-auto">
           <div className="min-h-48 flex flex-col md:flex-row gap-2 md:gap-4">
-            <div className="w-2/3 bg-white rounded-xl">
-              
+            <div className="w-2/3 bg-white rounded-xl p-4 lg:p-8">
+              <h1 className="text-4xl font-bold text-[#000000d0] pb-3">
+                {estate_title}
+              </h1>
+              <div>
+                <button className="py-2 px-4 bg-[#F7F7F7] text-black rounded-md">
+                  baler mata
+                </button>
+              </div>
             </div>
             <div className="w-1/3 bg-white rounded-xl"></div>
           </div>
