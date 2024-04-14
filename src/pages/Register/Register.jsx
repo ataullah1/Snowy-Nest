@@ -46,7 +46,7 @@ const Register = () => {
   useEffect(() => {
     if (userDta) {
       naviget('/');
-      console.log('bal');
+      console.log('Register to home');
     }
   }, [userDta, naviget]);
 

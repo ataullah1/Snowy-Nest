@@ -137,7 +137,7 @@ const PropertiDetails = () => {
                           <p>Property Status</p>
                         </td>
                         <td className="py-2 w-1/2">
-                          <p className="font-bold">: {status}</p>
+                          <p className="font-bold capitalize">: {status}</p>
                         </td>
                       </tr>
                     </table>
@@ -157,7 +157,12 @@ const PropertiDetails = () => {
                           <p>Last Remodel Year</p>
                         </td>
                         <td className="py-2">
-                          <p className="font-bold">: {last_remodel_year}</p>
+                          <p className="font-bold">
+                            :{' '}
+                            {last_remodel_year
+                              ? last_remodel_year
+                              : 'Not Entry'}
+                          </p>
                         </td>
                       </tr>
                     </table>
@@ -213,7 +218,7 @@ const PropertiDetails = () => {
                       <p>Property Status</p>
                     </td>
                     <td className="py-2 w-1/2">
-                      <p className="font-bold">: {status}</p>
+                      <p className="font-bold capitalize">: {status}</p>
                     </td>
                   </tr>
                 </table>
