@@ -16,6 +16,7 @@ import { useContext, useEffect, useState } from 'react';
 import { ContextAuth } from '../../provider/Provider';
 import { useNavigate } from 'react-router-dom';
 import Loding from '../Loding/Loding';
+import Swal from 'sweetalert2';
 
 const Register = () => {
   const [eye, setEye] = useState(false);
@@ -45,6 +46,7 @@ const Register = () => {
   useEffect(() => {
     if (userDta) {
       naviget('/');
+      console.log('bal');
     }
   }, [userDta, naviget]);
 
@@ -78,18 +80,30 @@ const Register = () => {
       .then(() => {
         // Update Profile
         profileUpdate(name, photo)
-          .then(() => {})
+          .then(() => {
+            Swal.fire({
+              title: 'Good job!',
+              text: 'Your account has been successfully created. Please login now.',
+              icon: 'success',
+            });
+          })
           .catch((err) => {
             console.log(err);
           });
-        setReload(!reload);
         logOutAcc();
+        setReload(!reload);
+
         naviget('/login');
       })
       .catch((error) => {
         const errorMessage = error.message;
         console.log(errorMessage);
         setIsLoading(false);
+        Swal.fire({
+          title: 'Oops...!',
+          text: 'Sorry, your account could not be Created !',
+          icon: 'error',
+        });
       });
   };
 
@@ -99,10 +113,20 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        Swal.fire({
+          title: 'Good job!',
+          text: 'Your account has been successfully logged in.',
+          icon: 'success',
+        });
       })
       .catch((error) => {
         const errorMessage = error.message;
         console.log(errorMessage);
+        Swal.fire({
+          title: 'Oops...!',
+          text: 'Sorry, your account could not be logged in!',
+          icon: 'error',
+        });
       });
   };
   if (isLoading) {
