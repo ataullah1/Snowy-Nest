@@ -28,14 +28,15 @@ const Login = () => {
     isLoadings,
     userDta,
     setIsLoading,
+    registerDta,
   } = useContext(ContextAuth);
 
   useEffect(() => {
-    if (userDta && !location.state) {
+    if (userDta && !location.state && registerDta) {
       naviget('/');
       console.log('login to home');
     }
-  }, [naviget, userDta, location.state]);
+  }, [naviget, userDta, location.state, registerDta]);
   const handleLoginSubmit = (e) => {
     setEmailErr(null);
     e.preventDefault();

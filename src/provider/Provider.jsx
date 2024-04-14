@@ -18,6 +18,7 @@ import auth from '../firebase/firebase.config';
 export const ContextAuth = createContext();
 const Provider = ({ children }) => {
   const [reload, setReload] = useState(false);
+  const [registerDta, setRegisterDta] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [userDta, setUserDta] = useState(null);
 
@@ -110,6 +111,8 @@ const Provider = ({ children }) => {
     handleDeleteAcc,
     setReload,
     reload,
+    registerDta,
+    setRegisterDta,
     setIsLoading,
   };
   return (

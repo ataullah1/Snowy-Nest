@@ -39,6 +39,7 @@ const Register = () => {
     setReload,
     reload,
     setIsLoading,
+    setRegisterDta,
   } = useContext(ContextAuth);
 
   // Naviget, login done then go to Login
@@ -92,6 +93,7 @@ const Register = () => {
           });
         logOutAcc();
         setReload(!reload);
+        setRegisterDta(false);
 
         naviget('/login');
       })
