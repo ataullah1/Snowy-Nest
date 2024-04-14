@@ -49,6 +49,15 @@ const Login = () => {
       return;
     }
     // Email password Login
+    if (userDta) {
+      Swal.fire({
+        title: 'Oops...!',
+        text: 'Your account is already logged in!',
+        icon: 'warning',
+      });
+      naviget('/');
+      return;
+    }
     emlPassLogin(email, pass)
       .then((userCredential) => {
         const user = userCredential.user;
@@ -74,6 +83,15 @@ const Login = () => {
 
   // all Social Login
   const socialLogin = (socialLogin) => {
+    if (userDta) {
+      Swal.fire({
+        title: 'Oops...!',
+        text: 'Your account is already logged in!',
+        icon: 'warning',
+      });
+      naviget('/');
+      return;
+    }
     socialLogin()
       .then((result) => {
         const user = result.user;
