@@ -1,3 +1,4 @@
+import ContactForm from '../ContactForm/ContactForm';
 import ContactSec from '../ContactSec/ContactSec';
 import OfficeMap from '../OfficeMap/OfficeMap';
 import OurValue from '../OurValue/OurValue';
@@ -10,6 +11,9 @@ const MainSection = () => {
       <OurValue />
       <div className="mt-32">
         <ContactSec />
+        <div className="w-11/12 mx-auto mt-20">
+          <ContactForm />
+        </div>
       </div>
       <OfficeMap />
     </div>

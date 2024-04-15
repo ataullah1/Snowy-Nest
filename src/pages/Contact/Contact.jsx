@@ -2,6 +2,7 @@ import image1 from '../../assets/sliderImg/8.jpg';
 import { Link } from 'react-router-dom';
 import ContactSec from '../../components/ContactSec/ContactSec';
 import OfficeMap from '../../components/OfficeMap/OfficeMap';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 const Contact = () => {
   return (
@@ -33,6 +34,9 @@ const Contact = () => {
       <div>
         <div className="mt-12">
           <ContactSec />
+          <div className="w-11/12 mx-auto">
+            <ContactForm />
+          </div>
         </div>
         <OfficeMap />
       </div>
