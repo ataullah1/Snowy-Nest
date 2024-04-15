@@ -1,5 +1,7 @@
 import Marquee from 'react-fast-marquee';
 import pic1 from '../../assets/client pic/1.jpg';
+import pic2 from '../../assets/client pic/2.jpg';
+import pic3 from '../../assets/client pic/3.jpg';
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 const ClaintReview = () => {
   return (
@@ -56,7 +58,7 @@ const ClaintReview = () => {
           <div className="max-w-96 text-center shadow-md border p-4 rounded-xl">
             <img
               className="h-20 w-20 rounded-full mx-auto mb-2"
-              src={pic1}
+              src={pic2}
               alt=""
             />
             <div>
@@ -81,7 +83,7 @@ const ClaintReview = () => {
                   <BsStarFill />
                 </span>
                 <span>
-                  <BsStarHalf />
+                  <BsStarFill />
                 </span>
               </div>
             </div>
@@ -93,7 +95,7 @@ const ClaintReview = () => {
           <div className="max-w-96 text-center shadow-md border p-4 rounded-xl">
             <img
               className="h-20 w-20 rounded-full mx-auto mb-2"
-              src={pic1}
+              src={pic3}
               alt=""
             />{' '}
             <div>

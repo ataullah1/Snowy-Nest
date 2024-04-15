@@ -62,8 +62,7 @@ const Banner = () => {
                     Buy the property of your choice.
                   </h1>
                   <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestias architecto animi delectus .
+                    {`Explore SnowyNest's curated listings to effortlessly find and purchase the ideal property that matches your preferences and fits your lifestyle perfectly.`}
                   </p>
                 </div>
               </div>
@@ -90,8 +89,7 @@ const Banner = () => {
                     Your Property, Our Priority.
                   </h1>
                   <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestias architecto animi delectus .
+                  Your property aspirations are our top priority at SnowyNest. Trust us to prioritize your needs and guide you to your perfect home.
                   </p>
                 </div>
               </div>
@@ -115,11 +113,12 @@ const Banner = () => {
               <div className="flex h-full items-center justify-center relative">
                 <div className="text-white px-4 max-w-[800px]">
                   <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
-                    Find Your Dream Home At Snowy Nest.
+                    Discover Your Dream Home at SnowyNest!
                   </h1>
                   <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestias architecto animi delectus .
+                    Discover Your Dream Home at SnowyNest! Explore our diverse
+                    range of properties and find the perfect place to call your
+                    own.
                   </p>
                 </div>
               </div>
@@ -143,11 +142,12 @@ const Banner = () => {
               <div className="flex h-full items-center justify-center relative">
                 <div className="text-white px-4 max-w-[800px]">
                   <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
-                    Find Your Dream Home At Snowy Nest.
+                    Find Your Perfect Property Today!
                   </h1>
                   <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestias architecto animi delectus .
+                    Find Your Perfect Property Today! Start your journey to
+                    homeownership with SnowyNest and uncover the ideal living
+                    space for you.
                   </p>
                 </div>
               </div>
@@ -171,11 +171,11 @@ const Banner = () => {
               <div className="flex h-full items-center justify-center relative">
                 <div className="text-white px-4 max-w-[800px]">
                   <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
-                    Find Your Dream Home At Snowy Nest.
+                    Your Gateway to Home Bliss!
                   </h1>
                   <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestias architecto animi delectus .
+                    SnowyNest: Your Gateway to Home Bliss! Experience the joy of
+                    finding your dream home with us. Begin your search now!
                   </p>
                 </div>
               </div>
@@ -199,11 +199,12 @@ const Banner = () => {
               <div className="flex h-full items-center justify-center relative">
                 <div className="text-white px-4 max-w-[800px]">
                   <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
-                    Find Your Dream Home At Snowy Nest.
+                    Your Home Awaits at SnowyNest!
                   </h1>
                   <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestias architecto animi delectus .
+                    Unlock Endless Possibilities with SnowyNest! Let SnowyNest
+                    guide you to the home of your dreams. Your next adventure
+                    starts here!
                   </p>
                 </div>
               </div>
