@@ -21,39 +21,52 @@ const OurValue = () => {
               Best price on the market.
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p>
+                SnowyNest guarantees the best price on the market, ensuring
+                affordability without compromising quality, making your dream
+                home within reach.
+              </p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-base-200 shadow-md shadow-fuchsia-300">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              We will give you live time support.
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p>
+                SnowyNest stands by you for a lifetime, offering unwavering
+                support, guidance, and assistance, ensuring your residential
+                experience is hassle-free and fulfilling.
+              </p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-base-200 shadow-md shadow-fuchsia-300">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              Navigate the Property Market Confidently
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p>
+                Gain access to expert analysis and personalized advice for
+                buying or selling properties efficiently
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div
-        className="w-full md:w-3/5 lg:w-2/5 h-72 md:min-h-[350px] lg:min-h-[500px] rounded-tr-[100px] rounded-tl-3xl sm:rounded-tl-none md:rounded-tr-[200px] lg:rounded-tr-[300px] rounded-bl-3xl border-2 border-redLi"
-        style={{
-          backgroundImage: `url(${images})`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-        }}
-      >
-        {/* <img src={images} alt="" /> */}
+      <div className='w-full md:w-3/5 lg:w-2/5 flex items-center bg-emerald-50'>
+        <div
+          className="w-full h-72 md:min-h-[350px] lg:min-h-[510px] rounded-tr-[100px] rounded-tl-3xl sm:rounded-tl-none md:rounded-tr-[200px] lg:rounded-tr-[300px] rounded-bl-3xl border-2 border-redLi"
+          style={{
+            backgroundImage: `url(${images})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+          {/* <img src={images} alt="" /> */}
+        </div>
       </div>
     </div>
   );
