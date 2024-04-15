@@ -8,7 +8,9 @@ const MainSection = () => {
     <div className="bg-[#F7F7F7]">
       <Propertices />
       <OurValue />
-      <ContactSec />
+      <div className="mt-32">
+        <ContactSec />
+      </div>
       <OfficeMap />
     </div>
   );

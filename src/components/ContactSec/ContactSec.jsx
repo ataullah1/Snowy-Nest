@@ -3,7 +3,7 @@ import images from '../../assets/sliderImg/3.jpg';
 import { SiGmail } from 'react-icons/si';
 const ContactSec = () => {
   return (
-    <div className="w-11/12 mx-auto mt-32 flex flex-col-reverse md:flex-row gap-4 md:gap-8 lg:gap-28 justify-between">
+    <div className="w-11/12 mx-auto flex flex-col-reverse md:flex-row gap-4 md:gap-8 lg:gap-28 justify-between">
       <div className="w-full md:w-3/5">
         <h1 className="text-4xl md:text-5xl font-bold text-redLi border-b-4 border-slate-500 inline-block">
           Contact Us
