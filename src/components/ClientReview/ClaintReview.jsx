@@ -1,53 +1,125 @@
 import Marquee from 'react-fast-marquee';
-import imag1 from '../../assets/sliderImg/card/15.jpg';
-import { BiBookmark } from 'react-icons/bi';
-import { FcReadingEbook } from 'react-icons/fc';
-
+import pic1 from '../../assets/client pic/1.jpg';
+import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 const ClaintReview = () => {
   return (
     <div>
-      <div className="text-center">
-        <h1 className="text-4xl font-bold">Our Client Reviews</h1>
+      <div className="text-center pb-5">
+        <h1 className="text-4xl font-bold">What Our Client Say ?</h1>
         <p className="text-slate-400 pt-2 pb-8 max-w-[650px] mx-auto">
           {`SnowyNest's clients rave about seamless transactions, exceptional
           service, and finding their dream homes. Trust our community's
           testimonials for your next property journey.`}
         </p>
       </div>
-      <Marquee className="h-[600px]">
-        <div>
-          <div className="bg-white w-[380px] mx-auto p-3 border rounded-lg duration-200 space-y-3 hover:shadow-lg">
-            <div className="relative w-full h-56">
-              <div className="relative w-full h-full">
-                <img
-                  className="rounded-lg w-full h-full bg-cover overflow-hidden"
-                  src={imag1}
-                  alt=""
-                />
-                <div className="absolute bg-[#00000047] w-full h-full top-0 left-0 right-0 bottom-0 rounded-lg"></div>
-              </div>
-              <div className="absolute bottom-3 w-full flex justify-between px-4 items-center">
+      <Marquee className="">
+        <div className="flex flex-row gap-12">
+          <div className="max-w-96 text-center shadow-md border p-4 rounded-xl">
+            <img
+              className="h-20 w-20 rounded-full mx-auto mb-2"
+              src={pic1}
+              alt=""
+            />
+            <div>
+              <h1 className="font-bold text-2xl">Emily Wilson</h1>
+              <p className="text-base pb-2 font-semibold text-center">
+                Accountant
+              </p>
+              <p className="italic text-sm">
+                {` "SnowyNest's expertise and support were invaluable in finding my
+              dream home. Smooth process from start to finish. Highly recommend
+              their services!"`}
+              </p>
+              <div className="flex items-center justify-center mt-1 gap-2 text-yellow-500 ">
                 <span>
-                  <FcReadingEbook />
+                  <BsStarFill />
                 </span>
-                <span className="text-white hover:text-redLi bg-[#17161689] p-2 rounded-md cursor-pointer">
-                  <BiBookmark />
+                <span>
+                  <BsStarFill />
                 </span>
-              </div>
-            </div>
-            <div className="space-y-2 px-3">
-              <div className="space-y-3">
-                <h1 className="text-2xl font-bold text-black">
-                  amar sonaree bangelafsad
-                </h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                  minima quam at? Impedit magnam, magni optio molestiae eveniet
-                  ducimus ullam!.
-                </p>
+                <span>
+                  <BsStarFill />
+                </span>
+                <span>
+                  <BsStarFill />
+                </span>
+                <span>
+                  <BsStarHalf />
+                </span>
               </div>
             </div>
           </div>
+          <div className="max-w-96 text-center shadow-md border p-4 rounded-xl">
+            <img
+              className="h-20 w-20 rounded-full mx-auto mb-2"
+              src={pic1}
+              alt=""
+            />
+            <div>
+              <h1 className="font-bold text-2xl">Emily Wilson</h1>
+              <p className="text-base pb-2 font-semibold text-center">
+                Accountant
+              </p>
+              <p className="italic text-sm">
+                {` "SnowyNest's expertise and support were invaluable in finding my
+              dream home. Smooth process from start to finish. Highly recommend
+              their services!"`}
+              </p>
+              <div className="flex items-center justify-center mt-1 gap-2 text-yellow-500 ">
+                <span>
+                  <BsStarFill />
+                </span>
+                <span>
+                  <BsStarFill />
+                </span>
+                <span>
+                  <BsStarFill />
+                </span>
+                <span>
+                  <BsStarFill />
+                </span>
+                <span>
+                  <BsStarHalf />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="max-w-96 text-center shadow-md border p-4 rounded-xl">
+            <img
+              className="h-20 w-20 rounded-full mx-auto mb-2"
+              src={pic1}
+              alt=""
+            />
+            <div>
+              <h1 className="font-bold text-2xl">Emily Wilson</h1>
+              <p className="text-base pb-2 font-semibold text-center">
+                Accountant
+              </p>
+              <p className="italic text-sm">
+                {` "SnowyNest's expertise and support were invaluable in finding my
+              dream home. Smooth process from start to finish. Highly recommend
+              their services!"`}
+              </p>
+              <div className="flex items-center justify-center mt-1 gap-2 text-yellow-500 ">
+                <span>
+                  <BsStarFill />
+                </span>
+                <span>
+                  <BsStarFill />
+                </span>
+                <span>
+                  <BsStarFill />
+                </span>
+                <span>
+                  <BsStarFill />
+                </span>
+                <span>
+                  <BsStarHalf />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div></div>
         </div>
       </Marquee>
     </div>
