@@ -26,9 +26,16 @@ const About = () => {
           </div>
         </div>
       </div>
-      <h1 className="text-6xl font-bold text-center py-3">
-        This is About Section.
-      </h1>
+      <div>
+        <div className="flex flex-col md:flex-row items-center w-full gap-10">
+          <div className="w-full md:w-[55%] bg-yellow-300 h-72">
+            <h1>Thext</h1>
+          </div>
+          <div className="w-full md:w-[45%] bg-purple-600 h-72">
+            {/* <img src="" alt="" /> */}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
