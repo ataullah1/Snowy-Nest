@@ -5,7 +5,7 @@ import OfficeMap from '../../components/OfficeMap/OfficeMap';
 
 const Contact = () => {
   return (
-    <div>
+    <div className="bg-[#F7F7F7]">
       {' '}
       <div>
         <div
@@ -31,7 +31,7 @@ const Contact = () => {
         </div>
       </div>
       <div>
-        <div className='mt-12'>
+        <div className="mt-12">
           <ContactSec />
         </div>
         <OfficeMap />
