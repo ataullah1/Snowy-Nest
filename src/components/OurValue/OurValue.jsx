@@ -21,7 +21,7 @@ const OurValue = () => {
               Best price on the market.
             </div>
             <div className="collapse-content">
-              <p>
+              <p className="text-slate-500">
                 SnowyNest guarantees the best price on the market, ensuring
                 affordability without compromising quality, making your dream
                 home within reach.
@@ -34,7 +34,7 @@ const OurValue = () => {
               We will give you live time support.
             </div>
             <div className="collapse-content">
-              <p>
+              <p className="text-slate-500">
                 SnowyNest stands by you for a lifetime, offering unwavering
                 support, guidance, and assistance, ensuring your residential
                 experience is hassle-free and fulfilling.
@@ -47,7 +47,7 @@ const OurValue = () => {
               Navigate the Property Market Confidently
             </div>
             <div className="collapse-content">
-              <p>
+              <p className="text-slate-500">
                 Gain access to expert analysis and personalized advice for
                 buying or selling properties efficiently
               </p>
@@ -57,7 +57,7 @@ const OurValue = () => {
       </div>
       <div className="w-full md:w-3/5 lg:w-2/5 flex items-center">
         <div
-          className="w-full h-72 md:min-h-[350px] lg:min-h-[510px] rounded-tr-[100px] rounded-tl-3xl sm:rounded-tl-none md:rounded-tr-[200px] lg:rounded-tr-[300px] rounded-bl-3xl border-2 border-redLi"
+          className="w-full h-72 md:min-h-[350px] lg:min-h-[510px] rounded-tr-[100px] rounded-tl-3xl sm:rounded-tl-none md:rounded-tr-[180px] lg:rounded-tr-[250px] rounded-bl-3xl border-2 border-redLi"
           style={{
             backgroundImage: `url(${images})`,
             backgroundPosition: 'center',

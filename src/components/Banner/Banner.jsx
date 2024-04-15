@@ -20,7 +20,7 @@ import { FaSearch } from 'react-icons/fa';
 
 const Banner = () => {
   return (
-    <div className="relative">
+    <div className="relative text-white">
       {/* <div className="fixed w-full max-w-[1500px] mx-auto z-50">
         <Nav />
       </div> */}
