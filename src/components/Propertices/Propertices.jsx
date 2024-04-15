@@ -13,9 +13,10 @@ const Propertices = () => {
       <h1 className="pt-16 text-2xl sm:text-3xl text-center font-bold">
         Out Featured Premium Properties
       </h1>
-      <p className="text-base text-center max-w-[700px] mx-auto">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum eligendi
-        delur distinctio iusto? Tempora numquam non quos!
+      <p className="text-base text-center max-w-[700px] mx-auto text-slate-400 pt-2 leading-7">
+        Discover our handpicked selection of premium properties at SnowyNest.
+        Explore luxurious homes and investment opportunities tailored to elevate
+        your lifestyle.
       </p>
       <div className="mt-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {data.slice(0, showDta).map((dta) => (

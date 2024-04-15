@@ -8,12 +8,12 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation, Keyboard } from 'swiper/modules';
 
 // image input
-import slide1 from '../../assets/sliderImg/8.jpg';
+import slide1 from '../../assets/sliderImg/6.jpg';
 import slide2 from '../../assets/sliderImg/7.jpg';
-import slide3 from '../../assets/sliderImg/6.jpg';
+import slide3 from '../../assets/sliderImg/2.jpg';
 import slide4 from '../../assets/sliderImg/5.jpg';
 import slide5 from '../../assets/sliderImg/14.jpg';
-import slide6 from '../../assets/sliderImg/3.jpg';
+import slide6 from '../../assets/sliderImg/8.jpg';
 
 // import Nav from '../Nav/Nav';
 import { FaSearch } from 'react-icons/fa';
@@ -28,8 +28,9 @@ const Banner = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
+        loop={true}
         autoplay={{
-          delay: 3000,
+          delay: 3300,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -89,7 +90,9 @@ const Banner = () => {
                     Your Property, Our Priority.
                   </h1>
                   <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
-                  Your property aspirations are our top priority at SnowyNest. Trust us to prioritize your needs and guide you to your perfect home.
+                    Your property aspirations are our top priority at SnowyNest.
+                    Trust us to prioritize your needs and guide you to your
+                    perfect home.
                   </p>
                 </div>
               </div>
