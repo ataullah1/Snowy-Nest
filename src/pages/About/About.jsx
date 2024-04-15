@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import image1 from '../../assets/sliderImg/7.jpg';
 import image2 from '../../assets/sliderImg/card/2.jpg';
 import MarqueeImg from '../../components/Marquee/MarqueeImg';
+import ClaintReview from '../../components/ClientReview/ClaintReview';
 const About = () => {
   return (
     <div className="bg-[#F7F7F7]">
@@ -55,7 +56,14 @@ const About = () => {
         </div>
       </div>
       <div>
-        <MarqueeImg />
+        <div className="my-12 py-8 shadow-md bg-white">
+          <div className="w-11/12 mx-auto">
+            <ClaintReview />
+          </div>
+        </div>
+        <div>
+          <MarqueeImg />
+        </div>
       </div>
     </div>
   );
