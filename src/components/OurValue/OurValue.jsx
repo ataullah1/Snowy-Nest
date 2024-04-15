@@ -31,7 +31,7 @@ const OurValue = () => {
           <div className="collapse collapse-arrow bg-base-200 shadow-md shadow-fuchsia-300">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
-              We will give you live time support.
+              We will give you lifetime support.
             </div>
             <div className="collapse-content">
               <p className="text-slate-500">
