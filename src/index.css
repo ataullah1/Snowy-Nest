@@ -41,6 +41,12 @@ h5 {
 .collapse-title::after {
   color: #ff5a5f;
 }
+
+/* Map height leaflet
+.leaflet-container {
+  height: 100vh;
+} */
+
 /* Loder CSS */
 
 .loader {
