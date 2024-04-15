@@ -1,7 +1,7 @@
 import { MdCall, MdLocationCity, MdWhatsapp } from 'react-icons/md';
 import images from '../../assets/sliderImg/3.jpg';
 import { SiGmail } from 'react-icons/si';
-const Contact = () => {
+const ContactSec = () => {
   return (
     <div className="w-11/12 mx-auto mt-32 flex flex-col-reverse md:flex-row gap-4 md:gap-8 lg:gap-28 justify-between">
       <div className="w-full md:w-3/5">
@@ -67,4 +67,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactSec;

@@ -55,7 +55,7 @@ const OurValue = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:w-3/5 lg:w-2/5 flex items-center">
+      <div className="w-full md:w-[55%] lg:w-[45%] flex items-center">
         <div
           className="w-full h-72 md:min-h-[350px] lg:min-h-[510px] rounded-tr-[100px] rounded-tl-3xl sm:rounded-tl-none md:rounded-tr-[180px] lg:rounded-tr-[250px] rounded-bl-3xl border-2 border-redLi"
           style={{
