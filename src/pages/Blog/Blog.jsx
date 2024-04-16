@@ -1,10 +1,13 @@
-import BlogCard from '../../components/BlogCard/BlogCard';
+// import BlogCard from '../../components/BlogCard/BlogCard';
 
 import image1 from '../../assets/sliderImg/3.jpg';
+import profile1 from '../../assets/client pic/1.jpg';
 import { Link } from 'react-router-dom';
+import { MdDateRange } from 'react-icons/md';
+import { BiSearch } from 'react-icons/bi';
 const Blog = () => {
   return (
-    <div>
+    <div className="bg-[#F7F7F7]">
       <div>
         <div
           className="h-72 overflow-hidden bg-cover bg-no-repeat p-12 text-center relative"
@@ -29,32 +32,70 @@ const Blog = () => {
         </div>
       </div>
       {/* <BlogCard /> */}
-      <div className="flex flex-col lg:flex-row gap-10 w-11/12 mx-auto my-10">
-        <div className="min-h-16 w-full lg:w-3/5 bg-red-300 rounded-lg">
+      <div className="flex flex-col lg:flex-row gap-10 w-11/12 mx-auto py-10">
+        <div className="min-h-16 w-full lg:w-3/5 bg-white shadow-lg rounded-lg">
           <div className="rounded-t-lg">
             <div className="w-full rounded-t-xl">
-              <img className='w-full rounded-t-lg' src={image1} alt="" />
+              <img className="w-full rounded-t-lg" src={image1} alt="" />
             </div>
-            <div>
-              <h1>Blog Title line </h1>
-              <p>
+            <div className="p-3 sm:p-5">
+              <h1 className="text-3xl font-bold pb-2">Blog Title line </h1>
+              <p className="text-slate-400 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
                 nihil! Assumenda consectetur aut nam temporibus molestiae quod,
                 corporis facere minima minus vitae nulla architecto molestias
                 nobis. Rem molestias labore earum?
               </p>
-
-              <div>
-                <div>
-                  <img src="" alt="" />
-                  <p>Dote 235426</p>
+              <hr className="my-4" />
+              <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row gap-2 items-center">
+                  <img
+                    className="mr-auto sm:mr-0 h-10 sm:h-16 w-10 sm:w-16 rounded-full border border-redLi"
+                    src={profile1}
+                    alt=""
+                  />
+                  <div>
+                    <h1 className="text-sm sm:text-xl font-bold">Ataullah</h1>
+                    <p className="text-lg font-bold text-slate-400">
+                      Softwer engeenr
+                    </p>
+                  </div>
+                  <p className="sm:text-lg font-semibold sm:pl-2 flex items-center gap-2 text-sm">
+                    <MdDateRange />
+                    March, 10, 2024
+                  </p>
                 </div>
-                <Link>Learn More...</Link>
+                <Link className="block py-2 px-3 sm:px-5 text-redLi border border-redLi rounded-md font-semibold active:scale-90 hover:bg-redLi hover:text-white duration-150">
+                  Learn More...
+                </Link>
               </div>
             </div>
           </div>
         </div>
-        <div className="min-h-16 w-full lg:w-2/5 bg-yellow-300"></div>
+        <div className="min-h-16 w-full lg:w-2/5 bg-white shadow-lg p-5 rounded-lg">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search Here"
+              className="py-2 px-4 text-lg outline-none border rounded-md w-full"
+            />
+            <span className="absolute top-1/2 -translate-y-1/2 right-3 text-xl">
+              <BiSearch />
+            </span>
+          </div>
+          <div className="my-4">
+            <h1 className="text-2xl font-bold ">Resent Post Blog</h1>
+            <div>
+              <div className="rounded-lg">
+                <img src={image1} className="w-24 rounded-l-md" alt="" />
+                <div>
+                  <h1>Name</h1>
+                  <p>Description Name</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
