@@ -84,13 +84,19 @@ const Blog = () => {
             </span>
           </div>
           <div className="my-4">
-            <h1 className="text-2xl font-bold ">Resent Post Blog</h1>
+            <h1 className="text-2xl font-bold pb-5">Resent Post Blog</h1>
             <div>
-              <div className="rounded-lg">
-                <img src={image1} className="w-24 rounded-l-md" alt="" />
-                <div>
-                  <h1>Name</h1>
-                  <p>Description Name</p>
+              <div className="border-t border-b rounded-lg flex items-center gap-2">
+                <div className="h-28 w-1/3 bg-red-200 rounded-md"></div>
+                {/* <img src={image1} className="w-52 rounded-l-md" alt="" /> */}
+                <div className="w-2/3">
+                  <h1 className="text-2xl font-bold text-slate-600">
+                    This is Title
+                  </h1>
+                  <p className="text-slate-400 text-sm">
+                    This is description Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quo, quam!
+                  </p>
                 </div>
               </div>
             </div>
