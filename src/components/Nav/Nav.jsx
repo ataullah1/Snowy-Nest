@@ -15,7 +15,7 @@ const Nav = () => {
   // console.log(hover);
   return (
     <div>
-      <div className="w-11/12 mx-auto ">
+      <div className="w-11/12 mx-auto max-w-[1700px]">
         <div className=" navbar flex items-center flex-col sm:flex-row sm:justify-between">
           <div className="navbar-start flex items-center flex-row-reverse justify-between w-full sm:w-auto sm:flex-row">
             {userDta ? (

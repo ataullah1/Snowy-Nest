@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form';
+import { BsSendFill } from 'react-icons/bs';
 import {
   FaFacebook,
   FaGithub,
@@ -99,11 +100,9 @@ const ContactForm = () => {
             placeholder="Your Message"
             {...register('Your Message', { min: 10 })}
           />
-
-          <input
-            className="py-2 px-2 bg-redLi rounded-md font-semibold text-white cursor-pointer active:scale-95 hover:bg-transparent border-2 border-redLi hover:text-redLi duration-150"
-            type="submit"
-          />
+          <button className="py-2 px-2 bg-redLi rounded-md font-semibold text-white cursor-pointer active:scale-95 hover:bg-transparent border-2 border-redLi hover:text-redLi duration-150 flex items-center justify-center gap-2">
+            Send <BsSendFill />
+          </button>
         </form>
       </div>
     </div>

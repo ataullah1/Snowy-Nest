@@ -14,7 +14,7 @@ const MarqueeImg = () => {
     <div className="py-5">
       <div className="text-center">
         <h1 className="text-4xl font-bold">Our Partners</h1>
-        <p className="text-slate-400 pt-2 pb-8">
+        <p className="text-slate-400 pt-2 pb-8 px-3">
           We only work with the best companies around the globe
         </p>
       </div>

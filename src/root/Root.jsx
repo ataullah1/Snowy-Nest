@@ -33,14 +33,11 @@ const Root = () => {
       <div
         className={
           scrolled
-            ? 'fixed top-0 left-0 right-0 bg-[#c0c0c0b5] z-50 max-w-[1500px] mx-auto'
-            : 'bg-transparent fixed top-0 left-0 right-0 z-50 max-w-[1500px] mx-auto'
+            ? 'fixed top-0 left-0 right-0 bg-[#c0c0c0b5] z-50 w-full mx-auto max-w-[1700px]'
+            : 'bg-transparent fixed top-0 left-0 right-0 z-50 w-full mx-auto max-w-[1700px]'
         }
       >
         <Nav />
-        {/* <h1 className="fixed top-0 left-0 z-50 bg-transparent text-white text-center text-6xl w-full">
-          baler mata
-        </h1> */}
       </div>
       <div className="max-w-[1700px] mx-auto">
         <Outlet />

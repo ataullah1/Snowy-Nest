@@ -1,4 +1,4 @@
-import { BsGithub, BsTwitterX, BsWhatsapp } from 'react-icons/bs';
+import { BsGithub, BsInstagram, BsLinkedin, BsTwitterX } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="text-[#8A99B3]">
       <div className=" bg-[#24324A]">
-        <div className="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-6 lg:grid-rows-1 gap-8 sm:gap-3 xl:gap-5 py-16">
+        <div className="w-11/12 max-w-[1700px] mx-auto grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-6 lg:grid-rows-1 gap-8 sm:gap-3 xl:gap-5 py-16">
           <div className="lg:col-span-2">
             <h1 className="font-bold text-2xl text-white pb-5">About Site</h1>
             <p>
@@ -17,7 +17,10 @@ const Footer = () => {
           <div className="">
             <h1 className="font-bold text-2xl text-white pb-5">Quick Links</h1>
             <div className="flex flex-col gap-3">
-              <Link className="hover:text-white hover:translate-x-2 duration-200">
+              <Link
+                to={'/about'}
+                className="hover:text-white hover:translate-x-2 duration-200"
+              >
                 About Us
               </Link>
               <Link className="hover:text-white hover:translate-x-2 duration-200">
@@ -26,8 +29,11 @@ const Footer = () => {
               <Link className="hover:text-white hover:translate-x-2 duration-200">
                 User’s Guide
               </Link>
-              <Link className="hover:text-white hover:translate-x-2 duration-200">
-                Support Center
+              <Link
+                to={'/blog'}
+                className="hover:text-white hover:translate-x-2 duration-200"
+              >
+                Blog
               </Link>
               <Link className="hover:text-white hover:translate-x-2 duration-200">
                 Press Info
@@ -37,38 +43,49 @@ const Footer = () => {
           <div className="">
             <h1 className="font-bold text-2xl text-white pb-5">Contact Us</h1>
             <div className="flex flex-col gap-3">
-              <p>info@findhouse.com</p>
-              <p>Collins Street West, Victoria 8007, Australia.</p>
-              <p>+1 246-345-0699</p>
-              <p>+1 246-345-0695</p>
+              <p>info@snowynest.com</p>
+              <p>Mirpur 10, Dhaka, Bangladesh</p>
+              <p>+880 1326-142663</p>
+              <p>+880 1719-199967</p>
             </div>
           </div>
           <div className="lg:col-span-2">
             <h1 className="font-bold text-2xl text-white pb-5">Follow us</h1>
-            <div className="flex flex-row items-center gap-4 text-2xl">
+            <div className="flex flex-row items-center gap-4 text-3xl">
               <a
-                href="#"
+                href="https://www.facebook.com/ataullah0"
+                target="_blank"
                 className="hover:scale-125 rounded-full p-1 hover:text-white duration-150"
               >
                 <FaFacebook />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/dev_ataullah"
+                target="_blank"
                 className="hover:scale-125 rounded-full p-1 hover:text-white duration-150"
               >
                 <BsTwitterX />
               </a>
               <a
-                href="#"
+                href="https://github.com/ataullah1"
+                target="_blank"
                 className="hover:scale-125 rounded-full p-1 hover:text-white duration-150"
               >
                 <BsGithub />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/md-ataullah/"
+                target="_blank"
                 className="hover:scale-125 rounded-full p-1 hover:text-white duration-150"
               >
-                <BsWhatsapp />
+                <BsLinkedin />
+              </a>
+              <a
+                href="https://www.instagram.com/ataullah.info/"
+                target="_blank"
+                className="hover:scale-125 rounded-full p-1 hover:text-white duration-150"
+              >
+                <BsInstagram />
               </a>
             </div>
             <h1 className="font-semibold text-xl text-white pb-4 pt-10">
@@ -95,6 +112,10 @@ const Footer = () => {
             </Link>
             <Link className="hover:text-white" to={'/about'}>
               About
+            </Link>
+
+            <Link className="hover:text-white" to={'/blog'}>
+              Blog
             </Link>
             <Link className="hover:text-white" to={'/contact'}>
               Contact

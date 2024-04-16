@@ -28,7 +28,34 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <BlogCard />
+      {/* <BlogCard /> */}
+      <div className="flex flex-col lg:flex-row gap-10 w-11/12 mx-auto my-10">
+        <div className="min-h-16 w-full lg:w-3/5 bg-red-300 rounded-lg">
+          <div className="rounded-t-lg">
+            <div className="w-full rounded-t-xl">
+              <img className='w-full rounded-t-lg' src={image1} alt="" />
+            </div>
+            <div>
+              <h1>Blog Title line </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                nihil! Assumenda consectetur aut nam temporibus molestiae quod,
+                corporis facere minima minus vitae nulla architecto molestias
+                nobis. Rem molestias labore earum?
+              </p>
+
+              <div>
+                <div>
+                  <img src="" alt="" />
+                  <p>Dote 235426</p>
+                </div>
+                <Link>Learn More...</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="min-h-16 w-full lg:w-2/5 bg-yellow-300"></div>
+      </div>
     </div>
   );
 };
