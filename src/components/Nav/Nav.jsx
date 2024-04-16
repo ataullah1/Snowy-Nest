@@ -164,9 +164,13 @@ const Nav = () => {
                 alt=""
               />
               {hover && (
-                <p className="text-redLi rounded-md absolute top-16 lg:top-[70px] right-14 lg:right-20 bg-slate-100 border-redLi border px-3 py-1">
-                  View Profile
-                </p>
+                <div className=" rounded-md absolute top-16 lg:top-[70px] right-14 lg:right-20 bg-slate-100 border-redLi border px-3 py-1">
+                  <div
+                    className="bg-redLi h-2 w-3 absolute right-1 -top-2 hidden sm:block"
+                    style={{ clipPath: 'polygon(50% 0, 0% 100%, 100% 100%)' }}
+                  ></div>
+                  <p className="text-redLi">{userDta.displayName}</p>
+                </div>
               )}
               <div
                 className={`absolute top-16 lg:top-20 right-16 duration-3000 transition-transform ${
