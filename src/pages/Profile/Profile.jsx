@@ -83,11 +83,7 @@ const Profile = () => {
         <div className="min-h-[500px] py-5 w-11/12 sm:w-10/12 lg:w-[700px] mx-auto bg-slate-50 border-4 border-redLi rounded-2xl -translate-y-44">
           <div>
             <div className=" h-[95px] w-[96px] mx-auto rounded-full bg-gradient-to-r from-fuchsia-600 to-purple-600 p-1">
-              <div
-                data-aos="zoom-in"
-                data-aos-delay="350"
-                className="w-full h-full bg-fuchsia-50 rounded-full p-1"
-              >
+              <div className="w-full h-full bg-fuchsia-50 rounded-full p-1">
                 <img
                   src={userDta.photoURL ? userDta.photoURL : profilePic}
                   className="w-full h-full rounded-full"
@@ -107,11 +103,7 @@ const Profile = () => {
                 }
               />
             )}
-            <h1
-              data-aos="zoom-in"
-              data-aos-delay="400"
-              className="text-center text-2xl font-semibold "
-            >
+            <h1 className="text-center text-2xl font-semibold ">
               {userDta.displayName ? userDta.displayName : 'User Name'}
             </h1>
             <p className="text-center text-sm underline">
@@ -123,11 +115,7 @@ const Profile = () => {
 
             <div className="w-11/12 sm:w-10/12 mx-auto">
               <div className="flex items-center justify-between">
-                <h1
-                  data-aos="zoom-in"
-                  data-aos-delay="400"
-                  className="flex items-center gap-1 font-semibold text-lg underline"
-                >
+                <h1 className="flex items-center gap-1 font-semibold text-lg underline">
                   <IoMdContact /> My Profile
                 </h1>
               </div>
@@ -149,7 +137,7 @@ const Profile = () => {
                       )}
                     </div>
                   ) : (
-                    <p data-aos="zoom-in" data-aos-delay="400">
+                    <p>
                       {userDta.displayName ? userDta.displayName : 'User Name'}
                     </p>
                   )}
@@ -173,7 +161,7 @@ const Profile = () => {
                       )}
                     </div>
                   ) : ( */}
-                  <p data-aos="zoom-in" data-aos-delay="400">
+                  <p>
                     {userDta.email
                       ? userDta.email
                       : 'Email could not be accessed.'}

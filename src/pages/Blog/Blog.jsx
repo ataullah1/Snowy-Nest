@@ -228,7 +228,7 @@ const Blog = () => {
               </h1>
               <div className="flex flex-col gap-10">
                 <div
-                  data-aos="zoom-out-left"
+                  data-aos="zoom-out-down"
                   className="shadow-md p-2 rounded-lg flex items-center gap-2"
                 >
                   <div
@@ -252,7 +252,7 @@ const Blog = () => {
                   </div>
                 </div>
                 <div
-                  data-aos="zoom-out-left"
+                  data-aos="zoom-out-down"
                   className="shadow-md p-2 rounded-lg flex items-center gap-2"
                 >
                   <div
@@ -276,7 +276,7 @@ const Blog = () => {
                   </div>
                 </div>
                 <div
-                  data-aos="zoom-out-left"
+                  data-aos="zoom-out-down"
                   className="shadow-md p-2 rounded-lg flex items-center gap-2"
                 >
                   <div
@@ -300,7 +300,7 @@ const Blog = () => {
                   </div>
                 </div>
                 <div
-                  data-aos="zoom-out-left"
+                  data-aos="zoom-out-down"
                   className="shadow-md p-2 rounded-lg flex items-center gap-2"
                 >
                   <div
@@ -324,7 +324,7 @@ const Blog = () => {
                   </div>
                 </div>
                 <div
-                  data-aos="zoom-out-left"
+                  data-aos="zoom-out-down"
                   className="shadow-md p-2 rounded-lg flex items-center gap-2"
                 >
                   <div
@@ -351,7 +351,7 @@ const Blog = () => {
             </div>
           </div>
           <div
-            data-aos="zoom-out-left"
+            data-aos="zoom-out-down"
             className="bg-white shadow-lg p-5 rounded-lg mt-8 sm:mt-16"
           >
             <h1 className="text-2xl font-bold pb-5">Categories Property</h1>

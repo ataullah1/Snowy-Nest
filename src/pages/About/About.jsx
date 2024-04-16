@@ -38,38 +38,38 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center w-full gap-10 py-12">
           <div className="w-full md:w-[55%]">
             <h1
-              data-aos="fade-right"
+              data-aos="zoom-out-down"
               className="text-2xl text-slate-800 font-bold pb-2"
             >
               Your Premier Destination for Residential Real Estate
             </h1>
             <p
-              data-aos="fade-left"
+              data-aos="zoom-out-down"
               className="text-slate-400 pb-2"
             >{`At SnowyNest, we understand that finding the perfect place to call home is more than just a transaction; it's about finding sanctuary, comfort, and belonging. Nestled within the digital landscape, SnowyNest emerges as your trusted ally in navigating the intricate world of residential real estate. Whether you're seeking to buy, sell, or invest in properties, our platform offers a seamless journey, tailored to your unique needs and aspirations.`}</p>
             <h1
-              data-aos="fade-right"
+              data-aos="zoom-out-down"
               className="text-2xl text-slate-800 font-bold pb-2"
             >
               Crafting Dreams into Realty
             </h1>
             <p
-              data-aos="fade-left"
+              data-aos="zoom-out-down"
               className="text-slate-400 pb-2"
             >{`SnowyNest isn't just another real estate platform; it's a sanctuary where dreams take shape. With a deep-rooted commitment to excellence, integrity, and personalized service, we endeavor to transform your aspirations into tangible realities. Our team of seasoned professionals brings a wealth of experience and expertise to the table, ensuring that every transaction is executed with precision and care.`}</p>
             <h1
-              data-aos="fade-right"
+              data-aos="zoom-out-down"
               className="text-2xl text-slate-800 font-bold pb-2"
             >
               Unraveling Boundless Opportunities
             </h1>
             <p
-              data-aos="fade-left"
+              data-aos="zoom-out-down"
               className="text-slate-400 pb-2"
             >{`In the ever-evolving realm of real estate, opportunities abound for those with the foresight to seize them. Whether you're a first-time buyer, a seasoned investor, or a homeowner looking to make a change, SnowyNest provides a gateway to endless possibilities. With an extensive portfolio of properties spanning diverse locations, styles, and price points, we empower you to explore, evaluate, and embark on your next adventure with confidence.`}</p>
           </div>
           <div
-            data-aos="fade-left"
+            data-aos="zoom-out-down"
             className="w-full md:w-[45%] h-[500px] rounded-2xl"
             style={{
               backgroundImage: `url(${image2})`,
