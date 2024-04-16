@@ -1,10 +1,16 @@
 // import BlogCard from '../../components/BlogCard/BlogCard';
 
-import image1 from '../../assets/sliderImg/3.jpg';
+import image1 from '../../assets/BlogBanner/3.jpg';
+import image2 from '../../assets/BlogBanner/2.jpg';
+import image3 from '../../assets/BlogBanner/1.jpg';
+import image4 from '../../assets/BlogBanner/2.jpg';
 import profile1 from '../../assets/client pic/1.jpg';
+import profile2 from '../../assets/client pic/2.jpg';
+import profile3 from '../../assets/client pic/3.jpg';
+import profile4 from '../../assets/client pic/4.png';
 import { Link } from 'react-router-dom';
 import { MdDateRange } from 'react-icons/md';
-import { BiSearch } from 'react-icons/bi';
+import { BiRightArrow, BiSearch } from 'react-icons/bi';
 import { Helmet } from 'react-helmet';
 const Blog = () => {
   return (
@@ -75,23 +81,24 @@ const Blog = () => {
           </div>
           <div className="bg-white shadow-lg rounded-lg">
             <div className="w-full rounded-t-xl">
-              <img className="w-full rounded-t-lg" src={image1} alt="" />
+              <img className="w-full rounded-t-lg" src={image2} alt="" />
             </div>
             <div className="p-3 sm:p-5">
               <h1 className="text-3xl font-bold pb-2">
-                Find Your Snowy Sanctuary!{' '}
+                Understanding the Current Market.
               </h1>
               <p className="text-slate-400 ">
-                Escape to picturesque winter retreats with our curated selection
-                of homes amidst snow-kissed landscapes. Discover your cozy haven
-                today!
+                Dive into the latest trends in residential real estate,
+                including pricing, demand, and inventory levels. Discuss how
+                these factors influence buyer and seller behavior and offer
+                predictions for the future of the market.
               </p>
               <hr className="my-4" />
               <div className="flex justify-between items-center">
                 <div className="flex flex-col sm:flex-row gap-2 items-center">
                   <img
                     className="mr-auto sm:mr-0 h-10 sm:h-16 w-10 sm:w-16 rounded-full border border-redLi"
-                    src={profile1}
+                    src={profile2}
                     alt=""
                   />
                   <div>
@@ -113,23 +120,24 @@ const Blog = () => {
           </div>
           <div className="bg-white shadow-lg rounded-lg">
             <div className="w-full rounded-t-xl">
-              <img className="w-full rounded-t-lg" src={image1} alt="" />
+              <img className="w-full rounded-t-lg" src={image3} alt="" />
             </div>
             <div className="p-3 sm:p-5">
               <h1 className="text-3xl font-bold pb-2">
-                Find Your Snowy Sanctuary!{' '}
+                The Benefits of Living in a Walkable Neighborhood
               </h1>
               <p className="text-slate-400 ">
-                Escape to picturesque winter retreats with our curated selection
-                of homes amidst snow-kissed landscapes. Discover your cozy haven
-                today!
+                Explore the increasing desire for walkable communities and how
+                this preference is shaping the residential real estate
+                landscape. Highlight the health, environmental, and social
+                benefits of living in areas with easy access to amenities.
               </p>
               <hr className="my-4" />
               <div className="flex justify-between items-center">
                 <div className="flex flex-col sm:flex-row gap-2 items-center">
                   <img
                     className="mr-auto sm:mr-0 h-10 sm:h-16 w-10 sm:w-16 rounded-full border border-redLi"
-                    src={profile1}
+                    src={profile3}
                     alt=""
                   />
                   <div>
@@ -151,23 +159,24 @@ const Blog = () => {
           </div>
           <div className="bg-white shadow-lg rounded-lg">
             <div className="w-full rounded-t-xl">
-              <img className="w-full rounded-t-lg" src={image1} alt="" />
+              <img className="w-full rounded-t-lg" src={image4} alt="" />
             </div>
             <div className="p-3 sm:p-5">
               <h1 className="text-3xl font-bold pb-2">
-                Find Your Snowy Sanctuary!{' '}
+                Tips for First-Time Homebuyers
               </h1>
               <p className="text-slate-400 ">
-                Escape to picturesque winter retreats with our curated selection
-                of homes amidst snow-kissed landscapes. Discover your cozy haven
-                today!
+                Provide a comprehensive guide for individuals looking to
+                purchase their first home. Cover topics such as budgeting, the
+                importance of a good credit score, understanding mortgages, and
+                navigating the home buying process.
               </p>
               <hr className="my-4" />
               <div className="flex justify-between items-center">
                 <div className="flex flex-col sm:flex-row gap-2 items-center">
                   <img
                     className="mr-auto sm:mr-0 h-10 sm:h-16 w-10 sm:w-16 rounded-full border border-redLi"
-                    src={profile1}
+                    src={profile4}
                     alt=""
                   />
                   <div>
@@ -188,32 +197,161 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="min-h-16 w-full lg:w-2/5 bg-white shadow-lg p-5 rounded-lg">
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="Search Here"
-              className="py-2 px-4 text-lg outline-none border rounded-md w-full"
-            />
-            <span className="absolute top-1/2 -translate-y-1/2 right-3 text-xl">
-              <BiSearch />
-            </span>
-          </div>
-          <div className="my-4">
-            <h1 className="text-2xl font-bold pb-5">Resent Post Blog</h1>
-            <div>
-              <div className="border-t border-b rounded-lg flex items-center gap-2">
-                <div className="h-28 w-1/3 bg-red-200 rounded-md"></div>
-                {/* <img src={image1} className="w-52 rounded-l-md" alt="" /> */}
-                <div className="w-2/3">
-                  <h1 className="text-2xl font-bold text-slate-600">
-                    This is Title
-                  </h1>
-                  <p className="text-slate-400 text-sm">
-                    This is description Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Quo, quam!
-                  </p>
+        <div className="w-full lg:w-2/5">
+          <div className="bg-white shadow-lg p-5 rounded-lg">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Search Here"
+                className="py-2 px-4 text-lg outline-none border rounded-md w-full"
+              />
+              <span className="absolute top-1/2 -translate-y-1/2 right-3 text-xl">
+                <BiSearch />
+              </span>
+            </div>
+            <div className="my-4">
+              <h1 className="text-2xl font-bold pb-5">Featured Listings</h1>
+              <div className="flex flex-col gap-10">
+                <div className="shadow-md p-2 rounded-lg flex items-center gap-2">
+                  <div
+                    className="h-28 w-1/3 bg-red-200 rounded-md"
+                    style={{
+                      backgroundImage: `url(${image3})`,
+                      backgroundPosition: 'center',
+                      backgroundSize: 'cover',
+                      backgroundRepeat: 'no-repeat',
+                    }}
+                  ></div>
+                  {/* <img src={image1} className="w-52 rounded-l-md" alt="" /> */}
+                  <div className="w-2/3 flex flex-col justify-between">
+                    <h1 className="text-2xl font-bold text-slate-600">
+                      Sunset Studio
+                    </h1>
+                    <h1 className="text-2xl font-bold text-redLi py-3">
+                      $13,000<span className="text-lg font-semibold">/mo</span>
+                    </h1>
+                    <p className="">Beds: 4 Baths: 2 Sq Ft: 5280</p>
+                  </div>
                 </div>
+                <div className="shadow-md p-2 rounded-lg flex items-center gap-2">
+                  <div
+                    className="h-28 w-1/3 bg-red-200 rounded-md"
+                    style={{
+                      backgroundImage: `url(${image1})`,
+                      backgroundPosition: 'center',
+                      backgroundSize: 'cover',
+                      backgroundRepeat: 'no-repeat',
+                    }}
+                  ></div>
+                  {/* <img src={image1} className="w-52 rounded-l-md" alt="" /> */}
+                  <div className="w-2/3 flex flex-col justify-between">
+                    <h1 className="text-2xl font-bold text-slate-600">
+                      Sunset Studio
+                    </h1>
+                    <h1 className="text-2xl font-bold text-redLi py-3">
+                      $13,000<span className="text-lg font-semibold">/mo</span>
+                    </h1>
+                    <p className="">Beds: 4 Baths: 2 Sq Ft: 5280</p>
+                  </div>
+                </div>
+                <div className="shadow-md p-2 rounded-lg flex items-center gap-2">
+                  <div
+                    className="h-28 w-1/3 bg-red-200 rounded-md"
+                    style={{
+                      backgroundImage: `url(${image1})`,
+                      backgroundPosition: 'center',
+                      backgroundSize: 'cover',
+                      backgroundRepeat: 'no-repeat',
+                    }}
+                  ></div>
+                  {/* <img src={image1} className="w-52 rounded-l-md" alt="" /> */}
+                  <div className="w-2/3 flex flex-col justify-between">
+                    <h1 className="text-2xl font-bold text-slate-600">
+                      Sunset Studio
+                    </h1>
+                    <h1 className="text-2xl font-bold text-redLi py-3">
+                      $13,000<span className="text-lg font-semibold">/mo</span>
+                    </h1>
+                    <p className="">Beds: 4 Baths: 2 Sq Ft: 5280</p>
+                  </div>
+                </div>
+                <div className="shadow-md p-2 rounded-lg flex items-center gap-2">
+                  <div
+                    className="h-28 w-1/3 bg-red-200 rounded-md"
+                    style={{
+                      backgroundImage: `url(${image3})`,
+                      backgroundPosition: 'center',
+                      backgroundSize: 'cover',
+                      backgroundRepeat: 'no-repeat',
+                    }}
+                  ></div>
+                  {/* <img src={image1} className="w-52 rounded-l-md" alt="" /> */}
+                  <div className="w-2/3 flex flex-col justify-between">
+                    <h1 className="text-2xl font-bold text-slate-600">
+                      Sunset Studio
+                    </h1>
+                    <h1 className="text-2xl font-bold text-redLi py-3">
+                      $13,000<span className="text-lg font-semibold">/mo</span>
+                    </h1>
+                    <p className="">Beds: 4 Baths: 2 Sq Ft: 5280</p>
+                  </div>
+                </div>
+                <div className="shadow-md p-2 rounded-lg flex items-center gap-2">
+                  <div
+                    className="h-28 w-1/3 bg-red-200 rounded-md"
+                    style={{
+                      backgroundImage: `url(${image4})`,
+                      backgroundPosition: 'center',
+                      backgroundSize: 'cover',
+                      backgroundRepeat: 'no-repeat',
+                    }}
+                  ></div>
+                  {/* <img src={image1} className="w-52 rounded-l-md" alt="" /> */}
+                  <div className="w-2/3 flex flex-col justify-between">
+                    <h1 className="text-2xl font-bold text-slate-600">
+                      Sunset Studio
+                    </h1>
+                    <h1 className="text-2xl font-bold text-redLi py-3">
+                      $13,000<span className="text-lg font-semibold">/mo</span>
+                    </h1>
+                    <p className="">Beds: 4 Baths: 2 Sq Ft: 5280</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white shadow-lg p-5 rounded-lg mt-8 sm:mt-16">
+            <h1 className="text-2xl font-bold pb-5">Categories Property</h1>
+            <div className="flex flex-col gap-5 px-2">
+              <div className="flex justify-between items-center gap-5">
+                <p className="flex items-center gap-2">
+                  <BiRightArrow /> Apartment
+                </p>
+                <p>6 properties</p>
+              </div>
+              <div className="flex justify-between items-center gap-5">
+                <p className="flex items-center gap-2">
+                  <BiRightArrow /> Town House
+                </p>
+                <p>90 properties</p>
+              </div>
+              <div className="flex justify-between items-center gap-5">
+                <p className="flex items-center gap-2">
+                  <BiRightArrow /> Modern Villa
+                </p>
+                <p>16 properties</p>
+              </div>
+              <div className="flex justify-between items-center gap-5">
+                <p className="flex items-center gap-2">
+                  <BiRightArrow /> Family House
+                </p>
+                <p>60 properties</p>
+              </div>
+              <div className="flex justify-between items-center gap-5">
+                <p className="flex items-center gap-2">
+                  <BiRightArrow /> Condo
+                </p>
+                <p>30 properties</p>
               </div>
             </div>
           </div>
