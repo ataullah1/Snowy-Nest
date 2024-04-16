@@ -23,12 +23,13 @@ You can access the live version of SnowyNest [here](https://snowynest-c1dbe.web.
 
 ## Project Details
 
-SnowyNest is a responsive web application designed to showcase residential properties. It features:
+SnowyNest is a dynamic web application built using modern technologies to provide users with a robust platform for exploring residential properties. Leveraging React.js as the foundation, along with React Router DOM for seamless navigation between different sections, the application delivers a smooth user experience.
 
-- **Property Listings**: Users can browse through various property listings categorized by type, location, and price range.
-- **Property Details**: Detailed information about each property, including images, description, amenities, and contact details, etc.
-- **Search Functionality**: Users can search for specific properties based on location, type, or other criteria.(Static)
-- **Contact Form**: Interested users can fill out a contact form to inquire about a property.
+Styling is handled efficiently with Tailwind CSS, ensuring visually appealing and responsive designs across various screen sizes. DaisyUI, a component library, enriches the UI with ready-to-use components, reducing development time and effort.
+
+Key functionalities such as user authentication, contact form submission, and data management are powered by Firebase, offering a reliable backend infrastructure. Additionally, React Hook Form facilitates efficient form handling, while Sweetalert2 enhances user interactions with customizable alert dialogs.
+
+The user profile editing feature is implemented using Firebase authentication and database services, allowing users to securely update their profile information within the application. React animations libraries such as Framer Motion or React Spring are utilized to incorporate fluid and responsive animations throughout the UI, enhancing user experience and engagement.
 
 ## Technologies Used
 
