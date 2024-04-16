@@ -33,18 +33,19 @@ const Blog = () => {
       </div>
       {/* <BlogCard /> */}
       <div className="flex flex-col lg:flex-row gap-10 w-11/12 mx-auto py-10">
-        <div className="min-h-16 w-full lg:w-3/5 bg-white shadow-lg rounded-lg">
-          <div className="rounded-t-lg">
+        <div className="min-h-16 w-full lg:w-3/5 flex flex-col gap-8">
+          <div className="bg-white shadow-lg rounded-lg">
             <div className="w-full rounded-t-xl">
               <img className="w-full rounded-t-lg" src={image1} alt="" />
             </div>
             <div className="p-3 sm:p-5">
-              <h1 className="text-3xl font-bold pb-2">Blog Title line </h1>
+              <h1 className="text-3xl font-bold pb-2">
+                Find Your Snowy Sanctuary!{' '}
+              </h1>
               <p className="text-slate-400 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-                nihil! Assumenda consectetur aut nam temporibus molestiae quod,
-                corporis facere minima minus vitae nulla architecto molestias
-                nobis. Rem molestias labore earum?
+                Escape to picturesque winter retreats with our curated selection
+                of homes amidst snow-kissed landscapes. Discover your cozy haven
+                today!
               </p>
               <hr className="my-4" />
               <div className="flex justify-between items-center">
@@ -55,9 +56,123 @@ const Blog = () => {
                     alt=""
                   />
                   <div>
-                    <h1 className="text-sm sm:text-xl font-bold">Ataullah</h1>
+                    <h1 className="text-sm sm:text-xl font-bold">Emma Frost</h1>
                     <p className="text-lg font-bold text-slate-400">
-                      Softwer engeenr
+                      Property Consultant
+                    </p>
+                  </div>
+                  <p className="sm:text-lg font-semibold sm:pl-2 flex items-center gap-2 text-sm">
+                    <MdDateRange />
+                    March, 10, 2024
+                  </p>
+                </div>
+                <Link className="block py-2 px-3 sm:px-5 text-redLi border border-redLi rounded-md font-semibold active:scale-90 hover:bg-redLi hover:text-white duration-150">
+                  Learn More...
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white shadow-lg rounded-lg">
+            <div className="w-full rounded-t-xl">
+              <img className="w-full rounded-t-lg" src={image1} alt="" />
+            </div>
+            <div className="p-3 sm:p-5">
+              <h1 className="text-3xl font-bold pb-2">
+                Find Your Snowy Sanctuary!{' '}
+              </h1>
+              <p className="text-slate-400 ">
+                Escape to picturesque winter retreats with our curated selection
+                of homes amidst snow-kissed landscapes. Discover your cozy haven
+                today!
+              </p>
+              <hr className="my-4" />
+              <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row gap-2 items-center">
+                  <img
+                    className="mr-auto sm:mr-0 h-10 sm:h-16 w-10 sm:w-16 rounded-full border border-redLi"
+                    src={profile1}
+                    alt=""
+                  />
+                  <div>
+                    <h1 className="text-sm sm:text-xl font-bold">Emma Frost</h1>
+                    <p className="text-lg font-bold text-slate-400">
+                      Property Consultant
+                    </p>
+                  </div>
+                  <p className="sm:text-lg font-semibold sm:pl-2 flex items-center gap-2 text-sm">
+                    <MdDateRange />
+                    March, 10, 2024
+                  </p>
+                </div>
+                <Link className="block py-2 px-3 sm:px-5 text-redLi border border-redLi rounded-md font-semibold active:scale-90 hover:bg-redLi hover:text-white duration-150">
+                  Learn More...
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white shadow-lg rounded-lg">
+            <div className="w-full rounded-t-xl">
+              <img className="w-full rounded-t-lg" src={image1} alt="" />
+            </div>
+            <div className="p-3 sm:p-5">
+              <h1 className="text-3xl font-bold pb-2">
+                Find Your Snowy Sanctuary!{' '}
+              </h1>
+              <p className="text-slate-400 ">
+                Escape to picturesque winter retreats with our curated selection
+                of homes amidst snow-kissed landscapes. Discover your cozy haven
+                today!
+              </p>
+              <hr className="my-4" />
+              <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row gap-2 items-center">
+                  <img
+                    className="mr-auto sm:mr-0 h-10 sm:h-16 w-10 sm:w-16 rounded-full border border-redLi"
+                    src={profile1}
+                    alt=""
+                  />
+                  <div>
+                    <h1 className="text-sm sm:text-xl font-bold">Emma Frost</h1>
+                    <p className="text-lg font-bold text-slate-400">
+                      Property Consultant
+                    </p>
+                  </div>
+                  <p className="sm:text-lg font-semibold sm:pl-2 flex items-center gap-2 text-sm">
+                    <MdDateRange />
+                    March, 10, 2024
+                  </p>
+                </div>
+                <Link className="block py-2 px-3 sm:px-5 text-redLi border border-redLi rounded-md font-semibold active:scale-90 hover:bg-redLi hover:text-white duration-150">
+                  Learn More...
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white shadow-lg rounded-lg">
+            <div className="w-full rounded-t-xl">
+              <img className="w-full rounded-t-lg" src={image1} alt="" />
+            </div>
+            <div className="p-3 sm:p-5">
+              <h1 className="text-3xl font-bold pb-2">
+                Find Your Snowy Sanctuary!{' '}
+              </h1>
+              <p className="text-slate-400 ">
+                Escape to picturesque winter retreats with our curated selection
+                of homes amidst snow-kissed landscapes. Discover your cozy haven
+                today!
+              </p>
+              <hr className="my-4" />
+              <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row gap-2 items-center">
+                  <img
+                    className="mr-auto sm:mr-0 h-10 sm:h-16 w-10 sm:w-16 rounded-full border border-redLi"
+                    src={profile1}
+                    alt=""
+                  />
+                  <div>
+                    <h1 className="text-sm sm:text-xl font-bold">Emma Frost</h1>
+                    <p className="text-lg font-bold text-slate-400">
+                      Property Consultant
                     </p>
                   </div>
                   <p className="sm:text-lg font-semibold sm:pl-2 flex items-center gap-2 text-sm">

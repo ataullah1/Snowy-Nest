@@ -30,7 +30,7 @@ const Nav = () => {
                 />
                 {hover && (
                   <p className="text-redLi rounded-md absolute top-16 lg:top-[70px] right-14 lg:right-20 bg-slate-100 border-redLi border px-3 py-1">
-                    View Profile
+                    {userDta.displayName}
                   </p>
                 )}
                 <div

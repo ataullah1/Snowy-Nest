@@ -177,8 +177,8 @@ const Banner = () => {
                     Your Gateway to Home Bliss!
                   </h1>
                   <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
-                    SnowyNest: Your Gateway to Home Bliss! Experience the joy of
-                    finding your dream home with us. Begin your search now!
+                    Your Gateway to Home Bliss! Experience the joy of finding
+                    your dream home with us. Begin your search now!
                   </p>
                 </div>
               </div>

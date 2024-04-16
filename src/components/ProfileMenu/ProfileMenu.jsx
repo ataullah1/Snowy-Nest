@@ -44,6 +44,12 @@ const ProfileMenu = () => {
             </Link>
             <Link
               className="block lg:hidden py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150"
+              to={'/blog'}
+            >
+              Blog
+            </Link>
+            <Link
+              className="block lg:hidden py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150"
               to={'/contact'}
             >
               Contact Us
