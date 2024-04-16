@@ -251,7 +251,14 @@ const Register = () => {
               <p className="text-sm text-red-500 italic">{confPassErr}</p>
             )}
           </div>
-
+          <p></p>
+          <label>
+            <input type="checkbox" /> I agree to the
+            <Link to={'/privecy-policy'} className="text-redLi">
+              {' '}
+              Privacy Policy
+            </Link>
+          </label>
           <input
             // onClick={handeleNameImg}
             type="submit"

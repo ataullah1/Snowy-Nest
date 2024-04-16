@@ -4,9 +4,13 @@ import image2 from '../../assets/sliderImg/card/2.jpg';
 import MarqueeImg from '../../components/Marquee/MarqueeImg';
 import ClaintReview from '../../components/ClientReview/ClaintReview';
 import OurValue from '../../components/OurValue/OurValue';
+import { Helmet } from 'react-helmet';
 const About = () => {
   return (
     <div className="bg-[#F7F7F7]">
+      <Helmet>
+        <title>About | SnowyNest</title>
+      </Helmet>
       <div>
         <div
           className="h-72 overflow-hidden bg-cover bg-no-repeat p-12 text-center relative"

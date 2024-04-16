@@ -66,7 +66,7 @@ const ProfileMenu = () => {
             >
               Setting
             </Link>
-            <Link className="py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150">
+            <Link to={'/privecy-policy'} className="py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150">
               Privecy policy
             </Link>
           </ul>

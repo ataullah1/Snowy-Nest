@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer';
 import { useContext, useEffect, useState } from 'react';
 import { ContextAuth } from '../provider/Provider';
 import Loding from '../pages/Loding/Loding';
+import { Helmet } from 'react-helmet';
 
 const Root = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -30,6 +31,9 @@ const Root = () => {
   }
   return (
     <div>
+      <Helmet>
+        <title>Home | SnowyNest</title>
+      </Helmet>
       <div
         className={
           scrolled

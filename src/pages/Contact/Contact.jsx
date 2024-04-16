@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom';
 import ContactSec from '../../components/ContactSec/ContactSec';
 import OfficeMap from '../../components/OfficeMap/OfficeMap';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   return (
     <div className="bg-[#F7F7F7]">
-      {' '}
+      <Helmet>
+        <title>Contact | SnowyNest</title>
+      </Helmet>
       <div>
         <div
           className="h-72 overflow-hidden bg-cover bg-no-repeat p-12 text-center relative"

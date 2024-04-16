@@ -5,6 +5,7 @@ import profile1 from '../../assets/client pic/1.jpg';
 import { Link } from 'react-router-dom';
 import { MdDateRange } from 'react-icons/md';
 import { BiSearch } from 'react-icons/bi';
+import { Helmet } from 'react-helmet';
 const Blog = () => {
   return (
     <div className="bg-[#F7F7F7]">
@@ -218,6 +219,9 @@ const Blog = () => {
           </div>
         </div>
       </div>
+      <Helmet>
+        <title>Blog | SnowyNest</title>
+      </Helmet>
     </div>
   );
 };

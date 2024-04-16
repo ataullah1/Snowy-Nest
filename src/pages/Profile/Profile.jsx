@@ -6,6 +6,7 @@ import { useContext, useState } from 'react';
 import { MdSave } from 'react-icons/md';
 import { ContextAuth } from '../../provider/Provider';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Profile = () => {
   const { userDta, profileUpdate, handleDeleteAcc, setReload, reload } =
@@ -61,6 +62,9 @@ const Profile = () => {
   }
   return (
     <div className="relative min-h-screen">
+      <Helmet>
+        <title>Profile | SnowyNest</title>
+      </Helmet>
       <div
         className="min-h-96 overflow-hidden bg-cover bg-no-repeat p-12 text-center relative"
         style={{

@@ -10,6 +10,7 @@ import PropertiDetails from '../pages/PropertiDetails/PropertiDetails';
 import PriveteRoute from '../pages/PrivetRoute/PriveteRoute';
 import Error from '../pages/ErrorPage/Error';
 import Blog from '../pages/Blog/Blog';
+import PrivecyPolicy from '../pages/PrivecyPolicy/PrivecyPolicy';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/privecy-policy',
+        element: <PrivecyPolicy />,
       },
       {
         path: '/login',
