@@ -4,7 +4,11 @@ import { FaLocationDot } from 'react-icons/fa6';
 const OfficeMap = () => {
   // const position = [23.811056, 90.407608];
   return (
-    <div className="mt-20">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      className="mt-20"
+    >
       <div className="inline-block py-2 px-8 bg-[#24324A] rounded-tr-lg">
         <h1 className=" text-3xl font-bold text-white">
           <span className="flex items-center justify-center gap-2">

@@ -19,14 +19,22 @@ const ContactForm = () => {
   return (
     <div className="bg-white p-8 rounded-3xl border-2 mt-14 gap-10 flex flex-col md:flex-row">
       <div className="w-full md:w-2/5 relative">
-        <h1 className="text-4xl font-bold">Send Us An Email</h1>
-        <p className="text-slate-400 pt-2 text-justify">
+        <h1 data-aos="fade-right" className="text-4xl font-bold">
+          Send Us An Email
+        </h1>
+        <p
+          data-aos="fade-down-right"
+          className="text-slate-400 pt-2 text-justify"
+        >
           Have questions or interested in a property? Reach out to us at{' '}
           <span className="text-redLi cursor-pointer">info@snowynest.com</span>.
           Our team is here to help with any inquiries or assistance you may need
           regarding buying or selling your home.
         </p>
-        <div className="md:absolute md:bottom-2 md:left-1/2 md:-translate-x-1/2 text-center">
+        <div
+          data-aos="fade-down"
+          className="md:absolute md:bottom-2 md:left-1/2 md:-translate-x-1/2 text-center"
+        >
           <h1 className="text-2xl font-bold pt-8 pb-3 underline">Follow Us</h1>
           <div className="flex flex-row gap-4 text-2xl text-slate-600 justify-center">
             <a
@@ -62,7 +70,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:w-3/5">
+      <div data-aos="fade-left" className="w-full md:w-3/5">
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
           <input
             className="px-4 py-2 outline-none border rounded-md"

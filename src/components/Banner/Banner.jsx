@@ -220,7 +220,7 @@ const Banner = () => {
           <input
             type="text"
             name="search"
-            className="w-full h-12 rounded-full outline-redLi bg-transparent border-2 my-7 px-7 text-redLi"
+            className="w-full h-12 rounded-full outline-none bg-transparent border-2 my-7 px-7 placeholder-slate-100 text-white"
             placeholder="Search Your Keyword"
           />
           <span className="absolute cursor-pointer top-1/2 -translate-y-1/2 right-5 md:right-10 text-redLi ">

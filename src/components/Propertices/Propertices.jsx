@@ -10,10 +10,16 @@ const Propertices = () => {
   // console.log(data.length);
   return (
     <div className="w-11/12 mx-auto">
-      <h1 className="pt-16 text-2xl sm:text-3xl text-center font-bold">
+      <h1
+        data-aos="fade-up"
+        className="pt-16 text-2xl sm:text-3xl text-center font-bold"
+      >
         Out Featured Premium Properties
       </h1>
-      <p className="text-base text-center max-w-[700px] mx-auto text-slate-400 pt-2 leading-7">
+      <p
+        data-aos="fade-up"
+        className="text-base text-center max-w-[700px] mx-auto text-slate-400 pt-2 leading-7"
+      >
         Discover our handpicked selection of premium properties at SnowyNest.
         Explore luxurious homes and investment opportunities tailored to elevate
         your lifestyle.
@@ -25,6 +31,7 @@ const Propertices = () => {
       </div>
       {showDta !== data.length && (
         <p
+          data-aos="fade-down"  
           className="py-2 px-4 text-center cursor-pointer mt-8 underline flex items-center gap-2 justify-center hover:text-redLi text-lg"
           onClick={() => setShowDta(data.length)}
         >

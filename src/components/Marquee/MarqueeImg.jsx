@@ -13,8 +13,20 @@ const MarqueeImg = () => {
   return (
     <div className="py-5">
       <div className="text-center">
-        <h1 className="text-4xl font-bold">Our Partners</h1>
-        <p className="text-slate-400 pt-2 pb-8 px-3">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-anchor-placement="center-bottom"
+          className="text-4xl font-bold"
+        >
+          Our Partners
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="450"
+          data-aos-anchor-placement="center-bottom"
+          className="text-slate-400 pt-2 pb-8 px-3"
+        >
           We only work with the best companies around the globe
         </p>
       </div>

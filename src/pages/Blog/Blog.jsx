@@ -41,7 +41,11 @@ const Blog = () => {
       {/* <BlogCard /> */}
       <div className="flex flex-col lg:flex-row gap-10 w-11/12 mx-auto py-10">
         <div className="min-h-16 w-full lg:w-3/5 flex flex-col gap-8">
-          <div className="bg-white shadow-lg rounded-lg">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            className="bg-white shadow-lg rounded-lg"
+          >
             <div className="w-full rounded-t-xl">
               <img className="w-full rounded-t-lg" src={image1} alt="" />
             </div>
@@ -79,7 +83,10 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white shadow-lg rounded-lg">
+          <div
+            data-aos="zoom-out-down"
+            className="bg-white shadow-lg rounded-lg"
+          >
             <div className="w-full rounded-t-xl">
               <img className="w-full rounded-t-lg" src={image2} alt="" />
             </div>
@@ -118,7 +125,10 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white shadow-lg rounded-lg">
+          <div
+            data-aos="zoom-out-down"
+            className="bg-white shadow-lg rounded-lg"
+          >
             <div className="w-full rounded-t-xl">
               <img className="w-full rounded-t-lg" src={image3} alt="" />
             </div>
@@ -157,7 +167,10 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white shadow-lg rounded-lg">
+          <div
+            data-aos="zoom-out-down"
+            className="bg-white shadow-lg rounded-lg"
+          >
             <div className="w-full rounded-t-xl">
               <img className="w-full rounded-t-lg" src={image4} alt="" />
             </div>
@@ -210,9 +223,14 @@ const Blog = () => {
               </span>
             </div>
             <div className="my-4">
-              <h1 className="text-2xl font-bold pb-5">Featured Listings</h1>
+              <h1 data-aos="zoom-out-right" className="text-2xl font-bold pb-5">
+                Featured Listings
+              </h1>
               <div className="flex flex-col gap-10">
-                <div className="shadow-md p-2 rounded-lg flex items-center gap-2">
+                <div
+                  data-aos="zoom-out-left"
+                  className="shadow-md p-2 rounded-lg flex items-center gap-2"
+                >
                   <div
                     className="h-28 w-1/3 bg-red-200 rounded-md"
                     style={{
@@ -233,7 +251,10 @@ const Blog = () => {
                     <p className="">Beds: 4 Baths: 2 Sq Ft: 5280</p>
                   </div>
                 </div>
-                <div className="shadow-md p-2 rounded-lg flex items-center gap-2">
+                <div
+                  data-aos="zoom-out-left"
+                  className="shadow-md p-2 rounded-lg flex items-center gap-2"
+                >
                   <div
                     className="h-28 w-1/3 bg-red-200 rounded-md"
                     style={{
@@ -254,7 +275,10 @@ const Blog = () => {
                     <p className="">Beds: 4 Baths: 2 Sq Ft: 5280</p>
                   </div>
                 </div>
-                <div className="shadow-md p-2 rounded-lg flex items-center gap-2">
+                <div
+                  data-aos="zoom-out-left"
+                  className="shadow-md p-2 rounded-lg flex items-center gap-2"
+                >
                   <div
                     className="h-28 w-1/3 bg-red-200 rounded-md"
                     style={{
@@ -275,7 +299,10 @@ const Blog = () => {
                     <p className="">Beds: 4 Baths: 2 Sq Ft: 5280</p>
                   </div>
                 </div>
-                <div className="shadow-md p-2 rounded-lg flex items-center gap-2">
+                <div
+                  data-aos="zoom-out-left"
+                  className="shadow-md p-2 rounded-lg flex items-center gap-2"
+                >
                   <div
                     className="h-28 w-1/3 bg-red-200 rounded-md"
                     style={{
@@ -296,7 +323,10 @@ const Blog = () => {
                     <p className="">Beds: 4 Baths: 2 Sq Ft: 5280</p>
                   </div>
                 </div>
-                <div className="shadow-md p-2 rounded-lg flex items-center gap-2">
+                <div
+                  data-aos="zoom-out-left"
+                  className="shadow-md p-2 rounded-lg flex items-center gap-2"
+                >
                   <div
                     className="h-28 w-1/3 bg-red-200 rounded-md"
                     style={{
@@ -320,7 +350,10 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white shadow-lg p-5 rounded-lg mt-8 sm:mt-16">
+          <div
+            data-aos="zoom-out-left"
+            className="bg-white shadow-lg p-5 rounded-lg mt-8 sm:mt-16"
+          >
             <h1 className="text-2xl font-bold pb-5">Categories Property</h1>
             <div className="flex flex-col gap-5 px-2">
               <div className="flex justify-between items-center gap-5">

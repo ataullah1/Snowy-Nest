@@ -8,7 +8,10 @@ import { Link } from 'react-router-dom';
 const PropertiCard = ({ dta }) => {
   // console.log(dta);
   return (
-    <div className="bg-white min-w-[380px] max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3 hover:shadow-lg">
+    <div
+      data-aos="zoom-in"
+      className="bg-white min-w-[380px] max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3 hover:shadow-lg"
+    >
       <div className="relative w-full h-56">
         <div className="relative w-full h-full">
           <img

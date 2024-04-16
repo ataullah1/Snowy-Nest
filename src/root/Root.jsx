@@ -5,6 +5,10 @@ import { useContext, useEffect, useState } from 'react';
 import { ContextAuth } from '../provider/Provider';
 import Loding from '../pages/Loding/Loding';
 import { Helmet } from 'react-helmet';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Root = () => {
   const [scrolled, setScrolled] = useState(false);

@@ -7,8 +7,18 @@ const ClaintReview = () => {
   return (
     <div>
       <div className="text-center pb-5">
-        <h1 className="text-4xl font-bold">What Our Client Say ?</h1>
-        <p className="text-slate-400 pt-2 pb-8 max-w-[650px] mx-auto">
+        <h1
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          className="text-4xl font-bold"
+        >
+          What Our Client Say ?
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          className="text-slate-400 pt-2 pb-8 max-w-[650px] mx-auto"
+        >
           {`SnowyNest's clients rave about seamless transactions, exceptional
           service, and finding their dream homes. Trust our community's
           testimonials for your next property journey.`}
