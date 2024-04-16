@@ -32,20 +32,7 @@ const Profile = () => {
       setPhotoErr('Please enter a valid URL');
     } else if (name.length < 2) {
       setNameErr('Enter your valid name!');
-      return;
     }
-    //  else if (!isValidEmail.test(email)) {
-    //   setEmailErr('Enter a valid email address!');
-    //   return;
-    // }
-    // console.log(name, email);
-    // handleUpdateEmail(email)
-    //   .then(() => {
-    //     console.log('done email');
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
     profileUpdate(name, photo)
       .then(() => {
         setReload(!reload);
