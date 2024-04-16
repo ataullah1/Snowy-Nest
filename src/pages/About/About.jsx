@@ -3,6 +3,7 @@ import image1 from '../../assets/sliderImg/7.jpg';
 import image2 from '../../assets/sliderImg/card/2.jpg';
 import MarqueeImg from '../../components/Marquee/MarqueeImg';
 import ClaintReview from '../../components/ClientReview/ClaintReview';
+import OurValue from '../../components/OurValue/OurValue';
 const About = () => {
   return (
     <div className="bg-[#F7F7F7]">
@@ -60,6 +61,7 @@ const About = () => {
           <div className="w-11/12 mx-auto">
             <ClaintReview />
           </div>
+          <OurValue />
         </div>
         <div>
           <MarqueeImg />

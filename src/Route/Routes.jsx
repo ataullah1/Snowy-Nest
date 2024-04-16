@@ -9,12 +9,13 @@ import Profile from '../pages/Profile/Profile';
 import PropertiDetails from '../pages/PropertiDetails/PropertiDetails';
 import PriveteRoute from '../pages/PrivetRoute/PriveteRoute';
 import Error from '../pages/ErrorPage/Error';
+import Blog from '../pages/Blog/Blog';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
-    errorElement:<Error/>,
+    errorElement: <Error />,
     children: [
       {
         path: '/',
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />,
+      },
+      {
+        path: '/blog',
+        element: <Blog />,
       },
       {
         path: '/contact',

@@ -31,22 +31,28 @@ const ProfileMenu = () => {
         <div>
           <ul className="flex flex-col gap-3 my-4">
             <Link
-              className="py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150"
+              className="block lg:hidden py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150"
               to={'/'}
             >
               Home
             </Link>
             <Link
-              className="py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150"
+              className="block lg:hidden py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150"
               to={'/about'}
             >
               About
             </Link>
             <Link
-              className="py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150"
+              className="block lg:hidden py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150"
               to={'/contact'}
             >
               Contact Us
+            </Link>
+            <Link
+              to={'profile'}
+              className="py-1.5 border rounded-md w-full px-3 hover:border-redLi duration-150"
+            >
+              Update Profile
             </Link>
             <Link
               to={'profile'}

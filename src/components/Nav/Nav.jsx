@@ -97,13 +97,19 @@ const Nav = () => {
                       Home
                     </NavLink>
                     <NavLink
-                      to={'about'}
+                      to={'/about'}
                       className="hover:bg-slate-300 hover:text-redLi py-1 px-4 rounded"
                     >
                       About
                     </NavLink>
                     <NavLink
-                      to={'contact'}
+                      to={'/blog'}
+                      className="hover:bg-slate-300 hover:text-redLi py-1 px-4 rounded"
+                    >
+                      Blog
+                    </NavLink>
+                    <NavLink
+                      to={'/contact'}
                       className="hover:bg-slate-300 hover:text-redLi py-1 px-4 rounded"
                     >
                       Contact
@@ -140,13 +146,19 @@ const Nav = () => {
                 Home
               </NavLink>
               <NavLink
-                to={'about'}
+                to={'/about'}
                 className="w-28 py-3 text-center font-semibold hover:bg-white hover:text-redLi bg-[#ffffff0c] rounded-md border hover:border-redLi"
               >
                 About
               </NavLink>
               <NavLink
-                to={'contact'}
+                to={'/blog'}
+                className="w-28 py-3 text-center font-semibold hover:bg-white hover:text-redLi bg-[#ffffff0c] rounded-md border hover:border-redLi"
+              >
+                Blog
+              </NavLink>
+              <NavLink
+                to={'/contact'}
                 className="w-28 py-3 text-center font-semibold hover:bg-white hover:text-redLi bg-[#ffffff0c] rounded-md border hover:border-redLi"
               >
                 Contact
