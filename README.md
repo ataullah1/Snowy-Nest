@@ -10,6 +10,17 @@ SnowyNest is a real estate project built with React.js, React Router DOM, and Ta
 
 You can access the live version of SnowyNest [here](https://snowynest-c1dbe.web.app/).
 
+## Features and Characteristics of this project:
+
+- **Responsive Property Listings**: SnowyNest offers a seamless browsing experience across devices, allowing users to explore various residential properties conveniently from desktops, tablets, or smartphones.
+- **Details Property Information**: Each property listing is accompanied by comprehensive details, including high-resolution images, descriptive text, amenities, and contact information. This ensures that users have all the necessary information to make informed decisions.
+- **Multiple Authentication Options**:SnowyNest supports various authentication methods, including email & password login via Firebase, as well as social login options such as Google, Twitter, and Facebook authentication. This enhances user accessibility and security.
+- **User Profile Editing:**:SnowyNest offers registered users the ability to edit their profiles, providing a personalized experience. Users can update their contact information, preferences, and profile picture, ensuring their account reflects accurate and up-to-date details.
+- **Convenient Contact Form:**: Interested users can easily reach out to property owners or agents by filling out a contact form directly within the application. This streamlined communication process facilitates inquiries and potential transactions.
+- **Interactive Google Maps Integration**:SnowyNest incorporates Google Maps to provide users with a visual representation of property locations. This interactive map feature allows users to explore neighborhoods, nearby amenities, and get a better understanding of the property's surroundings.
+
+<!-- - ****: -->
+
 ## Project Details
 
 SnowyNest is a responsive web application designed to showcase residential properties. It features:
@@ -31,7 +42,6 @@ SnowyNest is a responsive web application designed to showcase residential prope
 
 ## Package Used
 
-- **React Router DOM**
 - **React Icon**
 - **React-hot-toast**
 - **Swiper**
@@ -39,7 +49,7 @@ SnowyNest is a responsive web application designed to showcase residential prope
 - **React Hook Form**
 - **Sweetalert2**
 - **React Fast Marquee**
-- **React Leaflet**
+<!-- - **React Leaflet** -->
 - **React Helmet**
 
 ## How to Install this project!

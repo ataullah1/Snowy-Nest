@@ -9,10 +9,10 @@ import { Autoplay, Pagination, Navigation, Keyboard } from 'swiper/modules';
 
 // image input
 import slide1 from '../../assets/sliderImg/6.jpg';
-import slide2 from '../../assets/sliderImg/7.jpg';
-import slide3 from '../../assets/sliderImg/2.jpg';
+import slide2 from '../../assets/sliderImg/14.jpg';
+import slide3 from '../../assets/sliderImg/7.jpg';
 import slide4 from '../../assets/sliderImg/5.jpg';
-import slide5 from '../../assets/sliderImg/14.jpg';
+import slide5 from '../../assets/sliderImg/2.jpg';
 import slide6 from '../../assets/sliderImg/8.jpg';
 
 // import Nav from '../Nav/Nav';

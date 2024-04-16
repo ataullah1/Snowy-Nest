@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { SlSizeFullscreen } from 'react-icons/sl';
 import { useLoaderData, useParams } from 'react-router-dom';
 
@@ -25,6 +26,9 @@ const PropertiDetails = () => {
   //   console.log(filterDta[0]);
   return (
     <div>
+      <Helmet>
+        <title>Property Details | SnowyNest</title>
+      </Helmet>
       <div className="bg-slate-900 h-20"></div>
       <div className="w-full grid gap-1 rounded-md grid-cols-2 lg:grid-cols-5 grid-rows-5 lg:grid-rows-2 relative bg-white mb-10">
         <div
