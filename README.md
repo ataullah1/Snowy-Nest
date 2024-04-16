@@ -21,7 +21,7 @@ You can access the live version of SnowyNest [here](https://snowynest-c1dbe.web.
 
 <!-- - ****: -->
 
-## Project Details
+## Details of this project:
 
 SnowyNest is a dynamic web application built using modern technologies to provide users with a robust platform for exploring residential properties. Leveraging React.js as the foundation, along with React Router DOM for seamless navigation between different sections, the application delivers a smooth user experience.
 
@@ -49,8 +49,7 @@ The user profile editing feature is implemented using Firebase authentication an
 - **Firebase**
 - **React Hook Form**
 - **Sweetalert2**
-- **React Fast Marquee**
-<!-- - **React Leaflet** -->
+- **React Fast Marquee** <!-- - **React Leaflet** -->
 - **React Helmet**
 
 ## How to Install this project!
@@ -118,13 +117,37 @@ To install and run SnowyNest locally, follow these steps:
   npm i react-firebase
   ```
 
+- **React Hook Form**
+
+  ```
+  npm i react-hook-form
+  ```
+
+- **Sweetalert2**
+
+  ```
+  npm i sweetalert2
+  ```
+
+- **React Fast Marquee**
+
+  ```
+  npm i react-fast-marquee
+  ```
+
+- **React Helmet**
+
+  ```
+  npm i react-helmet
+  ```
+
 6. Run the development server:
 
    ```
    npm run dev
    ```
 
-   #Then Click "o". Then Hit Enter.
+   #Then Click "o". Then Hit "Enter".
 
 ## Feedback and Contributions
 
