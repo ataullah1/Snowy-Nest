@@ -50,7 +50,7 @@ const Profile = () => {
           text: 'Sorry, your profile could not be updated !',
           icon: 'error',
         });
-        console.log(err);
+        console.log(err.message);
       });
   };
 
@@ -82,10 +82,7 @@ const Profile = () => {
         <div className="min-h-[500px] py-5 w-11/12 sm:w-10/12 lg:w-[700px] mx-auto bg-slate-50 border-4 border-redLi rounded-2xl -translate-y-44">
           <div>
             <div className=" h-[95px] w-[96px] mx-auto rounded-full bg-gradient-to-r from-fuchsia-600 to-purple-600 p-1">
-              <div
-                data-aos="zoom-in"
-                className="w-full h-full bg-fuchsia-50 rounded-full p-1"
-              >
+              <div className="w-full h-full bg-fuchsia-50 rounded-full p-1">
                 <img
                   src={userDta.photoURL ? userDta.photoURL : profilePic}
                   className="w-full h-full rounded-full"

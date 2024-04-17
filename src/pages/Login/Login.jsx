@@ -19,6 +19,7 @@ const Login = () => {
   const [eye, setEye] = useState(false);
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const [emailErr, setEmailErr] = useState(null);
+  const [passErr, setPassErr] = useState(null);
 
   const {
     twitterLogin,
@@ -47,6 +48,9 @@ const Login = () => {
 
     if (!isValidEmail.test(email)) {
       setEmailErr('Please enter a valid email address.');
+      return;
+    } else if (pass.length < 6) {
+      setPassErr('Please enter a valid password.');
       return;
     }
     // Email password Login
@@ -170,22 +174,27 @@ const Login = () => {
               <p className="text-sm text-red-500 italic">{emailErr}</p>
             )}
           </div>
-          <label className="relative input input-bordered flex items-center gap-2">
-            <RiLockPasswordFill />
-            <input
-              type={eye ? 'text' : 'password'}
-              className="grow"
-              name="password"
-              required
-              placeholder="Password"
-            />
-            <div
-              onClick={() => setEye(!eye)}
-              className="cursor-pointer text-xl absolute right-3"
-            >
-              {eye ? <FaEye /> : <FaEyeSlash />}
-            </div>
-          </label>
+          <div>
+            <label className="relative input input-bordered flex items-center gap-2">
+              <RiLockPasswordFill />
+              <input
+                type={eye ? 'text' : 'password'}
+                className="grow"
+                name="password"
+                placeholder="Password"
+              />
+              <div
+                onClick={() => setEye(!eye)}
+                className="cursor-pointer text-xl absolute right-3"
+              >
+                {eye ? <FaEye /> : <FaEyeSlash />}
+              </div>
+            </label>{' '}
+            {passErr && (
+              <p className="text-sm text-red-500 italic">{passErr}</p>
+            )}
+          </div>
+
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-1">
               <input
