@@ -13,7 +13,7 @@ const Profile = () => {
   const { userDta, profileUpdate, handleDeleteAcc, setReload, reload } =
     useContext(ContextAuth);
   // const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const isValidPhoto = /\bhttps?:\/\/\S+?\.(?:png|jpe?g|gif|bmp)\b/;
+  // const isValidPhoto = /\bhttps?:\/\/\S+?\.(?:png|jpe?g|gif|bmp)\b/;
   const [update, setUpdate] = useState(false);
   const [nameErr, setNameErr] = useState('');
   // const [emailErr, setEmailErr] = useState('');
@@ -26,13 +26,14 @@ const Profile = () => {
     const name = document.getElementById('nameInp').value;
     // const email = document.getElementById('emailInp').value;
     const photo = document.getElementById('imgUrl').value;
-    if (name.length > 2) {
-      //&& isValidEmail.test(email)
+    if (name.length > 2 && photo.length > 5) {
       setUpdate(!update);
-    } else if (!isValidPhoto.test(photo)) {
-      setPhotoErr('Please enter a valid URL');
+    } else if (photo.length < 5) {
+      setPhotoErr('Enter your valid new photo URL');
+      return;
     } else if (name.length < 2) {
-      setNameErr('Enter your valid name!');
+      setNameErr('Enter your valid new name');
+      return;
     }
     profileUpdate(name, photo)
       .then(() => {
@@ -93,16 +94,21 @@ const Profile = () => {
               </div>
             </div>
             {update && (
-              <input
-                type="text"
-                id="imgUrl"
-                placeholder={photoErr ? photoErr : 'Input your photo URL'}
-                className={
-                  photoErr
-                    ? 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block my-2 md:w-[500px] placeholder-red-500'
-                    : 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block my-2 md:w-[500px]'
-                }
-              />
+              <div className="w-[500px] mx-auto">
+                <input
+                  type="text"
+                  id="imgUrl"
+                  placeholder="Input your new photo URL"
+                  className={
+                    photoErr
+                      ? 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block mt-2 md:w-full placeholder-red-500'
+                      : 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block mt-2 md:w-full'
+                  }
+                />
+                {photoErr && (
+                  <p className="text-red-500 italic text-sm">{photoErr}</p>
+                )}
+              </div>
             )}
             <h1 className="text-center text-2xl font-semibold ">
               {userDta.displayName ? userDta.displayName : 'User Name'}
@@ -132,7 +138,7 @@ const Profile = () => {
                         placeholder="Your Name"
                         id="nameInp"
                         className="border-2 border-redLi rounded-md py-1 px-2"
-                      />{' '}
+                      />
                       {nameErr && (
                         <p className="text-red-500 italic text-sm">{nameErr}</p>
                       )}

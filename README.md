@@ -43,15 +43,15 @@ The user profile editing feature is implemented using Firebase authentication an
 
 ## Package Used
 
-- **React Icon**
-- **React-hot-toast**
+- **AOS Package**
 - **Swiper**
-- **Firebase**
 - **React Hook Form**
 - **Sweetalert2**
+- **React Icon**
+- **React-hot-toast**
+- **Firebase**
 - **React Fast Marquee** <!-- - **React Leaflet** -->
 - **React Helmet**
-- **AOS Package**
 
 ## How to Install this project!
 
@@ -142,7 +142,7 @@ To install and run SnowyNest locally, follow these steps:
   npm install --save aos@next
   ```
 
-6. Run the development server:
+5. Run the development server:
 
    ```
    npm run dev

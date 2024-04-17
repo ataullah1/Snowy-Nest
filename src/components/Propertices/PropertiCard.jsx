@@ -10,7 +10,7 @@ const PropertiCard = ({ dta }) => {
   return (
     <div
       data-aos="zoom-in"
-      className="bg-white min-w-[380px] max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3 hover:shadow-lg"
+      className="bg-white min-w-[380px] max-w-[500px] mx-auto p-3 border rounded-lg hover:scale-105 duration-200 space-y-3 hover:shadow-xl"
     >
       <div className="relative w-full h-56">
         <div className="relative w-full h-full">
