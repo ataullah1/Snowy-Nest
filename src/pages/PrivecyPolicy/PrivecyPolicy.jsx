@@ -74,7 +74,11 @@ const PrivecyPolicy = () => {
         <h2 className="text-2xl pt-4 font-bold ">Contact Us</h2>
         <p>
           If you have any questions about our Privacy Policy, please contact us
-          at privacy@snowynest.com.
+          at privacy @
+          <Link className="text-redLi" to={'/contact'}>
+            snowynest.com
+          </Link>
+          .
         </p>
       </div>
     </div>
