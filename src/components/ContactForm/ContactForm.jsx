@@ -19,49 +19,53 @@ const ContactForm = () => {
   return (
     <div className="bg-white p-8 rounded-3xl border-2 mt-14 gap-10 flex flex-col md:flex-row">
       <div className="w-full md:w-2/5 relative">
-        <h1 data-aos="zoom-out-down" className="text-4xl font-bold">
+        <h1 data-aos="fade-right" className="text-4xl font-bold">
           Send Us An Email
         </h1>
-        <p
-          data-aos="zoom-out-down"
-          className="text-slate-400 pt-2 text-justify"
-        >
+        <p data-aos="fade-down" className="text-slate-400 pt-2 text-justify">
           Have questions or interested in a property? Reach out to us at{' '}
           <span className="text-redLi cursor-pointer">info@snowynest.com</span>.
           Our team is here to help with any inquiries or assistance you may need
           regarding buying or selling your home.
         </p>
-        <div
-          data-aos="fade-down"
-          className="md:absolute md:bottom-2 md:left-1/2 md:-translate-x-1/2 text-center"
-        >
-          <h1 className="text-2xl font-bold pt-8 pb-3 underline">Follow Us</h1>
+        <div className="md:absolute md:bottom-2 md:left-1/2 md:-translate-x-1/2 text-center">
+          <h1
+            data-aos="fade-down"
+            className="text-2xl font-bold pt-8 pb-3 underline"
+          >
+            Follow Us
+          </h1>
           <div className="flex flex-row gap-4 text-2xl text-slate-600 justify-center">
             <a
+              data-aos="fade-down"
               href="#"
               className="hover:text-redLi hover:scale-125 duration-150"
             >
               <FaFacebook />
             </a>
             <a
+              data-aos="fade-down"
               href="#"
               className="hover:text-redLi hover:scale-125 duration-150"
             >
               <FaInstagram />
             </a>
             <a
+              data-aos="fade-down"
               href="#"
               className="hover:text-redLi hover:scale-125 duration-150"
             >
               <FaTwitter />
             </a>
             <a
+              data-aos="fade-down"
               href="#"
               className="hover:text-redLi hover:scale-125 duration-150"
             >
               <FaGithub />
             </a>
             <a
+              data-aos="fade-down"
               href="#"
               className="hover:text-redLi hover:scale-125 duration-150"
             >
@@ -70,7 +74,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <div data-aos="fade-down" className="w-full md:w-3/5">
+      <div data-aos="fade-left" className="w-full md:w-3/5">
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
           <input
             className="px-4 py-2 outline-none border rounded-md"

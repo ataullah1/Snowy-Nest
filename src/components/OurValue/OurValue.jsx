@@ -4,21 +4,32 @@ const OurValue = () => {
     <div className="w-11/12 mx-auto mt-28 flex flex-col-reverse md:flex-row-reverse gap-4 md:gap-8 lg:gap-28 justify-between">
       <div className="w-full md:w-3/5">
         <h1
-          data-aos-delay="400"
+          data-aos="fade-left"
           className="text-4xl md:text-5xl font-bold text-redLi border-b-4 border-slate-500 inline-block"
         >
           Our Value
         </h1>
-        <p className="text-3xl md:text-4xl font-semibold text-slate-600 my-5">
+        <p
+          data-aos="fade-down"
+          data-aos-delay="350"
+          className="text-3xl md:text-4xl font-semibold text-slate-600 my-5"
+        >
           We cherish your trust,
         </p>
-        <p className="max-w-[600px] text-slate-400">
+        <p
+          data-aos="fade-down"
+          data-aos-delay="400"
+          className="max-w-[600px] text-slate-400"
+        >
           Dedicated to offering exceptional service. Our commitment to creating
           a nurturing living space stems from our belief that it profoundly
           enhances life quality.
         </p>
         <div className="flex flex-col gap-5 mt-5">
-          <div className="collapse collapse-arrow bg-base-200 shadow-md shadow-fuchsia-300">
+          <div
+            data-aos="fade-down"
+            className="collapse collapse-arrow bg-base-200 shadow-md shadow-fuchsia-300"
+          >
             <input type="radio" name="my-accordion-2" defaultChecked />
             <div className="collapse-title text-xl font-medium">
               Best price on the market.
@@ -31,7 +42,10 @@ const OurValue = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-arrow bg-base-200 shadow-md shadow-fuchsia-300">
+          <div
+            data-aos="fade-down"
+            className="collapse collapse-arrow bg-base-200 shadow-md shadow-fuchsia-300"
+          >
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               We will give you lifetime support.
@@ -44,7 +58,10 @@ const OurValue = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-arrow bg-base-200 shadow-md shadow-fuchsia-300">
+          <div
+            data-aos="fade-down"
+            className="collapse collapse-arrow bg-base-200 shadow-md shadow-fuchsia-300"
+          >
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               Navigate the Property Market Confidently

@@ -70,7 +70,10 @@ const Profile = () => {
         <div className="min-h-[500px] py-5 w-11/12 sm:w-10/12 lg:w-[700px] mx-auto bg-slate-50 border-4 border-redLi rounded-2xl -translate-y-44">
           <div>
             <div className=" h-[95px] w-[96px] mx-auto rounded-full bg-gradient-to-r from-fuchsia-600 to-purple-600 p-1">
-              <div className="w-full h-full bg-fuchsia-50 rounded-full p-1">
+              <div
+                data-aos="zoom-in"
+                className="w-full h-full bg-fuchsia-50 rounded-full p-1"
+              >
                 <img
                   src={userDta.photoURL ? userDta.photoURL : profilePic}
                   className="w-full h-full rounded-full"
@@ -133,21 +136,6 @@ const Profile = () => {
                   <p className="text-base font-semibold text-slate-500">
                     Email
                   </p>
-                  {/* {update ? (
-                    <div>
-                      <input
-                        type="email"
-                        placeholder="Your Email"
-                        id="emailInp"
-                        className="border-2 border-redLi rounded-md py-1 px-2"
-                      />
-                      {emailErr && (
-                        <p className="text-red-500 italic text-sm">
-                          {emailErr}
-                        </p>
-                      )}
-                    </div>
-                  ) : ( */}
                   <p>
                     {userDta.email
                       ? userDta.email
@@ -160,7 +148,7 @@ const Profile = () => {
                     Phone
                   </p>
                   <p>
-                    {userDta.phoneNumber ? userDta.phoneNumber : '01719-199967'}
+                    {userDta.phoneNumber ? userDta.phoneNumber : '017**-******'}
                   </p>
                 </div>
                 <div>

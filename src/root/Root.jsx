@@ -47,7 +47,7 @@ const Root = () => {
       >
         <Nav />
       </div>
-      <div className="max-w-[1700px] mx-auto">
+      <div className="max-w-[1700px] mx-auto overflow-hidden">
         <Outlet />
       </div>
       <Footer />
