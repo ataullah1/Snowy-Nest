@@ -14,7 +14,7 @@ const Propertices = () => {
         data-aos="fade-up"
         className="pt-16 text-2xl sm:text-3xl text-center font-bold"
       >
-        Out Featured Premium Properties
+        Our Featured Premium Properties
       </h1>
       <p
         data-aos="fade-up"

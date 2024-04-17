@@ -37,7 +37,17 @@ h5 {
   color: #ff5a5f;
   /* color: #00ffa6; */
 }
-
+/* Banner arrow edit */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: red;
+}
+@media screen and (max-width: 640px) {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    transform: scale(0.6);
+  }
+}
 .collapse-title::after {
   color: #ff5a5f;
 }

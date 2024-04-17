@@ -204,7 +204,7 @@ const Register = () => {
               />
             </label>
             {emailErr && (
-              <p className="text-sm text-red-500 italic">{emailErr}</p>
+              <p className="text-sm text-red-500 italic pt-1">{emailErr}</p>
             )}
           </div>
           <div>
@@ -231,7 +231,7 @@ const Register = () => {
               </div>
             </label>
             {passErr && (
-              <p className="text-sm text-red-500 italic">{passErr}</p>
+              <p className="text-sm text-red-500 italic pt-1">{passErr}</p>
             )}
           </div>
           <div>
@@ -251,7 +251,7 @@ const Register = () => {
               />
             </label>
             {confPassErr && (
-              <p className="text-sm text-red-500 italic">{confPassErr}</p>
+              <p className="text-sm text-red-500 italic pt-1">{confPassErr}</p>
             )}
           </div>
           <p></p>

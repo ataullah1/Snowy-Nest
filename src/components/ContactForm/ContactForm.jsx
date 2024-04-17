@@ -28,6 +28,8 @@ const ContactForm = () => {
           Our team is here to help with any inquiries or assistance you may need
           regarding buying or selling your home.
         </p>
+        <h1 className="text-2xl font-bold pt-6 pb-2">Our Address</h1>
+        <p className="text-slate-400">Mirpur 10, Dhaka, Bangladesh</p>
         <div className="md:absolute md:bottom-2 md:left-1/2 md:-translate-x-1/2 text-center">
           <h1
             data-aos="fade-down"

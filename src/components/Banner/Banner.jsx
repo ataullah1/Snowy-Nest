@@ -41,11 +41,11 @@ const Banner = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation, Keyboard]}
-        className="mySwiper h-[500px] md:min-h-screen"
+        className="mySwiper h-[400px] md:min-h-screen"
       >
         <SwiperSlide>
           <div
-            className="h-[500px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+            className="h-[400px] md:min-h-screen relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
             style={{
               backgroundImage: `url(${slide1})`,
               backgroundPosition: 'center',
@@ -62,7 +62,7 @@ const Banner = () => {
                   <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
                     Buy the property of your choice.
                   </h1>
-                  <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
+                  <p className="max-w-[700px] mx-auto p-4 text-base md:text-lg">
                     {`Explore SnowyNest's curated listings to effortlessly find and purchase the ideal property that matches your preferences and fits your lifestyle perfectly.`}
                   </p>
                 </div>
@@ -72,7 +72,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="h-[500px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+            className="h-[400px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
             style={{
               backgroundImage: `url(${slide2})`,
               backgroundPosition: 'center',
@@ -89,7 +89,7 @@ const Banner = () => {
                   <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
                     Your Property, Our Priority.
                   </h1>
-                  <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
+                  <p className="max-w-[700px] mx-auto p-4 text-base md:text-lg">
                     Your property aspirations are our top priority at SnowyNest.
                     Trust us to prioritize your needs and guide you to your
                     perfect home.
@@ -101,7 +101,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="h-[500px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+            className="h-[400px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
             style={{
               backgroundImage: `url(${slide3})`,
               backgroundPosition: 'center',
@@ -118,7 +118,7 @@ const Banner = () => {
                   <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
                     Discover Your Dream Home at SnowyNest!
                   </h1>
-                  <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
+                  <p className="max-w-[700px] mx-auto p-4 text-base md:text-lg">
                     Discover Your Dream Home at SnowyNest! Explore our diverse
                     range of properties and find the perfect place to call your
                     own.
@@ -130,7 +130,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="h-[500px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+            className="h-[400px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
             style={{
               backgroundImage: `url(${slide4})`,
               backgroundPosition: 'center',
@@ -147,7 +147,7 @@ const Banner = () => {
                   <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
                     Find Your Perfect Property Today!
                   </h1>
-                  <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
+                  <p className="max-w-[700px] mx-auto p-4 text-base md:text-lg">
                     Find Your Perfect Property Today! Start your journey to
                     homeownership with SnowyNest and uncover the ideal living
                     space for you.
@@ -159,7 +159,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="h-[500px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+            className="h-[400px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
             style={{
               backgroundImage: `url(${slide5})`,
               backgroundPosition: 'center',
@@ -176,7 +176,7 @@ const Banner = () => {
                   <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
                     Your Gateway to Home Bliss!
                   </h1>
-                  <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
+                  <p className="max-w-[700px] mx-auto p-4 text-base md:text-lg">
                     Your Gateway to Home Bliss! Experience the joy of finding
                     your dream home with us. Begin your search now!
                   </p>
@@ -187,7 +187,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="h-[500px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+            className="h-[400px] md:min-h-screen relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
             style={{
               backgroundImage: `url(${slide6})`,
               backgroundPosition: 'center',
@@ -204,7 +204,7 @@ const Banner = () => {
                   <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">
                     Your Home Awaits at SnowyNest!
                   </h1>
-                  <p className="max-w-[700px] mx-auto py-4 text-base md:text-lg">
+                  <p className="max-w-[700px] mx-auto p-4 text-base md:text-lg">
                     Unlock Endless Possibilities with SnowyNest! Let SnowyNest
                     guide you to the home of your dreams. Your next adventure
                     starts here!
