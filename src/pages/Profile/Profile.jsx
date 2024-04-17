@@ -7,6 +7,7 @@ import { MdSave } from 'react-icons/md';
 import { ContextAuth } from '../../provider/Provider';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import Swal from 'sweetalert2';
 
 const Profile = () => {
   const { userDta, profileUpdate, handleDeleteAcc, setReload, reload } =
@@ -36,8 +37,18 @@ const Profile = () => {
     profileUpdate(name, photo)
       .then(() => {
         setReload(!reload);
+        Swal.fire({
+          title: 'Good job!',
+          text: 'Your profile has been successfully updated.',
+          icon: 'success',
+        });
       })
       .catch((err) => {
+        Swal.fire({
+          title: 'Oops...!',
+          text: 'Sorry, your profile could not be updated !',
+          icon: 'error',
+        });
         console.log(err);
       });
   };
