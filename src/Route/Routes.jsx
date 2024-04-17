@@ -11,6 +11,7 @@ import PriveteRoute from '../pages/PrivetRoute/PriveteRoute';
 import Error from '../pages/ErrorPage/Error';
 import Blog from '../pages/Blog/Blog';
 import PrivecyPolicy from '../pages/PrivecyPolicy/PrivecyPolicy';
+import UpdateProfile from '../pages/UpdateProfile/UpdateProfile';
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: '/profile',
         element: <Profile />,
+      },
+      {
+        path: '/update-profile',
+        element: <UpdateProfile />,
       },
       {
         path: '/properti_details/:viewId',

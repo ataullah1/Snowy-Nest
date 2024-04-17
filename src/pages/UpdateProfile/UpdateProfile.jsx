@@ -106,8 +106,8 @@ const UpdateProfile = () => {
                   <IoMdContact /> My Profile
                 </h1>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-8">
-                <div>
+              <div className="flex flex-col gap-3">
+                <div className="w-full">
                   <p className="text-base font-semibold text-slate-500">
                     Full Name
                   </p>
@@ -117,7 +117,7 @@ const UpdateProfile = () => {
                         type="text"
                         placeholder="Your Name"
                         id="nameInp"
-                        className="border-2 border-redLi rounded-md py-1 px-2"
+                        className="w-full border-2 border-redLi rounded-md py-1 px-2"
                       />
                       {nameErr && (
                         <p className="text-red-500 italic text-sm">{nameErr}</p>
@@ -130,29 +130,31 @@ const UpdateProfile = () => {
                   )}
                 </div>
 
-                <div className="w-[500px] mx-auto">
+                <div className="w-full">
+                  <p className="text-base font-semibold text-slate-500">
+                    Photo URL
+                  </p>
                   <input
                     type="text"
                     id="imgUrl"
                     placeholder="Input your new photo URL"
                     className={
                       photoErr
-                        ? 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block mt-2 md:w-full placeholder-red-500'
-                        : 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block mt-2 md:w-full'
+                        ? 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block w-full placeholder-red-500'
+                        : 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block w-full'
                     }
                   />
                   {photoErr && (
                     <p className="text-red-500 italic text-sm">{photoErr}</p>
                   )}
                 </div>
-              </div>
-              <div className="flex items-center justify-between mt-12">
+
                 <div>
                   {update ? (
                     <div>
                       <button
                         onClick={(() => setUpdate(!update), handleUpdate)}
-                        className="bg-redLi text-white flex items-center gap-1 font-semibold text-lg cursor-pointer py-2 border-redLi border-2 hover:-skew-x-[15deg] duration-150 px-5 rounded-md"
+                        className="w-full md:w-auto bg-redLi text-white flex justify-center md:justify-normal items-center gap-1 font-semibold text-lg cursor-pointer py-2 border-redLi border-2 hover:-skew-x-[15deg] duration-150 px-10 rounded-md"
                       >
                         <MdSave /> Save
                       </button>
@@ -160,7 +162,7 @@ const UpdateProfile = () => {
                   ) : (
                     <button
                       onClick={() => setUpdate(!update)}
-                      className="flex items-center gap-2 font-semibold text-lg cursor-pointer py-2 border-redLi border-2 hover:-skew-x-[15deg] duration-150 px-5 rounded-md"
+                      className="w-full md:w-auto flex justify-center md:justify-normal items-center gap-2 font-semibold text-lg cursor-pointer py-2 border-redLi border-2 hover:-skew-x-[15deg] duration-150 px-10 rounded-md"
                     >
                       <FaEdit /> Update Profile
                     </button>
