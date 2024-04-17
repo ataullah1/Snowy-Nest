@@ -1,7 +1,6 @@
 import { FaEdit } from 'react-icons/fa';
 import image1 from '../../assets/sliderImg/14.jpg';
 import profilePic from '../../assets/userProfile.png';
-import { IoMdContact } from 'react-icons/io';
 import { useContext, useEffect, useState } from 'react';
 import { MdSave } from 'react-icons/md';
 import { ContextAuth } from '../../provider/Provider';
@@ -25,11 +24,11 @@ const UpdateProfile = () => {
     const photo = document.getElementById('imgUrl').value;
     if (name.length > 2 && photo.length > 5) {
       setUpdate(!update);
-    } else if (photo.length < 5) {
-      setPhotoErr('Enter your valid new photo URL');
-      return;
     } else if (name.length < 2) {
       setNameErr('Enter your valid new name');
+      return;
+    } else if (photo.length < 5) {
+      setPhotoErr('Enter your valid new photo URL');
       return;
     }
     profileUpdate(name, photo)
@@ -61,7 +60,7 @@ const UpdateProfile = () => {
   return (
     <div className="relative min-h-screen">
       <Helmet>
-        <title>Profile | SnowyNest</title>
+        <title>Profile-Update | SnowyNest</title>
       </Helmet>
       <div
         className="min-h-96 overflow-hidden bg-cover bg-no-repeat p-12 text-center relative"
@@ -76,9 +75,9 @@ const UpdateProfile = () => {
           className="absolute bottom-0 left-0 right-0 top-0 min-h-96 w-full overflow-hidden bg-fixed"
           style={{ backgroundColor: ' rgba(0, 0, 0, 0.6)' }}
         ></div>
-      </div>
+      </div>{' '}
       {userDta && (
-        <div className="min-h-[500px] py-5 w-11/12 sm:w-10/12 lg:w-[700px] mx-auto bg-slate-50 border-4 border-redLi rounded-2xl -translate-y-44">
+        <div className="min-h-[490px] py-5 w-11/12 sm:w-10/12 lg:w-[700px] mx-auto bg-slate-50 border-4 border-redLi rounded-2xl -translate-y-44">
           <div>
             <div className=" h-[95px] w-[96px] mx-auto rounded-full bg-gradient-to-r from-fuchsia-600 to-purple-600 p-1">
               <div className="w-full h-full bg-fuchsia-50 rounded-full p-1">
@@ -101,23 +100,28 @@ const UpdateProfile = () => {
             </div>
 
             <div className="w-11/12 sm:w-10/12 mx-auto">
-              <div className="flex items-center justify-between">
-                <h1 className="flex items-center gap-1 font-semibold text-lg underline">
-                  <IoMdContact /> My Profile
-                </h1>
-              </div>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 w-full md:max-w-[400px] mx-auto mt-14">
                 <div className="w-full">
-                  <p className="text-base font-semibold text-slate-500">
-                    Full Name
+                  <p
+                    className={
+                      update
+                        ? 'text-base font-semibold text-slate-500'
+                        : 'text-base font-semibold text-slate-500 border-b border-redLi mb-2'
+                    }
+                  >
+                    {update ? 'Enter New Full Name' : 'Your Name'}
                   </p>
                   {update ? (
                     <div>
                       <input
                         type="text"
-                        placeholder="Your Name"
+                        placeholder="Your New Name"
                         id="nameInp"
-                        className="w-full border-2 border-redLi rounded-md py-1 px-2"
+                        className={
+                          nameErr
+                            ? 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block w-full placeholder-red-500'
+                            : 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block w-full'
+                        }
                       />
                       {nameErr && (
                         <p className="text-red-500 italic text-sm">{nameErr}</p>
@@ -131,30 +135,48 @@ const UpdateProfile = () => {
                 </div>
 
                 <div className="w-full">
-                  <p className="text-base font-semibold text-slate-500">
-                    Photo URL
-                  </p>
-                  <input
-                    type="text"
-                    id="imgUrl"
-                    placeholder="Input your new photo URL"
+                  <p
                     className={
-                      photoErr
-                        ? 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block w-full placeholder-red-500'
-                        : 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block w-full'
+                      update
+                        ? 'text-base font-semibold text-slate-500'
+                        : 'text-base font-semibold text-slate-500 border-b border-redLi mb-2'
                     }
-                  />
-                  {photoErr && (
-                    <p className="text-red-500 italic text-sm">{photoErr}</p>
+                  >
+                    {update ? 'Enter New Photo URL' : 'Your Photo URL'}
+                  </p>
+                  {update ? (
+                    <div>
+                      <input
+                        type="text"
+                        id="imgUrl"
+                        placeholder="Enter your new photo URL"
+                        className={
+                          photoErr
+                            ? 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block w-full placeholder-red-500'
+                            : 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block w-full'
+                        }
+                      />
+                      {photoErr && (
+                        <p className="text-red-500 italic text-sm">
+                          {photoErr}
+                        </p>
+                      )}
+                    </div>
+                  ) : (
+                    <p>
+                      {userDta.photoURL
+                        ? userDta.photoURL.slice(0, 42) + '.....'
+                        : 'User photo URL'}
+                    </p>
                   )}
                 </div>
 
-                <div>
+                <div className="mt-4">
                   {update ? (
                     <div>
                       <button
                         onClick={(() => setUpdate(!update), handleUpdate)}
-                        className="w-full md:w-auto bg-redLi text-white flex justify-center md:justify-normal items-center gap-1 font-semibold text-lg cursor-pointer py-2 border-redLi border-2 hover:-skew-x-[15deg] duration-150 px-10 rounded-md"
+                        className="w-full bg-redLi text-white flex justify-center items-center gap-1 font-semibold text-lg cursor-pointer py-2 hover:-skew-x-[15deg] duration-150 px-10 rounded-md"
                       >
                         <MdSave /> Save
                       </button>
@@ -162,7 +184,7 @@ const UpdateProfile = () => {
                   ) : (
                     <button
                       onClick={() => setUpdate(!update)}
-                      className="w-full md:w-auto flex justify-center md:justify-normal items-center gap-2 font-semibold text-lg cursor-pointer py-2 border-redLi border-2 hover:-skew-x-[15deg] duration-150 px-10 rounded-md"
+                      className="w-full bg-redLi text-white flex justify-center items-center gap-1 font-semibold text-lg cursor-pointer py-2 hover:-skew-x-[15deg] duration-150 px-10 rounded-md"
                     >
                       <FaEdit /> Update Profile
                     </button>
