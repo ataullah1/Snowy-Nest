@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import { AiOutlineCheck } from 'react-icons/ai';
 import { SlSizeFullscreen } from 'react-icons/sl';
 import { useLoaderData, useParams } from 'react-router-dom';
 
@@ -23,6 +24,7 @@ const PropertiDetails = () => {
     status,
     location,
     map,
+    features,
   } = filterDta[0];
   //   console.log(filterDta[0]);
   return (
@@ -177,7 +179,26 @@ const PropertiDetails = () => {
               <p className="pt-5">
                 Rating: <span className="font-bold">{rating} (40)</span>
               </p>
+              <div className="mt-8">
+                <h1 className="text-2xl font-semibold pb-3">
+                  Property Features
+                </h1>
+                <div className="flex flex-wrap gap-4">
+                  {features.map((dta, i) => (
+                    <div
+                      key={i}
+                      className="flex items-center gap-1 font-medium pr-2"
+                    >
+                      <span className="text-green-600 text-xl">
+                        <AiOutlineCheck />
+                      </span>
+                      {dta}
+                    </div>
+                  ))}
+                </div>
+              </div>
               <hr className="my-6" />
+              {/* Location Map Part */}
               <div>
                 <div className="flex justify-between">
                   <h1 className="text-2xl font-semibold pb-8">Location </h1>

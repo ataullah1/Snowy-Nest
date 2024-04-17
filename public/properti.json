@@ -32,7 +32,7 @@
       "Walk-in closets",
       "Three-car garage"
     ],
-    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45060306.91979326!2d-129.94270855000002!3d46.42366899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e72d55ea434f%3A0x91e2209ccaf48a86!2sTropical%20Paradise%20Properties!5e0!3m2!1sen!2sbd!4v1712984027431!5m2!1sen!2sbd"
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2683.977557029732!2d-122.35647610931908!3d47.72368469694446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901118927ff7d5%3A0x24bff4c24328c9be!2sLakefront%20Community%20Housing%20(LIHI)!5e0!3m2!1sen!2sbd!4v1713361114301!5m2!1sen!2sbd"
   },
   {
     "image": "https://i.postimg.cc/m2qPHKYw/3.jpg",
@@ -48,7 +48,7 @@
     "price": "$990,000",
     "status": "sale",
     "area": "2400",
-    "location": "Downtown Metropolis, USA",
+    "location": "Metropolis Dermatology, USA",
     "facilities": ["living room", "Pool", "rooftop terrace"],
     "rating": 4.8,
     "year_built": 2017,
@@ -66,7 +66,8 @@
       "Smart home technology",
       "City views",
       "Convenient location"
-    ]
+    ],
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.897887299442!2d-118.26441922388457!3d34.04649037315918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c72ef2f727bb%3A0x3414e0ac7c973f05!2sMetropolis%20Dermatology!5e0!3m2!1sen!2sbd!4v1713361218260!5m2!1sen!2sbd"
   },
   {
     "image": "https://i.postimg.cc/Y0HJZ2B3/2.jpg",
@@ -100,7 +101,8 @@
       "Fitness center",
       "Swimming pool",
       "Concierge services"
-    ]
+    ],
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7184.529815626375!2d-80.13891730535127!3d25.794833159324128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b4836333c545%3A0xcf29078f23554e0!2sCity%20Center%2C%20Miami%20Beach%2C%20FL%2033139%2C%20USA!5e0!3m2!1sen!2sbd!4v1713361326693!5m2!1sen!2sbd"
   },
   {
     "image": "https://i.postimg.cc/KcB8w4Xy/5.jpg",
@@ -135,7 +137,7 @@
       "Secure access",
       "High-speed internet"
     ],
-    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45060306.91979326!2d-129.94270855000002!3d46.42366899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e72d55ea434f%3A0x91e2209ccaf48a86!2sTropical%20Paradise%20Properties!5e0!3m2!1sen!2sbd!4v1712984027431!5m2!1sen!2sbd" 
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9969.15120778651!2d-0.7889724215337675!3d51.34261819841844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48742a98adba4291%3A0x709a6de7ee82794!2sCollege%20Town%2C%20UK!5e0!3m2!1sen!2sbd!4v1713361385880!5m2!1sen!2sbd"
   },
   {
     "image": "https://i.postimg.cc/g2kcxDxY/6.jpg",
@@ -169,7 +171,8 @@
       "Convenient location",
       "Spacious floor plans",
       "Beautifully landscaped grounds"
-    ]
+    ],
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.9994813552735!2d-75.32912361181513!3d39.896643898115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c2897aaed69b%3A0xd4b0385eafe9eca4!2sSenior%20Community%20Services!5e0!3m2!1sen!2sbd!4v1713361449351!5m2!1sen!2sbd"
   },
   {
     "image": "https://i.postimg.cc/Kv5vcVvq/7.jpg",
@@ -203,7 +206,8 @@
       "High-end appliances",
       "Granite countertops",
       "Open-concept layout"
-    ]
+    ],
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51288416.331005365!2d-171.18763360798613!3d38.31664798562333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e72d55ea434f%3A0x91e2209ccaf48a86!2sTropical%20Paradise%20Properties!5e0!3m2!1sen!2sbd!4v1713361497623!5m2!1sen!2sbd"
   },
   {
     "image": "https://i.postimg.cc/HnDsj1yK/9.jpg",
@@ -237,7 +241,8 @@
       "Central location",
       "Close to restaurants and shops",
       "Pet-friendly"
-    ]
+    ],
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7668.88332605782!2d120.33343704369983!3d16.042554888532223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33915d55efe8d335%3A0x4d6d69755ce6d6d1!2sDowntown%20District%2C%20Dagupan%2C%20Pangasinan%2C%20Philippines!5e0!3m2!1sen!2sbd!4v1713361543312!5m2!1sen!2sbd"
   },
   {
     "image": "https://i.postimg.cc/HkBxzNqc/1.jpg",
@@ -271,7 +276,8 @@
       "WiFi",
       "BBQ grill",
       "Outdoor shower"
-    ]
+    ],
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918214.2709733476!2d13.766933444337173!3d44.4163674804852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x27c40a4464bcfdbd%3A0x1b7c2c7f43184ef2!2sBeachfront%20Paradise%20Jago!5e0!3m2!1sen!2sbd!4v1713361607976!5m2!1sen!2sbd"
   },
   {
     "image": "https://i.postimg.cc/RVmZB99J/2.jpg",
@@ -305,6 +311,7 @@
       "Board games",
       "Outdoor grill",
       "Hiking trails nearby"
-    ]
+    ],
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.077628631828!2d7.439538076684609!3d46.940513371136475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39c9b3d8db87%3A0x610332b4ea1cf64d!2sMountain%20Wilderness%20Schweiz!5e0!3m2!1sen!2sbd!4v1713361657157!5m2!1sen!2sbd"
   }
 ]
