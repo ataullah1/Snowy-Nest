@@ -9,16 +9,14 @@ import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Swal from 'sweetalert2';
 
-const Profile = () => {
+const UpdateProfile = () => {
   const { userDta, profileUpdate, setReload, reload } = useContext(ContextAuth);
-  // const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  // const isValidPhoto = /\bhttps?:\/\/\S+?\.(?:png|jpe?g|gif|bmp)\b/;
   const [update, setUpdate] = useState(false);
   const [nameErr, setNameErr] = useState('');
   // const [emailErr, setEmailErr] = useState('');
   const [photoErr, setPhotoErr] = useState('');
 
-  const handleProfileUpdate = () => {
+  const handleUpdate = () => {
     setPhotoErr('');
     setNameErr('');
     // setEmailErr('');
@@ -91,23 +89,7 @@ const Profile = () => {
                 />
               </div>
             </div>
-            {update && (
-              <div className="w-[500px] mx-auto">
-                <input
-                  type="text"
-                  id="imgUrl"
-                  placeholder="Input your new photo URL"
-                  className={
-                    photoErr
-                      ? 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block mt-2 md:w-full placeholder-red-500'
-                      : 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block mt-2 md:w-full'
-                  }
-                />
-                {photoErr && (
-                  <p className="text-red-500 italic text-sm">{photoErr}</p>
-                )}
-              </div>
-            )}
+
             <h1 className="text-center text-2xl font-semibold ">
               {userDta.displayName ? userDta.displayName : 'User Name'}
             </h1>
@@ -115,7 +97,7 @@ const Profile = () => {
               {userDta.email ? userDta.email : 'Email could not be accessed'}
             </p>
             <div className="divider before:bg-redLi after:bg-redLi divider-secondary w-full text-lg">
-              Profile details
+              Profile Update
             </div>
 
             <div className="w-11/12 sm:w-10/12 mx-auto">
@@ -147,44 +129,29 @@ const Profile = () => {
                     </p>
                   )}
                 </div>
-                <div>
-                  <p className="text-base font-semibold text-slate-500">
-                    Email
-                  </p>
-                  <p>
-                    {userDta.email
-                      ? userDta.email
-                      : 'Email could not be accessed.'}
-                  </p>
-                  {/* )} */}
-                </div>
-                <div>
-                  <p className="text-base font-semibold text-slate-500">
-                    Phone
-                  </p>
-                  <p>
-                    {userDta.phoneNumber ? userDta.phoneNumber : '017**-******'}
-                  </p>
-                </div>
-                <div>
-                  <p className="text-base font-semibold text-slate-500">
-                    Address
-                  </p>
-                  <p>Bangladesh</p>
+
+                <div className="w-[500px] mx-auto">
+                  <input
+                    type="text"
+                    id="imgUrl"
+                    placeholder="Input your new photo URL"
+                    className={
+                      photoErr
+                        ? 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block mt-2 md:w-full placeholder-red-500'
+                        : 'border-2 border-redLi rounded-md py-1 px-3 mx-auto block mt-2 md:w-full'
+                    }
+                  />
+                  {photoErr && (
+                    <p className="text-red-500 italic text-sm">{photoErr}</p>
+                  )}
                 </div>
               </div>
               <div className="flex items-center justify-between mt-12">
-                <button className="py-2 bg-redLi text-white hover:-skew-x-[15deg] duration-150 border-redLi border-2 rounded-md px-4">
-                  Delete Profile
-                </button>
-
                 <div>
                   {update ? (
                     <div>
                       <button
-                        onClick={
-                          (() => setUpdate(!update), handleProfileUpdate)
-                        }
+                        onClick={(() => setUpdate(!update), handleUpdate)}
                         className="bg-redLi text-white flex items-center gap-1 font-semibold text-lg cursor-pointer py-2 border-redLi border-2 hover:-skew-x-[15deg] duration-150 px-5 rounded-md"
                       >
                         <MdSave /> Save
@@ -195,7 +162,7 @@ const Profile = () => {
                       onClick={() => setUpdate(!update)}
                       className="flex items-center gap-2 font-semibold text-lg cursor-pointer py-2 border-redLi border-2 hover:-skew-x-[15deg] duration-150 px-5 rounded-md"
                     >
-                      <FaEdit /> Edit Profile
+                      <FaEdit /> Update Profile
                     </button>
                   )}
                 </div>
@@ -208,4 +175,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default UpdateProfile;
