@@ -60,89 +60,22 @@ To install and run SnowyNest locally, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/programming-hero-web-course-4/b9a9-real-estate-ataullah1
+   git clone https://github.com/ataullah1/Snowy-Nest.git
    ```
 
 2. Navigate into the project directory:
 
    ```
-   cd SnowyNest
+   cd Snowy-Nest
    ```
 
-3. Install dependencies using npm or yarn:
+3. Install all dependencies using npm:
 
    ```
-   npm install -D tailwindcss postcss autoprefixer
+   npm install
    ```
 
-   #or
-
-   ```
-   yarn install -D tailwindcss postcss autoprefixer
-
-   ```
-
-4. All packages used by this project must be installed:
-
-- **React Router DOM**
-
-  ```
-  npm install react-router-dom localforage match-sorter sort-by
-  ```
-
-- **React Icon**
-  ```
-  npm install react-icons --save
-  ```
-- **React-hot-toast**
-
-  ```
-  npm i react-hot-toast
-  ```
-
-- **Swiper js**
-
-  ```
-  npm i swiper
-  ```
-
-- **Firebase**
-
-  ```
-  npm i react-firebase
-  ```
-
-- **React Hook Form**
-
-  ```
-  npm i react-hook-form
-  ```
-
-- **Sweetalert2**
-
-  ```
-  npm i sweetalert2
-  ```
-
-- **React Fast Marquee**
-
-  ```
-  npm i react-fast-marquee
-  ```
-
-- **React Helmet**
-
-  ```
-  npm i react-helmet
-  ```
-
-- **AOS Package**
-
-  ```
-  npm install --save aos@next
-  ```
-
-5. Run the development server:
+4. Run the development server:
 
    ```
    npm run dev
@@ -152,11 +85,11 @@ To install and run SnowyNest locally, follow these steps:
 
 ## Feedback and Contributions
 
-Feedback and contributions are welcome! If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/programming-hero-web-course-4/b9a9-real-estate-ataullah1/issues) or submit a pull request.
+Feedback and contributions are welcome! If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/ataullah1/Snowy-Nest.git/issues) or submit a pull request.
 
 Thank you for using SnowyNest! We hope you find your dream Property.
 
-## -Contact me
+## Contact me
 
 ### Follow on GitHub
 
